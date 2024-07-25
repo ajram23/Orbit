@@ -3,8 +3,23 @@
   <channel>
     <title>RoloxdexGuru</title>
     <item>
+      <title>Version 0.9.6.6 </title>
+      <pubDate>Sat, 25 Jul 2024 15:20:11 +0000</pubDate>
+      <sparkle:version>148</sparkle:version>
+      <sparkle:shortVersionString>0.9.6.6</sparkle:shortVersionString>
+      <description><![CDATA[
+                    <h2>Performance Improvement:</h2>
+                    <ul>
+                        <li>Much easier installation</li>
+                        <li>Much faster app</li>
+                        <li>loads of other improvements behind the scenes</li>
+                    </ul>
+                ]]></description>
+      <enclosure url="https://github.com/ajram23/rolodexpal/releases/download/0.9.6.6/Rolodex.pkg" sparkle:version="148" sparkle:shortVersionString="0.9.6.6" length="2998356" type="application/x-installer" sparkle:installationType="package"/>
+    </item>
+    <item>
       <title>Version 0.9.5</title>
-      <pubDate>Sat, 26 Jul 2024 15:20:11 +0000</pubDate>
+      <pubDate>Sat, 18 Jul 2024 15:20:11 +0000</pubDate>
       <sparkle:version>135</sparkle:version>
       <sparkle:shortVersionString>0.9.5</sparkle:shortVersionString>
       <description><![CDATA[
