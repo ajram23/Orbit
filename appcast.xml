@@ -1,0 +1,29 @@
+<?xml version="1.0" standalone="yes"?>
+<rss xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle" version="2.0">
+  <channel>
+    <title>RoloxdexGuru</title>
+    <item>
+      <title>Version 0.9.5</title>
+      <pubDate>Sat, 26 Jul 2024 15:20:11 +0000</pubDate>
+      <sparkle:version>135</sparkle:version>
+      <sparkle:shortVersionString>0.9.5</sparkle:shortVersionString>
+      <description><![CDATA[
+                    <h2>New Features:</h2>
+                    <ul>
+                        <li>Onboarding Flow</li>
+                        <li>The app helps you login, set up agent profile & syncs your data</li>
+                        <li>Added Support</li>
+                        <li>The app now supports Phone Numbers & Email Addresses</li>
+                        <li>Added Support for modifying groups</li>
+                        <li>You can now add contacts to groups</li>
+                    </ul>
+                    <h2>Bug Fixes:</h2>
+                    <ul>
+                        <li>Much better responses to questions</li>
+                        <li>Fixed issue 2</li>
+                    </ul>
+                ]]></description>
+      <enclosure url="https://yourserver.com/downloads/YourApp-09.5.pkg" sparkle:version="135" sparkle:shortVersionString="0.9.5" length="1234567" type="application/x-installer" sparkle:installationType="package"/>
+    </item>
+  </channel>
+</rss>
