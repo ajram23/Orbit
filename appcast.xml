@@ -14,6 +14,9 @@
                         <li>Much faster app</li>
                         <li>loads of other improvements behind the scenes</li>
                     </ul>
+                    <h2> 🧨Known Issues:</h2>
+                    <ul>
+                        <li>🛜 Google Account disconnects, have to reconnect to update!!</li>
                 ]]></description>
       <enclosure url="https://github.com/ajram23/rolodexpal/releases/download/0.9.6.6/Rolodex.pkg" sparkle:version="148" sparkle:shortVersionString="0.9.6.6" length="2998356" type="application/x-installer" sparkle:installationType="package"/>
     </item>
