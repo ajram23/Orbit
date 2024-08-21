@@ -1,9 +1,23 @@
 # rolodexpal
 
 ## 📦 | Install instructions (Mac Only)
-* Control click to install application 
+* Control click to install application
+  *   ![Screenshot 2024-08-21 at 4 21 32 PM](https://github.com/user-attachments/assets/19484f78-c2ac-4f22-89a2-9476e9e0583f)
+  *   If you are running the latest version of the MacOS, you will have to open settings -> Privacy & Security -> Open Anyway!
+  *   This is an interim step during the testing phase, we plan to release the app in the app store!
 * Make sure you have homebrew installed on your machine
 * Reached out to make sure your gmail ID is added to list of testers!
+* While installation you will be asked for this permission
+  * ![Screenshot 2024-08-15 at 11 10 34 AM](https://github.com/user-attachments/assets/029fa5f4-5d43-473e-8bab-3d94a3ef1749)
+  * Why: we don't have a server so everything runs on your machine, this pemission is to install that software!
+  * This is an interim step during the testing phase, we plan to release the app in the app store!
+* The installation will take sometime! 
+
+## Post Install
+* You will be asked for permissions
+  * ![Screenshot 2024-08-15 at 11 10 16 AM](https://github.com/user-attachments/assets/eb336dee-9a66-4846-a010-f30c8360eae8)
+  * This is for Google Sign.
+* Downloading & parsing the contacts will take sometime, we have to understand all of your contacts 🤩
 
 ## 💬 List of Use Cases
 
