@@ -38,18 +38,22 @@
 * Can you update [🧍] interests to include swimming
 
 ## ❌ Not Supported
-- [ ] Names: Only supporting givenName & familyName for now, need to add support middleName, phonetic, Prefix & Suffix
-- [ ] Company: Specific details about the company.
-- [ ] Location: Geographical or location-based data.
-- [ ] URLs: URLs like profiles, etc
-- [ ] Streaming: The service processes requests sequentially and does not support streaming output.
+### We take a very conservative approach to deleting data, so for now its not supported
+- [ ] Can’t add new labels - for instance you can’t say “add assistant’s email“ unless its predefined in your data.
+- [ ] Can't add or remove groups
+- [ ] Add the ability to remove
+- [ ] Add the ability to delete
 
 ## ⊯ Limitations
 - Labels for fields like emails, phones, relationships will default to Other
 ### 📝 Updates
-- [ ] Add the ability to remove
-- [ ] Add the ability to delete
 - [ ] Adding a new contact (need to change update to create/edits)
 - [ ] Multiple updates for one contact
 - [ ] Addition new relationships (Doesn’t need to find a match!)
-- [ ] Can’t add new labels - for instance you can’t say “add assistant’s email“ unless its predefined in your data.
+
+## 🔜 Coming soon
+- [ ] Company: Specific details about the company.
+- [ ] Names: Only supporting givenName & familyName for now, need to add support middleName, phonetic, Prefix & Suffix
+- [ ] Location: Geographical or location-based data.
+- [ ] URLs: URLs like profiles, etc
+- [ ] Streaming: The service processes requests sequentially and does not support streaming output.
