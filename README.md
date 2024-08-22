@@ -38,13 +38,14 @@
 * Can you update [🧍] interests to include swimming
 
 ## ❌ Not Supported
-
-- [ ] Company Information: Specific details about the company.
-- [ ] Location Specifics: Geographical or location-based data.
+- [ ] Names: Only supporting givenName & familyName for now, need to add support middleName, phonetic, Prefix & Suffix
+- [ ] Company: Specific details about the company.
+- [ ] Location: Geographical or location-based data.
 - [ ] URLs: URLs like profiles, etc
 - [ ] Streaming: The service processes requests sequentially and does not support streaming output.
 
 ## ⊯ Limitations
+- Labels for fields like emails, phones, relationships will default to Other
 ### 📝 Updates
 - [ ] Add the ability to remove
 - [ ] Add the ability to delete
