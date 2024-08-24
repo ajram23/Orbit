@@ -2,7 +2,7 @@
 
 ## 📦 | Install instructions (Mac Only)
 * Control click to install application
-  *   ![Screenshot 2024-08-21 at 4 21 32 PM](https://github.com/user-attachments/assets/19484f78-c2ac-4f22-89a2-9476e9e0583f)
+  *   ![Screenshot 2024-08-21 at 3 41 12 PM](https://github.com/user-attachments/assets/42869083-2806-414f-a92c-bb3d98d22518)
   *   If you are running the latest version of the MacOS, you will have to open settings -> Privacy & Security -> Open Anyway!
   *   This is an interim step during the testing phase, we plan to release the app in the app store!
 * Make sure you have homebrew installed on your machine
