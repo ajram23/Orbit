@@ -28,6 +28,7 @@
 * I am in the mood for Sichuan in NYC. Who should I ask?
 * What events are coming up in the next week? (including Checkins)?
 * Who do I know really well from Goldman Sachs?
+* Do I know any product managers at Google?
 
 # 📝 Edits
 * I'd like to check in with [🧍] 2 days, can you update it?
@@ -36,6 +37,7 @@
 * [🧍], unfortunately passed away on April 6th this year, please make note of it!
 * Can you change [🧍]'s familiarity to someone I am friendly with 
 * Can you update [🧍] interests to include swimming
+* [🧍] works at [🏢] as a VP of Product in the Cloud Division. Can you make an update?
 
 ## ❌ Not Supported
 ### We take a very conservative approach to deleting data, so for now its not supported
@@ -52,7 +54,6 @@
 - [ ] Addition new relationships (Doesn’t need to find a match!)
 
 ## 🔜 Coming soon
-- [ ] Company: Specific details about the company.
 - [ ] Names: Only supporting givenName & familyName for now, need to add support middleName, phonetic, Prefix & Suffix
 - [ ] Location: Geographical or location-based data.
 - [ ] URLs: URLs like profiles, etc
