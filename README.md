@@ -48,6 +48,7 @@
 
 ## ⊯ Limitations
 - Labels for fields like emails, phones, relationships will default to Other
+- We only create columns for fields that have data, because we need to train our system with the data, Adding data later doesnt retrain or work at the moment.
 ### 📝 Updates
 - [ ] Adding a new contact (need to change update to create/edits)
 - [ ] Multiple updates for one contact
