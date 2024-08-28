@@ -59,3 +59,6 @@
 - [ ] Location: Geographical or location-based data.
 - [ ] URLs: URLs like profiles, etc
 - [ ] Streaming: The service processes requests sequentially and does not support streaming output.
+
+## Known issues
+- [ ]  Podman installs fails sometimes https://github.com/containers/podman/issues/23784#issuecomment-2315351722
