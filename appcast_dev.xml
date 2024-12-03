@@ -3,6 +3,34 @@
   <channel>
     <title>ContactsPal</title>
     <item>
+      <title>Version 0.9.8.4</title>
+      <pubDate>Sun, 03 Dec 2024 12:00:00 +0000</pubDate>
+      <sparkle:version>280</sparkle:version>
+      <sparkle:shortVersionString>0.9.8.4</sparkle:shortVersionString>
+      <description><![CDATA[
+        <h2>New Features:</h2>
+        <ul>
+            <li>Fix animation to be better</li>
+            <li>Added support for update reminders</li>
+        </ul>
+        <h2>Bug Fixes:</h2>
+        <ul>
+            <li>Fixed regression where verification was removed</li>
+            <li>Fixed regressions where schema function introduced a tab</li>
+            <li>Fixed issue where duplicate profiles could be sent for addresses</li>
+            <li>Fixed issue where context was obtained by name instead of ID</li>
+        </ul>
+      ]]></description>
+      <enclosure 
+        url="https://yourserver.com/downloads/YourApp-09.8.4.dmg" 
+        sparkle:version="280" 
+        sparkle:shortVersionString="0.9.8.4" 
+        length="1234567" 
+        type="application/x-installer" 
+        sparkle:installationType="package" 
+      />
+    </item>
+    <item>
       <title>Version 0.9.5</title>
       <pubDate>Sat, 26 Jul 2024 15:20:11 +0000</pubDate>
       <sparkle:version>135</sparkle:version>
