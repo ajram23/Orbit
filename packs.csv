@@ -55,7 +55,7 @@ gcontacts,Job Title,Professional role or position title at the organization,"[""
 gcontacts,Department,Organizational department or division where contact works,"[""String""]",,organizations,TRUE,
 linkedin,LinkedIn Link,The LinkedIn profile link of the contact,"[""URL""]",,urls,TRUE,
 relationship,Connected On Date,The date when you first connected with the contact.,"[""Date""]",,events,FALSE,[]
-relationship,Last Connect Date,The date of your most recent interaction with the contact.,"[""Date""]",,events,FALSE,[]
+relationship,Last Interaction Date,The date of your most recent interaction with the contact.,"[""Date""]",,events,FALSE,[]
 relationship,Last Meet Date,The date of your most recent meeting with the contact.,"[""Date""]",,events,FALSE,[]
 relationship,Last Interaction Notes,The date of your most recent meeting with the contact.,"[""String""]",,userDefined,FALSE,[]
 relationship,First Met At,The event or place where you first met the contact.,"[""String""]",Online,userDefined,FALSE,"[{""value"": ""Conference"", ""valueExplanation"": ""Met at a conference.""}, {""value"": ""Networking Event"", ""valueExplanation"": ""Met at a networking event.""}, {""value"": ""Online"", ""valueExplanation"": ""Met online.""}, {""value"": ""Referral"", ""valueExplanation"": ""Introduced through a referral.""}, {""value"": ""Social Media"", ""valueExplanation"": ""Connected via social media.""}, {""value"": ""Workplace"", ""valueExplanation"": ""Met at work.""}, {""value"": ""School"", ""valueExplanation"": ""Met at school or university.""}]"
