@@ -1,69 +1,69 @@
-gcontacts,Full Name,Contact's full name including first and last name components,"[""String""]",,names,TRUE,
-gcontacts,Nickname,Alternative or informal names used for the contact,"[""String""]",,nicknames,TRUE,
-gcontacts,Gender,Gender identity of the contact,"[""String""]",,genders,TRUE,
-gcontacts,Photo,Profile photos or images associated with the contact,"[""URL""]",,photos,TRUE,
-gcontacts,Work Email,Primary work email address for business communication,"[""email""]",,emailAddresses,TRUE,
-gcontacts,Home Email,Personal email address for non-work communication,"[""email""]",,emailAddresses,TRUE,
-gcontacts,Other Email,Additional email address not categorized as work or home,"[""email""]",,emailAddresses,TRUE,
-gcontacts,Home Phone,Residential telephone number for the contact,"[""String""]",,phoneNumbers,TRUE,
-gcontacts,Work Phone,Business telephone number for professional communication,"[""String""]",,phoneNumbers,TRUE,
-gcontacts,Other Phone,Additional phone number not categorized as work or home,"[""String""]",,phoneNumbers,TRUE,
-gcontacts,Mobile Phone,Mobile or cellular phone number for the contact,"[""String""]",,phoneNumbers,TRUE,
-gcontacts,Main Phone,Primary or preferred phone number for the contact,"[""String""]",,phoneNumbers,TRUE,
-gcontacts,Home Fax Phone,Home fax machine number for document transmission,"[""String""]",,phoneNumbers,TRUE,
-gcontacts,Work Fax Phone,Business fax machine number for document transmission,"[""String""]",,phoneNumbers,TRUE,
-gcontacts,Google Voice Phone,Google Voice virtual phone number for the contact,"[""String""]",,phoneNumbers,TRUE,
-gcontacts,Pager Phone,Pager number for legacy contact methods,"[""String""]",,phoneNumbers,TRUE,
-gcontacts,Groups,Groups or contact lists the person belongs to,"[""String""]",,memberships,TRUE,
-gcontacts,Birthday,Contact's date of birth for birthday tracking,"[""Date""]",,birthdays,TRUE,
-gcontacts,Anniversary Date,Date marking significant personal or professional milestone,"[""Date""]",,events,TRUE,
-gcontacts,Other Date,Additional important dates related to the contact,"[""Date""]",,events,TRUE,
-gcontacts,Spouse Connection,The spouse connection of the contact indicating the name of the contact's spouse,"[""String""]",,relations,TRUE,
-gcontacts,Child Connection,The contact's child or children indicating parent-child relationship,"[""String""]",,relations,TRUE,
-gcontacts,Mother Connection,The contact's mother indicating maternal relationship,"[""String""]",,relations,TRUE,
-gcontacts,Father Connection,The contact's father indicating paternal relationship,"[""String""]",,relations,TRUE,
-gcontacts,Parent Connection,The contact's parent when relationship type is unspecified,"[""String""]",,relations,TRUE,
-gcontacts,Brother Connection,The contact's brother indicating sibling relationship,"[""String""]",,relations,TRUE,
-gcontacts,Sister Connection,The contact's sister indicating sibling relationship,"[""String""]",,relations,TRUE,
-gcontacts,Friend Connection,A friend of the contact indicating social relationship,"[""String""]",,relations,TRUE,
-gcontacts,Relative Connection,Extended family member related to the contact,"[""String""]",,relations,TRUE,
-gcontacts,Manager Connection,The contact's professional supervisor or manager,"[""String""]",,relations,TRUE,
-gcontacts,Assistant Connection,Person who provides administrative support to the contact,"[""String""]",,relations,TRUE,
-gcontacts,Reference Connection,Professional or personal reference for the contact,"[""String""]",,relations,TRUE,
-gcontacts,Partner Connection,Business or professional partner of the contact,"[""String""]",,relations,TRUE,
-gcontacts,Domestic Partner Connection,Person sharing domestic partnership with the contact,"[""String""]",,relations,TRUE,
-gcontacts,Notes,Biographical text and notes about the contact,"[""String""]",,biographies,TRUE,
-gcontacts,Work Address,Business or workplace mailing address,"[""String""]",,addresses,TRUE,
-gcontacts,Home Address,Residential mailing address,"[""String""]",,addresses,TRUE,
-gcontacts,Other Address,Additional address not categorized as work or home,"[""String""]",,addresses,TRUE,
-gcontacts,Profile Link,Professional profile or social media URL,"[""URL""]",,urls,TRUE,
-gcontacts,Blog Link,Personal or professional blog website URL,"[""URL""]",,urls,TRUE,
-gcontacts,Home Page Link,Personal website or homepage URL,"[""URL""]",,urls,TRUE,
-gcontacts,Work Link,Work-related website or company URL,"[""URL""]",,urls,TRUE,
-gcontacts,Last Name,Family name or surname of the contact,"[""String""]",,names,TRUE,
-gcontacts,First Name,Given name of the contact,"[""String""]",,names,TRUE,
-gcontacts,Middle Name,Middle name of the contact,"[""String""]",,names,TRUE,
-gcontacts,Prefix,Honorific prefix or title,"[""String""]",,names,TRUE,
-gcontacts,Suffix,Honorific suffix or generational title,"[""String""]",,names,TRUE,
-gcontacts,Phonetic Full Name,Phonetic spelling of full name for pronunciation,"[""String""]",,names,TRUE,
-gcontacts,Phonetic Last Name,Phonetic spelling of family name for pronunciation,"[""String""]",,names,TRUE,
-gcontacts,Phonetic First Name,Phonetic spelling of given name for pronunciation,"[""String""]",,names,TRUE,
-gcontacts,Phonetic Middle Name,Phonetic spelling of middle name for pronunciation,"[""String""]",,names,TRUE,
-gcontacts,Formatted Address,Complete formatted address string,"[""String""]",,addresses,TRUE,
-gcontacts,Organization,Name of organization or company affiliated with the contact,"[""String""]",,organizations,TRUE,
-gcontacts,Job Title,Professional role or position title at the organization,"[""String""]",,organizations,TRUE,
-gcontacts,Department,Organizational department or division where contact works,"[""String""]",,organizations,TRUE,
-linkedin,LinkedIn Link,The LinkedIn profile link of the contact,"[""URL""]",,urls,TRUE,
-relationship,Connected On Date,The date when you first connected with the contact.,"[""Date""]",,events,FALSE,[]
-relationship,Last Interaction Date,The date of your most recent interaction with the contact.,"[""Date""]",,events,FALSE,[]
-relationship,Last Meet Date,The date of your most recent meeting with the contact.,"[""Date""]",,events,FALSE,[]
-relationship,Last Interaction Notes,The date of your most recent meeting with the contact.,"[""String""]",,userDefined,FALSE,[]
-relationship,First Met At,The event or place where you first met the contact.,"[""String""]",Online,userDefined,FALSE,"[{""value"": ""Conference"", ""valueExplanation"": ""Met at a conference.""}, {""value"": ""Networking Event"", ""valueExplanation"": ""Met at a networking event.""}, {""value"": ""Online"", ""valueExplanation"": ""Met online.""}, {""value"": ""Referral"", ""valueExplanation"": ""Introduced through a referral.""}, {""value"": ""Social Media"", ""valueExplanation"": ""Connected via social media.""}, {""value"": ""Workplace"", ""valueExplanation"": ""Met at work.""}, {""value"": ""School"", ""valueExplanation"": ""Met at school or university.""}]"
-relationship,Familiarity,Represents your level of familiarity with the contact using star emojis.,"[""String""]",⭐️,userDefined,FALSE,"[{""value"": ""\u2b50\ufe0f"", ""valueExplanation"": ""Minimal familiarity; acquaintance.""}, {""value"": ""\u2b50\ufe0f\u2b50\ufe0f"", ""valueExplanation"": ""Some familiarity; met a few times.""}, {""value"": ""\u2b50\ufe0f\u2b50\ufe0f\u2b50\ufe0f"", ""valueExplanation"": ""Moderate familiarity; know each other well.""}, {""value"": ""\u2b50\ufe0f\u2b50\ufe0f\u2b50\ufe0f\u2b50\ufe0f"", ""valueExplanation"": ""High familiarity; close relationship.""}, {""value"": ""\u2b50\ufe0f\u2b50\ufe0f\u2b50\ufe0f\u2b50\ufe0f\u2b50\ufe0f"", ""valueExplanation"": ""Very high familiarity; very close connection.""}]"
-relationship,Strength,Measures the strength of your relationship with the contact using star emojis.,"[""String""]",⭐️,userDefined,FALSE,"[{""value"": ""\u2b50\ufe0f"", ""valueExplanation"": ""Weak relationship.""}, {""value"": ""\u2b50\ufe0f\u2b50\ufe0f"", ""valueExplanation"": ""Developing relationship.""}, {""value"": ""\u2b50\ufe0f\u2b50\ufe0f\u2b50\ufe0f"", ""valueExplanation"": ""Moderate relationship.""}, {""value"": ""\u2b50\ufe0f\u2b50\ufe0f\u2b50\ufe0f\u2b50\ufe0f"", ""valueExplanation"": ""Strong relationship.""}, {""value"": ""\u2b50\ufe0f\u2b50\ufe0f\u2b50\ufe0f\u2b50\ufe0f\u2b50\ufe0f"", ""valueExplanation"": ""Very strong relationship.""}]"
-relationship,Introduced By,The person who introduced you to the contact.,"[""String""]",,userDefined,FALSE,[]
-relationship,Referrals To,Records referrals you have given to the contact.,"[""String""]",,userDefined,TRUE,[]
-relationship,Needs Support,Specifies if the contact currently needs support or assistance.,"[""Boolean""]",No,userDefined,FALSE,"[{""value"": ""Yes"", ""valueExplanation"": ""Contact needs support.""}, {""value"": “No"", ""valueExplanation"": ""Contact does not need support.""}]"
-relationship,Outstanding IOUs,Records any favors owed to or by the contact.,"[""String""]",,userDefined,TRUE,[]
-relationship,Communication Frequency,How often you plan to communicate with the contact.,"[""String""]",Monthly,userDefined,FALSE,"[{""value"": ""Daily"", ""valueExplanation"": ""Communicate daily.""}, {""value"": ""Weekly"", ""valueExplanation"": ""Communicate weekly.""}, {""value"": ""Bi-Weekly"", ""valueExplanation"": ""Communicate every two weeks.""}, {""value"": ""Monthly"", ""valueExplanation"": ""Communicate monthly.""}, {""value"": ""Quarterly"", ""valueExplanation"": ""Communicate quarterly.""}, {""value"": ""Annually"", ""valueExplanation"": ""Communicate annually.""}]"
-relationship,Preferred Contact Method,The contact's preferred method of communication.,"[""String""]",Email,userDefined,TRUE,"[{""value"": ""Email"", ""valueExplanation"": ""Prefers email communication.""}, {""value"": ""Phone"", ""valueExplanation"": ""Prefers phone calls.""}, {""value"": ""SMS"", ""valueExplanation"": ""Prefers text messages.""}, {""value"": ""Social Media"", ""valueExplanation"": ""Prefers social media messaging.""}, {""value"": ""In-Person"", ""valueExplanation"": ""Prefers face-to-face meetings.""}]"
+gcontacts,person,Full Name,Contact's full name including first and last name components,"[""String""]",,names,TRUE,
+gcontacts,person,Nickname,Alternative or informal names used for the contact,"[""String""]",,nicknames,TRUE,
+gcontacts,person,Gender,Gender identity of the contact,"[""String""]",,genders,TRUE,
+gcontacts,person,Photo,Profile photos or images associated with the contact,"[""URL""]",,photos,TRUE,
+gcontacts,person,Work Email,Primary work email address for business communication,"[""email""]",,emailAddresses,TRUE,
+gcontacts,person,Home Email,Personal email address for non-work communication,"[""email""]",,emailAddresses,TRUE,
+gcontacts,person,Other Email,Additional email address not categorized as work or home,"[""email""]",,emailAddresses,TRUE,
+gcontacts,person,Home Phone,Residential telephone number for the contact,"[""String""]",,phoneNumbers,TRUE,
+gcontacts,person,Work Phone,Business telephone number for professional communication,"[""String""]",,phoneNumbers,TRUE,
+gcontacts,person,Other Phone,Additional phone number not categorized as work or home,"[""String""]",,phoneNumbers,TRUE,
+gcontacts,person,Mobile Phone,Mobile or cellular phone number for the contact,"[""String""]",,phoneNumbers,TRUE,
+gcontacts,person,Main Phone,Primary or preferred phone number for the contact,"[""String""]",,phoneNumbers,TRUE,
+gcontacts,person,Home Fax Phone,Home fax machine number for document transmission,"[""String""]",,phoneNumbers,TRUE,
+gcontacts,person,Work Fax Phone,Business fax machine number for document transmission,"[""String""]",,phoneNumbers,TRUE,
+gcontacts,person,Google Voice Phone,Google Voice virtual phone number for the contact,"[""String""]",,phoneNumbers,TRUE,
+gcontacts,person,Pager Phone,Pager number for legacy contact methods,"[""String""]",,phoneNumbers,TRUE,
+gcontacts,person,Groups,Groups or contact lists the person belongs to,"[""String""]",,memberships,TRUE,
+gcontacts,person,Birthday,Contact's date of birth for birthday tracking,"[""Date""]",,birthdays,TRUE,
+gcontacts,person,Anniversary Date,Date marking significant personal or professional milestone,"[""Date""]",,events,TRUE,
+gcontacts,person,Other Date,Additional important dates related to the contact,"[""Date""]",,events,TRUE,
+gcontacts,person,Spouse Connection,The spouse connection of the contact indicating the name of the contact's spouse,"[""String""]",,relations,TRUE,
+gcontacts,person,Child Connection,The contact's child or children indicating parent-child relationship,"[""String""]",,relations,TRUE,
+gcontacts,person,Mother Connection,The contact's mother indicating maternal relationship,"[""String""]",,relations,TRUE,
+gcontacts,person,Father Connection,The contact's father indicating paternal relationship,"[""String""]",,relations,TRUE,
+gcontacts,person,Parent Connection,The contact's parent when relationship type is unspecified,"[""String""]",,relations,TRUE,
+gcontacts,person,Brother Connection,The contact's brother indicating sibling relationship,"[""String""]",,relations,TRUE,
+gcontacts,person,Sister Connection,The contact's sister indicating sibling relationship,"[""String""]",,relations,TRUE,
+gcontacts,person,Friend Connection,A friend of the contact indicating social relationship,"[""String""]",,relations,TRUE,
+gcontacts,person,Relative Connection,Extended family member related to the contact,"[""String""]",,relations,TRUE,
+gcontacts,person,Manager Connection,The contact's professional supervisor or manager,"[""String""]",,relations,TRUE,
+gcontacts,person,Assistant Connection,Person who provides administrative support to the contact,"[""String""]",,relations,TRUE,
+gcontacts,person,Reference Connection,Professional or personal reference for the contact,"[""String""]",,relations,TRUE,
+gcontacts,person,Partner Connection,Business or professional partner of the contact,"[""String""]",,relations,TRUE,
+gcontacts,person,Domestic Partner Connection,Person sharing domestic partnership with the contact,"[""String""]",,relations,TRUE,
+gcontacts,person,Notes,Biographical text and notes about the contact,"[""String""]",,biographies,TRUE,
+gcontacts,person,Work Address,Business or workplace mailing address,"[""String""]",,addresses,TRUE,
+gcontacts,person,Home Address,Residential mailing address,"[""String""]",,addresses,TRUE,
+gcontacts,person,Other Address,Additional address not categorized as work or home,"[""String""]",,addresses,TRUE,
+gcontacts,person,Profile Link,Professional profile or social media URL,"[""URL""]",,urls,TRUE,
+gcontacts,person,Blog Link,Personal or professional blog website URL,"[""URL""]",,urls,TRUE,
+gcontacts,person,Home Page Link,Personal website or homepage URL,"[""URL""]",,urls,TRUE,
+gcontacts,person,Work Link,Work-related website or company URL,"[""URL""]",,urls,TRUE,
+gcontacts,person,Last Name,Family name or surname of the contact,"[""String""]",,names,TRUE,
+gcontacts,person,First Name,Given name of the contact,"[""String""]",,names,TRUE,
+gcontacts,person,Middle Name,Middle name of the contact,"[""String""]",,names,TRUE,
+gcontacts,person,Prefix,Honorific prefix or title,"[""String""]",,names,TRUE,
+gcontacts,person,Suffix,Honorific suffix or generational title,"[""String""]",,names,TRUE,
+gcontacts,person,Phonetic Full Name,Phonetic spelling of full name for pronunciation,"[""String""]",,names,TRUE,
+gcontacts,person,Phonetic Last Name,Phonetic spelling of family name for pronunciation,"[""String""]",,names,TRUE,
+gcontacts,person,Phonetic First Name,Phonetic spelling of given name for pronunciation,"[""String""]",,names,TRUE,
+gcontacts,person,Phonetic Middle Name,Phonetic spelling of middle name for pronunciation,"[""String""]",,names,TRUE,
+gcontacts,person,Formatted Address,Complete formatted address string,"[""String""]",,addresses,TRUE,
+gcontacts,person,Organization,Name of organization or company affiliated with the contact,"[""String""]",,organizations,TRUE,
+gcontacts,person,Job Title,Professional role or position title at the organization,"[""String""]",,organizations,TRUE,
+gcontacts,person,Department,Organizational department or division where contact works,"[""String""]",,organizations,TRUE,
+linkedin,person,LinkedIn Link,The LinkedIn profile link of the contact,"[""URL""]",,urls,TRUE,
+relationship,person,Connected On Date,The date when you first connected with the contact.,"[""Date""]",,events,FALSE,[]
+relationship,person,Last Interaction Date,The date of your most recent interaction with the contact.,"[""Date""]",,events,FALSE,[]
+relationship,person,Last Meet Date,The date of your most recent meeting with the contact.,"[""Date""]",,events,FALSE,[]
+relationship,person,Last Interaction Notes,The date of your most recent meeting with the contact.,"[""String""]",,userDefined,FALSE,[]
+relationship,person,First Met At,The event or place where you first met the contact.,"[""String""]",Online,userDefined,FALSE,"[{""value"": ""Conference"", ""valueExplanation"": ""Met at a conference.""}, {""value"": ""Networking Event"", ""valueExplanation"": ""Met at a networking event.""}, {""value"": ""Online"", ""valueExplanation"": ""Met online.""}, {""value"": ""Referral"", ""valueExplanation"": ""Introduced through a referral.""}, {""value"": ""Social Media"", ""valueExplanation"": ""Connected via social media.""}, {""value"": ""Workplace"", ""valueExplanation"": ""Met at work.""}, {""value"": ""School"", ""valueExplanation"": ""Met at school or university.""}]"
+relationship,person,Familiarity,Represents your level of familiarity with the contact using star emojis.,"[""String""]",⭐️,userDefined,FALSE,"[{""value"": ""\u2b50\ufe0f"", ""valueExplanation"": ""Minimal familiarity; acquaintance.""}, {""value"": ""\u2b50\ufe0f\u2b50\ufe0f"", ""valueExplanation"": ""Some familiarity; met a few times.""}, {""value"": ""\u2b50\ufe0f\u2b50\ufe0f\u2b50\ufe0f"", ""valueExplanation"": ""Moderate familiarity; know each other well.""}, {""value"": ""\u2b50\ufe0f\u2b50\ufe0f\u2b50\ufe0f\u2b50\ufe0f"", ""valueExplanation"": ""High familiarity; close relationship.""}, {""value"": ""\u2b50\ufe0f\u2b50\ufe0f\u2b50\ufe0f\u2b50\ufe0f\u2b50\ufe0f"", ""valueExplanation"": ""Very high familiarity; very close connection.""}]"
+relationship,person,Strength,Measures the strength of your relationship with the contact using star emojis.,"[""String""]",⭐️,userDefined,FALSE,"[{""value"": ""\u2b50\ufe0f"", ""valueExplanation"": ""Weak relationship.""}, {""value"": ""\u2b50\ufe0f\u2b50\ufe0f"", ""valueExplanation"": ""Developing relationship.""}, {""value"": ""\u2b50\ufe0f\u2b50\ufe0f\u2b50\ufe0f"", ""valueExplanation"": ""Moderate relationship.""}, {""value"": ""\u2b50\ufe0f\u2b50\ufe0f\u2b50\ufe0f\u2b50\ufe0f"", ""valueExplanation"": ""Strong relationship.""}, {""value"": ""\u2b50\ufe0f\u2b50\ufe0f\u2b50\ufe0f\u2b50\ufe0f\u2b50\ufe0f"", ""valueExplanation"": ""Very strong relationship.""}]"
+relationship,person,Introduced By,The person who introduced you to the contact.,"[""String""]",,userDefined,FALSE,[]
+relationship,person,Referrals To,Records referrals you have given to the contact.,"[""String""]",,userDefined,TRUE,[]
+relationship,person,Needs Support,Specifies if the contact currently needs support or assistance.,"[""Boolean""]",No,userDefined,FALSE,"[{""value"": ""Yes"", ""valueExplanation"": ""Contact needs support.""}, {""value"": “No"", ""valueExplanation"": ""Contact does not need support.""}]"
+relationship,person,Outstanding IOUs,Records any favors owed to or by the contact.,"[""String""]",,userDefined,TRUE,[]
+relationship,person,Communication Frequency,How often you plan to communicate with the contact.,"[""String""]",Monthly,userDefined,FALSE,"[{""value"": ""Daily"", ""valueExplanation"": ""Communicate daily.""}, {""value"": ""Weekly"", ""valueExplanation"": ""Communicate weekly.""}, {""value"": ""Bi-Weekly"", ""valueExplanation"": ""Communicate every two weeks.""}, {""value"": ""Monthly"", ""valueExplanation"": ""Communicate monthly.""}, {""value"": ""Quarterly"", ""valueExplanation"": ""Communicate quarterly.""}, {""value"": ""Annually"", ""valueExplanation"": ""Communicate annually.""}]"
+relationship,person,Preferred Contact Method,The contact's preferred method of communication.,"[""String""]",Email,userDefined,TRUE,"[{""value"": ""Email"", ""valueExplanation"": ""Prefers email communication.""}, {""value"": ""Phone"", ""valueExplanation"": ""Prefers phone calls.""}, {""value"": ""SMS"", ""valueExplanation"": ""Prefers text messages.""}, {""value"": ""Social Media"", ""valueExplanation"": ""Prefers social media messaging.""}, {""value"": ""In-Person"", ""valueExplanation"": ""Prefers face-to-face meetings.""}]"
