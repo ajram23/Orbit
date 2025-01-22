@@ -88,6 +88,9 @@ linkedin,organization,Employees,Number of employees in the organization,"[""Stri
 linkedin,organization,Founded,Year the organization was founded,"[""String""]",,userDefined,TRUE,
 linkedin,organization,Stage,Stage of the organization,"[""String""]",,userDefined,TRUE,
 linkedin,organization,Linkedin Link,LinkedIn URL of the organization,"[""URL""]",,userDefined,TRUE,
+linkedin,organization,Slogan,Slogan of the organization,"[""String""]",,userDefined,TRUE,
+linkedin,organization,Specialties,Specialties of the organization,"[""String""]",,userDefined,TRUE,
+linkedin,organization,Headquarters Address,Headquarters Address of the organization,"[""String""]",,addresses,TRUE,
 relationship,person,Connected On Date,The date when you first connected with the contact.,"[""Date""]",,events,FALSE,[]
 relationship,person,Last Interaction Date,The date of your most recent interaction with the contact.,"[""Date""]",,events,FALSE,[]
 relationship,person,Last Meet Date,The date of your most recent meeting with the contact.,"[""Date""]",,events,FALSE,[]
