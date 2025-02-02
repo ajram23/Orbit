@@ -1,4 +1,4 @@
-# rolodexpal
+# Orbit
 
 ## 📦 | Install instructions (Mac Only)
 * Control click to install application
