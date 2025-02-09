@@ -39,6 +39,13 @@
 * Can you update [🧍] interests to include swimming
 * [🧍] works at [🏢] as a VP of Product in the Cloud Division. Can you make an update?
 
+  
+* [ ] Names: Only supporting givenName & familyName for now, need to add support middleName, phonetic, Prefix & Suffix
+- [ ] Location: Geographical or location-based data.
+- [ ] URLs: URLs like profiles, etc
+- [ ] Streaming: The service processes requests sequentially and does not support streaming output.
+
+
 ## ❌ Not Supported
 ### We take a very conservative approach to deleting data, so for now its not supported
 - [ ] Can’t add new labels - for instance you can’t say “add assistant’s email“ unless its predefined in your data.
@@ -55,10 +62,6 @@
 - [ ] Addition new relationships (Doesn’t need to find a match!)
 
 ## 🔜 Coming soon
-- [ ] Names: Only supporting givenName & familyName for now, need to add support middleName, phonetic, Prefix & Suffix
-- [ ] Location: Geographical or location-based data.
-- [ ] URLs: URLs like profiles, etc
-- [ ] Streaming: The service processes requests sequentially and does not support streaming output.
 
 ## Known issues
 - [ ]  Podman installs fails sometimes https://github.com/containers/podman/issues/23784#issuecomment-2315351722
