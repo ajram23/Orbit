@@ -1,17 +1,7 @@
 # Orbit
 
 ## 📦 | Install instructions (Mac Only)
-* Control click to install application
-  *   ![Screenshot 2024-08-21 at 3 41 12 PM](https://github.com/user-attachments/assets/42869083-2806-414f-a92c-bb3d98d22518)
-  *   If you are running the latest version of the MacOS, you will have to open settings -> Privacy & Security -> Open Anyway!
-  *   This is an interim step during the testing phase, we plan to release the app in the app store!
-* Make sure you have homebrew installed on your machine
-* Reached out to make sure your gmail ID is added to list of testers!
-* While installation you will be asked for this permission
-  * ![Screenshot 2024-08-15 at 11 10 34 AM](https://github.com/user-attachments/assets/029fa5f4-5d43-473e-8bab-3d94a3ef1749)
-  * Why: we don't have a server so everything runs on your machine, this pemission is to install that software!
-  * This is an interim step during the testing phase, we plan to release the app in the app store!
-* The installation will take sometime! 
+* Double Click and install :) Notarized by apple :) 
 
 ## Post Install
 * You will be asked for permissions
