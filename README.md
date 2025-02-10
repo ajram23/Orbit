@@ -29,11 +29,9 @@
 * Can you update [🧍] interests to include swimming
 * [🧍] works at [🏢] as a VP of Product in the Cloud Division. Can you make an update?
 
-  
-* [ ] Names: Only supporting givenName & familyName for now, need to add support middleName, phonetic, Prefix & Suffix
-- [ ] Location: Geographical or location-based data.
-- [ ] URLs: URLs like profiles, etc
-- [ ] Streaming: The service processes requests sequentially and does not support streaming output.
+- Location: Geographical or location-based data.
+- URLs: URLs like profiles, etc
+- Streaming: The service processes requests sequentially and does not support streaming output.
 
 
 ## ❌ Not Supported
@@ -46,6 +44,8 @@
 ## ⊯ Limitations
 - Labels for fields like emails, phones, relationships will default to Other
 - We only create columns for fields that have data, because we need to train our system with the data, Adding data later doesnt retrain or work at the moment.
+
+  
 ### 📝 Updates
 - [ ] Adding a new contact (need to change update to create/edits)
 - [ ] Multiple updates for one contact
