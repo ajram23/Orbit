@@ -1,35 +1,41 @@
 <?xml version="1.0" standalone="yes"?>
 <rss xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle" version="2.0">
   <channel>
-    <title>ContactsPal</title>
+    <title>Orbit</title>
     <item>
-      <title>Version 0.9.5</title>
-      <pubDate>Sat, 26 Jul 2024 15:20:11 +0000</pubDate>
-      <sparkle:version>135</sparkle:version>
-      <sparkle:shortVersionString>0.9.5</sparkle:shortVersionString>
+      <title>Version 0.9.8.5.2</title>
+      <pubDate>Fri, 09 Feb 2025 12:00:00 +0000</pubDate>
+      <sparkle:version>343</sparkle:version>
+      <sparkle:shortVersionString>0.9.8.5.2</sparkle:shortVersionString>
       <description><![CDATA[
-        <h2>New Features:</h2>
+        <h2>Design Updates:</h2>
         <ul>
-            <li>Onboarding Flow</li>
-            <li>The app helps you login, set up agent profile & syncs your data</li>
-            <li>Added Support</li>
-            <li>The app now supports Phone Numbers & Email Addresses</li>
-            <li>Added Support for modifying groups</li>
-            <li>You can now add contacts to groups</li>
+          <li>Fresh new app icon reflecting our evolving brand identity</li>
+          <li>Improved visual feedback during operations</li>
         </ul>
+        
+        <h2>Performance Enhancements:</h2>
+        <ul>
+          <li>Answers now stream in real-time with processing state updates</li>
+          <li>Integrated UI callbacks for smoother user experience</li>
+          <li>Resolved rate limiting issues for improved performance</li>
+        </ul>
+        
         <h2>Bug Fixes:</h2>
         <ul>
-            <li>Much better responses to questions</li>
-            <li>Fixed issue 2</li>
+          <li>Enhanced validation error handling (#136)</li>
+          <li>Added verification for existing enrichments (#272)</li>
+          <li>Implemented UI state feedback system (#259)</li>
+          <li>Fixed rate limiting performance issues (#330)</li>
         </ul>
       ]]></description>
       <enclosure 
-        url="https://yourserver.com/downloads/YourApp-09.5.pkg" 
-        sparkle:version="135" 
-        sparkle:shortVersionString="0.9.5" 
-        length="1234567" 
+        url="https://github.com/ajram23/orbit/releases/download/0.9.8.5.2/Orbit.0.9.8.5.2.dmg" 
+        sparkle:version="343" 
+        sparkle:shortVersionString="0.9.8.5.2"
+        length="209143523" 
         type="application/x-installer" 
-        sparkle:installationType="package" 
+        sparkle:installationType="package"
       />
     </item>
   </channel>
