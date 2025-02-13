@@ -53,5 +53,3 @@
 
 ## 🔜 Coming soon
 
-## Known issues
-- [ ]  Podman installs fails sometimes https://github.com/containers/podman/issues/23784#issuecomment-2315351722
