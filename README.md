@@ -33,7 +33,12 @@
 - URLs: URLs like profiles, etc
 - Streaming: The service processes requests sequentially and does not support streaming output.
 
-
+# Updates
+- Whenever you launch the app, its shows you
+  - the upcoming celebrations (Birthday's/Anniversaries)
+  - Scheduled Checkins
+  - Reminders for followups
+    
 ## ❌ Not Supported
 ### We take a very conservative approach to deleting data, so for now its not supported
 - [ ] Can’t add new labels - for instance you can’t say “add assistant’s email“ unless its predefined in your data.
