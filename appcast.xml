@@ -3,6 +3,45 @@
   <channel>
     <title>Orbit</title>
     <item>
+      <title>Version 0.9.8.8</title>
+      <pubDate>Tue, 18 Mar 2025 12:00:00 +0000</pubDate>
+      <sparkle:version>384</sparkle:version>
+      <sparkle:shortVersionString>0.9.8.8</sparkle:shortVersionString>
+      <description><![CDATA[
+        <h2>Feed Customization & Settings:</h2>
+        <ul>
+          <li>Create your perfect information feed with new customization settings</li>
+          <li>Control what appears in your upcoming feed with easy toggles</li>
+          <li>Configure your experience with comprehensive settings panel</li>
+          <li>Customize your agent persona to match your personal style</li>
+        </ul>
+        
+        <h2>Improved App Experience:</h2>
+        <ul>
+          <li>Automatic app update checks every 3 hours</li>
+          <li>Refreshed loading window for a smoother startup experience</li>
+          <li>Feed automatically updates after contact sync</li>
+        </ul>
+        
+        <h2>Bug Fixes & Improvements:</h2>
+        <ul>
+          <li>Fixed issues with undo functionality</li>
+          <li>Improved enrichment logs for better tracking</li>
+          <li>Resolved agent persona update issues</li>
+          <li>Fixed field pack structure and added missing columns</li>
+          <li>Corrected copy functionality to ensure data integrity</li>
+        </ul>
+      ]]></description>
+      <enclosure 
+        url="https://github.com/ajram23/orbit/releases/download/0.9.8.8/Orbit.0.9.8.8.dmg" 
+        sparkle:version="384" 
+        sparkle:shortVersionString="0.9.8.8"
+        length="214486168" 
+        type="application/x-installer" 
+        sparkle:installationType="package"
+      />
+    </item>
+    <item>
       <title>Version 0.9.8.5.2</title>
       <pubDate>Fri, 09 Feb 2025 12:00:00 +0000</pubDate>
       <sparkle:version>343</sparkle:version>
