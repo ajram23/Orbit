@@ -57,12 +57,12 @@
 - [ ] Addition new relationships (Doesn’t need to find a match!)
 
 ## Added support for MCP server
-Open Claude Desktop
-Goto Settings
-Click on Developer
-Click Edit Config
-Open claude_desktop_config.json
-Make sure it has orbit-mcp, here are the details
+- Open Claude Desktop
+- Goto Settings
+- Click on Developer
+- Click Edit Config
+- Open claude_desktop_config.json
+- Make sure it has orbit-mcp, here are the details
 {
   "mcpServers": {
     "orbit-mcp": {
@@ -73,7 +73,7 @@ Make sure it has orbit-mcp, here are the details
     }
   }
 }
-Close the app & reopen Claude
-You should see an hammer icon with the number 3 (if you only have orbit-mcp), clicking on it will show you available MCP tools
-Now open a new conversation. You now have can send texts, draft emails and put your contacts to work!
+- Close the app & reopen Claude
+- You should see an hammer icon with the number 3 (if you only have orbit-mcp), clicking on it will show you available MCP tools
+- Now open a new conversation. You now have can send texts, draft emails and put your contacts to work!
 
