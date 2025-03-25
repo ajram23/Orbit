@@ -2,6 +2,59 @@
 <rss xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle" version="2.0">
   <channel>
     <title>Orbit</title>
+
+    <item>
+      <title>Version 0.9.8.9</title>
+      <pubDate>Tue, 25 Mar 2025 12:00:00 +0000</pubDate>
+      <sparkle:version>387</sparkle:version>
+      <sparkle:shortVersionString>0.9.8.9</sparkle:shortVersionString>
+      <description><![CDATA[
+        <h2>New Features</h2>
+        <ul>
+          <li>Added support for daily feed notifications</li>
+          <li>Familiarity added to contact profiles and profile cards</li>
+          <li>Feed links now trigger assistant to write messages and emails</li>
+        </ul>
+
+        <h2>Enhancements</h2>
+        <ul>
+          <li>Updated models for better responses</li>
+          <li>Fixed agent tone and removed paragraph formatting</li>
+          <li>Typeahead now scrollable with more results</li>
+          <li>Fixed residual LinkedIn enrichment</li>
+          <li>Improved celebrations prompt in feed</li>
+          <li>Settings UI cleanup</li>
+        </ul>
+
+        <h2>Bug Fixes</h2>
+        <ul>
+          <li>Improved resilience of answer generation</li>
+          <li>Fixed latest pack version download issue</li>
+          <li>Edge conditions handled in pydantic class</li>
+          <li>Fixes for update regressions</li>
+          <li>Preserved newlines in input without premature submission</li>
+          <li>Fixed crash in settings window and onboarding logic</li>
+          <li>Fixed broken notifications and other code warnings</li>
+        </ul>
+
+        <h2>Documentation & Technical</h2>
+        <ul>
+          <li>New Privacy and Terms of Service pages</li>
+          <li>Support added for environment observability</li>
+          <li>GitHub action updated, old code removed, minor check fixes</li>
+        </ul>
+      ]]></description>
+      <enclosure 
+        url="https://github.com/ajram23/orbit/releases/download/0.9.8.9/Orbit_0.9.8.9.zip" 
+        sparkle:version="387" 
+        sparkle:shortVersionString="0.9.8.9" 
+        length="292938973" 
+        type="application/octet-stream" 
+        sparkle:edSignature="cjNr2enrKyC6XHfJlCwzaCZ7Tdfn0QX82RFEJxGuVS0ezPs+zR6jIcekqoTXdlz83Xvnsnl176mldlE0dCCuCA==" 
+        sparkle:installationType="package" 
+      />
+    </item>
+
     <item>
       <title>Version 0.9.8.8</title>
       <pubDate>Tue, 18 Mar 2025 12:00:00 +0000</pubDate>
@@ -15,14 +68,14 @@
           <li>Configure your experience with comprehensive settings panel</li>
           <li>Customize your agent persona to match your personal style</li>
         </ul>
-        
+
         <h2>Improved App Experience:</h2>
         <ul>
           <li>Automatic app update checks every 3 hours</li>
           <li>Refreshed loading window for a smoother startup experience</li>
           <li>Feed automatically updates after contact sync</li>
         </ul>
-        
+
         <h2>Bug Fixes & Improvements:</h2>
         <ul>
           <li>Fixed issues with undo functionality</li>
@@ -41,6 +94,7 @@
         sparkle:installationType="package"
       />
     </item>
+
     <item>
       <title>Version 0.9.8.5.2</title>
       <pubDate>Fri, 09 Feb 2025 12:00:00 +0000</pubDate>
@@ -52,14 +106,14 @@
           <li>Fresh new app icon reflecting our evolving brand identity</li>
           <li>Improved visual feedback during operations</li>
         </ul>
-        
+
         <h2>Performance Enhancements:</h2>
         <ul>
           <li>Answers now stream in real-time with processing state updates</li>
           <li>Integrated UI callbacks for smoother user experience</li>
           <li>Resolved rate limiting issues for improved performance</li>
         </ul>
-        
+
         <h2>Bug Fixes:</h2>
         <ul>
           <li>Enhanced validation error handling (#136)</li>
@@ -77,5 +131,6 @@
         sparkle:installationType="package"
       />
     </item>
+
   </channel>
 </rss>
