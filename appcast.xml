@@ -76,7 +76,7 @@
             <sparkle:version>387</sparkle:version>
             <sparkle:shortVersionString>0.9.8.9</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
-            <enclosure url="https://raw.githubusercontent.com/ajram23/orbit/main/Orbit%200.9.8.9.dmg" length="214711867" type="application/octet-stream" sparkle:edSignature="Yd4Wigs3IO5URHPXbWhGOORIGYR+498JFjd1XetVCiT/nsharh29wainmG4NNXUecK0TAEdfX0m6/o4gPj0hCQ=="/>
+            <enclosure url="https://github.com/ajram23/Orbit/releases/download/0.9.8.9/Orbit.0.9.8.9.dmg" length="214711867" type="application/octet-stream" sparkle:edSignature="Yd4Wigs3IO5URHPXbWhGOORIGYR+498JFjd1XetVCiT/nsharh29wainmG4NNXUecK0TAEdfX0m6/o4gPj0hCQ=="/>
             <description><![CDATA[<h1>🚀 Release 0.9.8.9 - March 21, 2025</h1>
 
 <h2>🔔 New Features</h2>
@@ -140,7 +140,7 @@
             <sparkle:version>384</sparkle:version>
             <sparkle:shortVersionString>0.9.8.8</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
-            <enclosure url="https://raw.githubusercontent.com/ajram23/orbit/main/Orbit%200.9.8.8.dmg" length="214486168" type="application/octet-stream" sparkle:edSignature="aK5qFavcmEqfD26CRBEh6A2Tj6FZMbGEiZaJjy+aRzdy2SGeCLEDL/JnoeJZj+5UXRx5MFKi3FS25Jevecc6DQ=="/>
+            <enclosure url="https://github.com/ajram23/Orbit/releases/download/0.9.8.8/Orbit.0.9.8.8.dmg" length="214486168" type="application/octet-stream" sparkle:edSignature="aK5qFavcmEqfD26CRBEh6A2Tj6FZMbGEiZaJjy+aRzdy2SGeCLEDL/JnoeJZj+5UXRx5MFKi3FS25Jevecc6DQ=="/>
             <description><![CDATA[<h1>✨ Orbit Release 0.9.8.8 🚀 - March 18, 2025 ✨</h1>
 
 <h2>🎯 Feed Customization & Settings 📱</h2>
