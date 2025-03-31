@@ -49,9 +49,9 @@
         url="https://github.com/ajram23/orbit/releases/download/0.9.9/Orbit_0.9.9.zip" 
         sparkle:version="397" 
         sparkle:shortVersionString="0.9.9" 
-        length="293423569" 
+        length="244801688" 
         type="application/octet-stream" 
-        sparkle:edSignature="lamK/5A9QyN9iAAYTjYkZUSsGjoA5TnNfRf0HnAwL0Nyq6qEgXi6g+DG7lUYDjIxgko65/XHBkODXgJYEGibDw==" 
+        sparkle:edSignature="SR8M+1sQBb5B89+88cG9o/IQ41ZKsE2G795qmMoiBwe6+XAw1L9F6YWfpLFGN9FZojZtnQFJizM/zERAzVCYBQ==" 
         sparkle:installationType="package" 
       />
     </item>
