@@ -2,7 +2,59 @@
 <rss xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle" version="2.0">
   <channel>
     <title>Orbit</title>
-
+    <item>
+      <title>Version 0.9.9</title>
+      <pubDate>Mon, 31 Mar 2025 12:00:00 +0000</pubDate>
+      <sparkle:version>397</sparkle:version>
+      <sparkle:shortVersionString>0.9.9</sparkle:shortVersionString>
+      <description><![CDATA[
+        <h2>New Features</h2>
+        <ul>
+          <li>Add, remove, and customize fields with unprecedented flexibility</li>
+          <li>Edit field details directly in settings</li>
+          <li>Intelligent field selection when switching between packs</li>
+          <li>Typeahead support for finding and referencing fields</li>
+          <li>Add custom fields tailored to your unique needs</li>
+        </ul>
+        <h2>Intelligent Assistance</h2>
+        <ul>
+          <li>Smarter answer generation for your queries</li>
+          <li>More nuanced and contextual responses</li>
+          <li>Enhanced ability to understand and help with generic questions</li>
+        </ul>
+        <h2>Notifications & Updates</h2>
+        <ul>
+          <li>Comprehensive notification settings</li>
+          <li>Automatic update notifications</li>
+          <li>Smoother, more reliable update process</li>
+          <li>One-click update activation</li>
+        </ul>
+        <h2>Feed Improvements</h2>
+        <ul>
+          <li>Ignore specific fields to personalize your feed</li>
+          <li>Refined display of upcoming events and information</li>
+          <li>Better handling of events like birthdays</li>
+          <li>More intuitive feed interactions</li>
+        </ul>
+        <h2>Bug Fixes & Enhancements</h2>
+        <ul>
+          <li>Fixed display issues with responses</li>
+          <li>Resolved birthdays without years tracking</li>
+          <li>Improved overall system stability and performance</li>
+          <li>Enhanced user interface responsiveness</li>
+          <li>Fixed issues with pack and field interactions</li>
+        </ul>
+      ]]></description>
+      <enclosure 
+        url="https://github.com/ajram23/orbit/releases/download/0.9.9/Orbit_0.9.9.zip" 
+        sparkle:version="397" 
+        sparkle:shortVersionString="0.9.9" 
+        length="293423569" 
+        type="application/octet-stream" 
+        sparkle:edSignature="lamK/5A9QyN9iAAYTjYkZUSsGjoA5TnNfRf0HnAwL0Nyq6qEgXi6g+DG7lUYDjIxgko65/XHBkODXgJYEGibDw==" 
+        sparkle:installationType="package" 
+      />
+    </item>
     <item>
       <title>Version 0.9.8.9</title>
       <pubDate>Tue, 25 Mar 2025 12:00:00 +0000</pubDate>
