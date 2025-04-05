@@ -121,3 +121,4 @@ relationship,person,Interests,This field captures the various interests or hobbi
 relationship,person,Quora Link,A URL link to the contact's Quora profile.,"[""URL""]",,urls,FALSE,[]
 relationship,person,Twitter Link,Link to the contact's Twitter profile.,"[""URL""]",,urls,FALSE,[]
 relationship,person,Zoom Link,A link to the contact's Zoom meeting room.,"[""URL""]",,urls,FALSE,[]
+relationship,person,Never Remind,Specifies if you never want to remind the contact about a reaching a contact.,"[""Boolean""]",No,userDefined,FALSE,"[{""value"": ""Yes"", ""valueExplanation"": ""Never remind the contact.""}, {""value"": ""No"", ""valueExplanation"": ""Remind the contact.""}]"
