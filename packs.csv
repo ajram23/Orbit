@@ -82,6 +82,9 @@ gcontacts,person,Department,Organizational department or division where contact 
 gcontacts,organization,Department,Organizational department or division where contact works,"[""String""]",,organizations,TRUE,[]
 gcontacts,organization,Name,Name of the organization,"[""String""]",,organizations,TRUE,[]
 linkedin,person,Linkedin Link,The LinkedIn profile link of the contact,"[""URL""]",,urls,TRUE,[]
+linkedin,person,Skills,Skills of the contact,"[""String""]",,userDefined,TRUE,[]
+linkedin,person,Education,Education & Degree of the contact,"[""School(Degree)""]",,userDefined,TRUE,[]
+linkedin,person,Certifications,Certifications of the contact,"[""String""]",,userDefined,TRUE,[]
 linkedin,organization,Industry,Industry or sector of the organization,"[""String""]",,userDefined,TRUE,[]
 linkedin,organization,Type,Type of the organization - School or Company,"[""String""]",,userDefined,TRUE,[]
 linkedin,organization,Employees,Number of employees in the organization,"[""String""]",2-10,userDefined,FALSE,"[{""value"": ""2-10"", ""valueExplanation"": ""Very small organization or startup""}, {""value"": ""11-50"", ""valueExplanation"": ""Small organization or early-stage startup""}, {""value"": ""51-200"", ""valueExplanation"": ""Medium-sized organization""}, {""value"": ""201-500"", ""valueExplanation"": ""Growing mid-sized organization""}, {""value"": ""501-1000"", ""valueExplanation"": ""Large organization""}, {""value"": ""1001-5000"", ""valueExplanation"": ""Very large organization""}, {""value"": ""5001-10000"", ""valueExplanation"": ""Major enterprise""}, {""value"": ""10001+"", ""valueExplanation"": ""Large enterprise or multinational corporation""}]"
