@@ -8,10 +8,9 @@
             <sparkle:version>412</sparkle:version>
             <sparkle:shortVersionString>0.9.9.1</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
-            <enclosure url="https://github.com/ajram23/Orbit/releases/download/0.9.9.1/Orbit.9.9.1.dmg" length="217824993" type="application/octet-stream" sparkle:edSignature="aoVpuRmOBp3PWeJHuiuYP3tRsyDeELzP0LhOtRpDQ6nYC79rOInmBpv69f5eUDojYUY3Mygl0rE5lMmZYjYWDA=="/>
+            <enclosure url="https://github.com/ajram23/Orbit/releases/download/0.9.9.1/Orbit-0.9.9.1.zip" length="247322859" type="application/octet-stream" sparkle:edSignature="lR4aCV7B5V7rdw0CyE2cIAyhuhaiQhyd//nVtO3mT5A+iiygnsnZq2vpp5uLgk7fh6awnXTHg6TY3e4o5OzjBQ=="/>
             <sparkle:deltas>
                 <enclosure url="https://github.com/ajram23/Orbit/releases/download/0.9.9.1/Orbit412-397.delta" sparkle:deltaFrom="397" length="3292642" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="864784" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,en" sparkle:edSignature="batcO1WUyRCrfUg0P52/wf5IkrDK6l1YrmWqgp10tpFhmlpMh/+lGKsE60agr2D1Q1qVRPnQkPbB1evCemYyCQ=="/>
-                <enclosure url="https://github.com/ajram23/Orbit/releases/download/0.9.9.1/Orbit412-387.delta" sparkle:deltaFrom="387" length="3724818" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="864784" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,en" sparkle:edSignature="NI33TVboun5jUGcQQ2n1//nEeXehl+bKpelXLPMIIkcOCs8R9kNL2vWddYk/LpmZCuge8u/BSRYsxcel1FeZDw=="/>
             </sparkle:deltas>
 	    <description><![CDATA[<h1><span class="emoji">🚀</span> Orbit Release 0.9.9.1</h1>
     <p>April 15, 2025</p>
@@ -81,63 +80,10 @@
             <sparkle:version>397</sparkle:version>
             <sparkle:shortVersionString>0.9.9</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
-            <enclosure url="https://github.com/ajram23/Orbit/releases/download/0.9.9/Orbit.0.9.9.dmg" length="215471623" type="application/octet-stream" sparkle:edSignature="K2AqWZdMagSL85qafhBEQDof17i7HwZerPDPRtJPO6+N8JNoU06ViZHtGd5aG1efaE0LVydeCsX6xQR3ZcT/Aw=="/>
+            <enclosure url="https://raw.githubusercontent.com/ajram23/orbit/main/Orbit-0.9.9.zip" length="244801688" type="application/octet-stream" sparkle:edSignature="SR8M+1sQBb5B89+88cG9o/IQ41ZKsE2G795qmMoiBwe6+XAw1L9F6YWfpLFGN9FZojZtnQFJizM/zERAzVCYBQ=="/>
             <sparkle:deltas>
-                <enclosure url="https://github.com/ajram23/Orbit/releases/download/0.9.9/Orbit397-387.delta" sparkle:deltaFrom="387" length="1456494" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="864784" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,en" sparkle:edSignature="L3fOvoA5rVEfVABq5Usa1fBzGlanuenFjKWCp6GmkrUevDWQYfAX5vV5av70nkmxsuH77QRwRV0wVOQQCnNYAQ=="/>
+                <enclosure url="https://raw.githubusercontent.com/ajram23/orbit/main/Orbit397-387.delta" sparkle:deltaFrom="387" length="1456494" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="864784" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,en" sparkle:edSignature="L3fOvoA5rVEfVABq5Usa1fBzGlanuenFjKWCp6GmkrUevDWQYfAX5vV5av70nkmxsuH77QRwRV0wVOQQCnNYAQ=="/>
             </sparkle:deltas>
-            <description><![CDATA[<h1>🚀 Orbit Release 0.9.9 - March 31, 2025</h1>
-
-<p>With Orbit 0.9.9, your personal relationship assistant just got incredibly powerful. Now you can truly make Orbit your own – customize your contact packs, add your own unique fields, and transform how you track relationships. Whether it's adding custom fields, tracking key details, or creating personalized connections, Orbit adapts to your world, not the other way around. Customize. Personalize. Connect!</p>
-
-<h2>✨ New Features & Improvements</h2>
-
-<h3>📦 Pack & Field Management</h3>
-<ul>
-    <li>Add, remove, and customize fields with unprecedented flexibility</li>
-    <li>Edit field details directly in settings</li>
-    <li>Intelligent field selection when switching between packs</li>
-    <li>Typeahead support makes finding and referencing fields effortless</li>
-    <li>Add custom fields tailored to your unique needs</li>
-</ul>
-
-<h3>🤖 Intelligent Assistance</h3>
-<ul>
-    <li>Smarter answer generation for your queries</li>
-    <li>More nuanced and contextual responses</li>
-    <li>Enhanced ability to understand and help with generic questions</li>
-</ul>
-
-<h3>🔔 Notifications & Updates</h3>
-<ul>
-    <li>Comprehensive notification settings</li>
-    <li>Automatic update notifications</li>
-    <li>Smoother, more reliable update process</li>
-    <li>One-click update activation</li>
-</ul>
-
-<h3>📅 Feed Improvements</h3>
-<ul>
-    <li>Ignore specific fields to personalize your feed</li>
-    <li>Refined display of upcoming events and information</li>
-    <li>Better handling of events like birthdays</li>
-    <li>More intuitive feed interactions</li>
-</ul>
-
-<h2>🐛 Bug Fixes & Enhancements</h2>
-<ul>
-    <li>Fixed display issues with responses</li>
-    <li>Resolved birthdays without years tracking</li>
-    <li>Improved overall system stability and performance</li>
-    <li>Enhanced user interface responsiveness</li>
-    <li>Fixed issues with pack and field interactions</li>
-</ul>
-
-<p><em>We're continuously working to improve your experience. Your feedback drives our development!</em></p>
-
-<p><strong>Update now and enjoy the latest improvements!</strong> 🚀</p>
-
-<p><strong>Have suggestions?</strong> Reach out to our support team at <a href="mailto:hello@askorbit.com">hello@askorbit.com</a>!</p>
-]]></description>
         </item>
         <item>
             <title>0.9.8.9</title>
@@ -145,8 +91,8 @@
             <sparkle:version>387</sparkle:version>
             <sparkle:shortVersionString>0.9.8.9</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
-            <enclosure url="https://github.com/ajram23/Orbit/releases/download/0.9.8.9/Orbit.0.9.8.9.dmg" length="214711867" type="application/octet-stream" sparkle:edSignature="Yd4Wigs3IO5URHPXbWhGOORIGYR+498JFjd1XetVCiT/nsharh29wainmG4NNXUecK0TAEdfX0m6/o4gPj0hCQ=="/>
-            <description><![CDATA[<h1>🚀 Orbit Release 0.9.8.9 - March 21, 2025</h1>
+            <enclosure url="https://raw.githubusercontent.com/ajram23/orbit/main/Orbit%200.9.8.9.dmg" length="214711867" type="application/octet-stream" sparkle:edSignature="Yd4Wigs3IO5URHPXbWhGOORIGYR+498JFjd1XetVCiT/nsharh29wainmG4NNXUecK0TAEdfX0m6/o4gPj0hCQ=="/>
+            <description><![CDATA[<h1>🚀 Release 0.9.8.9 - March 21, 2025</h1>
 
 <h2>🔔 New Features</h2>
 <ul>
