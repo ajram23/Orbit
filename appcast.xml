@@ -8,7 +8,6 @@
             <sparkle:version>412</sparkle:version>
             <sparkle:shortVersionString>0.9.9.1</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
-            <sparkle:releaseNotesLink>https://github.com/ajram23/Orbit/releases/download/0.9.9.1/Orbit%200.9.9.1.html</sparkle:releaseNotesLink>
             <enclosure url="https://github.com/ajram23/Orbit/releases/download/0.9.9.1/Orbit%200.9.9.1.dmg" length="217824993" type="application/octet-stream" sparkle:edSignature="aoVpuRmOBp3PWeJHuiuYP3tRsyDeELzP0LhOtRpDQ6nYC79rOInmBpv69f5eUDojYUY3Mygl0rE5lMmZYjYWDA=="/>
             <sparkle:deltas>
                 <enclosure url="https://github.com/ajram23/Orbit/releases/download/0.9.9.1/Orbit412-397.delta" sparkle:deltaFrom="397" length="3292642" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="864784" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,en" sparkle:edSignature="batcO1WUyRCrfUg0P52/wf5IkrDK6l1YrmWqgp10tpFhmlpMh/+lGKsE60agr2D1Q1qVRPnQkPbB1evCemYyCQ=="/>
