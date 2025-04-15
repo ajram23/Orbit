@@ -8,13 +8,10 @@
             <sparkle:version>412</sparkle:version>
             <sparkle:shortVersionString>0.9.9.1</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
-            <enclosure url="https://github.com/ajram23/Orbit/releases/download/0.9.9.1/Orbit%200.9.9.1.dmg" length="217824993" type="application/octet-stream" sparkle:edSignature="aoVpuRmOBp3PWeJHuiuYP3tRsyDeELzP0LhOtRpDQ6nYC79rOInmBpv69f5eUDojYUY3Mygl0rE5lMmZYjYWDA=="/>
+            <enclosure url="https://github.com/ajram23/Orbit/releases/download/0.9.9.1/Orbit.9.9.1.dmg" length="217824993" type="application/octet-stream" sparkle:edSignature="aoVpuRmOBp3PWeJHuiuYP3tRsyDeELzP0LhOtRpDQ6nYC79rOInmBpv69f5eUDojYUY3Mygl0rE5lMmZYjYWDA=="/>
             <sparkle:deltas>
                 <enclosure url="https://github.com/ajram23/Orbit/releases/download/0.9.9.1/Orbit412-397.delta" sparkle:deltaFrom="397" length="3292642" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="864784" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,en" sparkle:edSignature="batcO1WUyRCrfUg0P52/wf5IkrDK6l1YrmWqgp10tpFhmlpMh/+lGKsE60agr2D1Q1qVRPnQkPbB1evCemYyCQ=="/>
                 <enclosure url="https://github.com/ajram23/Orbit/releases/download/0.9.9.1/Orbit412-387.delta" sparkle:deltaFrom="387" length="3724818" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="864784" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,en" sparkle:edSignature="NI33TVboun5jUGcQQ2n1//nEeXehl+bKpelXLPMIIkcOCs8R9kNL2vWddYk/LpmZCuge8u/BSRYsxcel1FeZDw=="/>
-                <enclosure url="https://github.com/ajram23/Orbit/releases/download/0.9.9.1/Orbit412-384.delta" sparkle:deltaFrom="384" length="11175090" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="864784" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,en" sparkle:edSignature="kYEswD0vMolXBO0zHSZPXAXsnvn35Zrznb9gwKt4HLayaD/nIrm0ry74HT4s3xpPFW34mOEoASSpNrwMZV66Cw=="/>
-                <enclosure url="https://github.com/ajram23/Orbit/releases/download/0.9.9.1/Orbit412-376.delta" sparkle:deltaFrom="376" length="12173354" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="864784" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,en" sparkle:edSignature="9EVf+GpKxO2uSnAUqGiCpwMTPaUMfIi2ECFEKBgVRrMdBDsTwrM4GtKPEcs4r3YOubNsDu1R21Ak2MuOx9mxBw=="/>
-                <enclosure url="https://github.com/ajram23/Orbit/releases/download/0.9.9.1/Orbit412-361.delta" sparkle:deltaFrom="361" length="31622230" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="864784" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,en" sparkle:edSignature="/vwTqUm9F0BA4m+2gshFjQxCAxCGY9TV4ZOYlQDXHp4kCcgWQuSdf2t5eSvfjcm101sKTchi/+vtSGhVIHqWBQ=="/>
             </sparkle:deltas>
 	    <description><![CDATA[<h1><span class="emoji">🚀</span> Orbit Release 0.9.9.1</h1>
     <p>April 15, 2025</p>
@@ -87,10 +84,6 @@
             <enclosure url="https://github.com/ajram23/Orbit/releases/download/0.9.9/Orbit.0.9.9.dmg" length="215471623" type="application/octet-stream" sparkle:edSignature="K2AqWZdMagSL85qafhBEQDof17i7HwZerPDPRtJPO6+N8JNoU06ViZHtGd5aG1efaE0LVydeCsX6xQR3ZcT/Aw=="/>
             <sparkle:deltas>
                 <enclosure url="https://github.com/ajram23/Orbit/releases/download/0.9.9/Orbit397-387.delta" sparkle:deltaFrom="387" length="1456494" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="864784" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,en" sparkle:edSignature="L3fOvoA5rVEfVABq5Usa1fBzGlanuenFjKWCp6GmkrUevDWQYfAX5vV5av70nkmxsuH77QRwRV0wVOQQCnNYAQ=="/>
-                <enclosure url="https://github.com/ajram23/Orbit/releases/download/0.9.9/Orbit397-384.delta" sparkle:deltaFrom="384" length="8867606" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="864784" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,en" sparkle:edSignature="EtfpNfDgDklyhMNbkTOALhGkfiafoksw2K9ZNXuzG388leOpqjL53FbEkzYLdRPFn1CEnBuGv5zF8FdcrqAZDQ=="/>
-                <enclosure url="https://github.com/ajram23/Orbit/releases/download/0.9.9/Orbit397-376.delta" sparkle:deltaFrom="376" length="9971430" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="864784" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,en" sparkle:edSignature="WokVyYY7xcm7x9KfX5iRUBhfDNd08W50aIcvcIaJYGUzUIaZ0IhKgDFCugl8LAFTRXJkh93Q/lmAvgSRI/TfAw=="/>
-                <enclosure url="https://github.com/ajram23/Orbit/releases/download/0.9.9/Orbit397-361.delta" sparkle:deltaFrom="350" length="29437034" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="864784" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,en" sparkle:edSignature="Mj4TCYhwwQphzTezdpyrexYXz6S7IiePkSyOcCVBi1j2uLg+ObPG0YqpcyvJrIS+h9zbBc7qd7nMyCdVUCoJBA=="/>
-                <enclosure url="https://github.com/ajram23/Orbit/releases/download/0.9.9/Orbit397-350.delta" sparkle:deltaFrom="361" length="29446834" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="864784" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,en" sparkle:edSignature="Sts7o9pMrXZGjXIkuVPw+uN+WDkzYbfaoRuNJ1z3nYFVzsCtPxcksbcdmskoG5iq+qh2V+2E2+WGrl6XehEwCA=="/>
             </sparkle:deltas>
             <description><![CDATA[<h1>🚀 Orbit Release 0.9.9 - March 31, 2025</h1>
 
@@ -153,7 +146,7 @@
             <sparkle:shortVersionString>0.9.8.9</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
             <enclosure url="https://github.com/ajram23/Orbit/releases/download/0.9.8.9/Orbit.0.9.8.9.dmg" length="214711867" type="application/octet-stream" sparkle:edSignature="Yd4Wigs3IO5URHPXbWhGOORIGYR+498JFjd1XetVCiT/nsharh29wainmG4NNXUecK0TAEdfX0m6/o4gPj0hCQ=="/>
-            <description><![CDATA[<h1>🚀 Release 0.9.8.9 - March 21, 2025</h1>
+            <description><![CDATA[<h1>🚀 Orbit Release 0.9.8.9 - March 21, 2025</h1>
 
 <h2>🔔 New Features</h2>
 <ul>
@@ -216,7 +209,7 @@
             <sparkle:version>384</sparkle:version>
             <sparkle:shortVersionString>0.9.8.8</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
-            <enclosure url="https://github.com/ajram23/Orbit/releases/download/0.9.8.8/Orbit.0.9.8.8.dmg" length="214486168" type="application/octet-stream" sparkle:edSignature="aK5qFavcmEqfD26CRBEh6A2Tj6FZMbGEiZaJjy+aRzdy2SGeCLEDL/JnoeJZj+5UXRx5MFKi3FS25Jevecc6DQ=="/>
+            <enclosure url="https://raw.githubusercontent.com/ajram23/orbit/main/Orbit%200.9.8.8.dmg" length="214486168" type="application/octet-stream" sparkle:edSignature="aK5qFavcmEqfD26CRBEh6A2Tj6FZMbGEiZaJjy+aRzdy2SGeCLEDL/JnoeJZj+5UXRx5MFKi3FS25Jevecc6DQ=="/>
             <description><![CDATA[<h1>✨ Orbit Release 0.9.8.8 🚀 - March 18, 2025 ✨</h1>
 
 <h2>🎯 Feed Customization & Settings 📱</h2>
