@@ -112,7 +112,7 @@ relationship,person,Check In Notes,Notes about the upcoming check in with the co
 relationship,person,Angellist Link,Link to the contact's Angellist profile.,"[""URL""]",,urls,FALSE,[]
 relationship,person,Cal.com Link,Link to the contact's Cal.com profile.,"[""URL""]",,urls,FALSE,[]
 relationship,person,Calendly Link,A link to the contact's Calendly scheduling page.,"[""URL""]",,urls,FALSE,[]
-relationship,person,Cause Link,A URL link related to the cause associated with the contact.,"[""URL""]",,urls,FALSE,[]
+relationship,person,Cause Link,A URL link related to the cause associated with the contact.,"[""URL""]",,urls,TRUE,[]
 relationship,person,Data Quality,This field represents the quality of data associated with a contact.,"[""String"", ""Emoji""]",,userDefined,FALSE,[]
 relationship,person,Google Calendar Link,Link to the contact's Google Calendar schedule or appointments.,"[""URL""]",,urls,FALSE,[]
 relationship,person,Hubspot Calendar Link,Link to the contact's Hubspot Calendar for scheduling meetings.,"[""URL""]",,urls,FALSE,[]
