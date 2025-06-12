@@ -1,0 +1,43 @@
+{
+    "version": "1.0.0",
+    "servers": [
+        {
+            "prefix": "google-gmail",
+            "composio_mcp_id": "5788e415-ed96-4d47-a62a-3e0fedbd4b2c",
+            "integration_id": "73b42e5a-1a41-463a-a9ee-55eb62f71ff7",
+            "metadata_overrides": {
+                "description": "Manage your GMail/Google Workspace emails",
+                "category":  "Productivity",
+                "server_type": "user",
+                "security_type": "oauth",
+                "logo_url": "https://raw.githubusercontent.com/ajram23/Orbit/refs/heads/main/logos/google_gmail_64x64.png",
+                "icon_url": "https://raw.githubusercontent.com/ajram23/Orbit/refs/heads/main/logos/google_gmail_32x32.png",
+                "credentials": [{
+                    "name": "connected_account_id",
+                    "description": "Sign in with your Google account",
+                    "required": true
+                }]
+            }
+        },
+        {
+            "prefix": "google-calendar",
+            # "composio_mcp_id": "c3fbccc9-ae7c-44e5-8116-829d1c4e7316",
+            "composio_mcp_id": "4bab692d-2ff6-41f0-baeb-fc3a21cc6275",
+            # "integration_id": "a816400b-a6da-4046-a89b-c9014829583a",
+            "integration_id": "8212a4f5-27db-48b0-92b6-bd35d51117b9",
+            "metadata_overrides": {
+                "description": "Manage your calendar events on Google Calendar",
+                "category":  "Productivity",
+                "server_type": "user",
+                "security_type": "oauth",
+                "logo_url": "https://raw.githubusercontent.com/ajram23/Orbit/refs/heads/main/logos/google_calendar_64x64.png",
+                "icon_url": "https://raw.githubusercontent.com/ajram23/Orbit/refs/heads/main/logos/google_calendar_32x32.png",
+                "credentials": [{
+                    "name": "connected_account_id",
+                    "description": "Sign in with your Google account",
+                    "required": true
+                }]
+            }
+        }
+    ]
+}
