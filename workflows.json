@@ -188,7 +188,7 @@
       "roles": ["all"],
       "tools": [],
       "services": ["orbit", "google-gmail"],
-      "prompt": "Use {!orbit} to find contacts who work in {^field:Industry} or have {^field:Expertise}. Use {!google-gmail} to draft an outreach email."
+      "prompt": "Use {!orbit} to find contacts who work in {^Industry} or have {^Expertise}. Use {!google-gmail} to draft an outreach email."
     },
     {
       "name": "Article to Action",
@@ -233,7 +233,7 @@
       "roles": ["all"],
       "tools": [],
       "services": ["orbit", "google-gmail"],
-      "prompt": "Use {!orbit} to list key contacts sorted by {^field:Last Contact}. Use {!google-gmail} to check response rates and engagement levels with each person."
+      "prompt": "Use {!orbit} to list key contacts sorted by {^Last Contact}. Use {!google-gmail} to check response rates and engagement levels with each person."
     },
     {
       "name": "Focus Time Protector",
@@ -251,7 +251,7 @@
       "roles": ["all"],
       "tools": [],
       "services": ["orbit", "google-gmail"],
-      "prompt": "Use {!orbit} to find two contacts who should know each other based on {^field:Industry} or {^field:Interests}. Use {!google-gmail} to draft a double opt-in introduction email."
+      "prompt": "Use {!orbit} to find two contacts who should know each other based on {^Industry} or {^Interests}. Use {!google-gmail} to draft a double opt-in introduction email."
     },
     {
       "name": "Save Paywalled Articles",
@@ -260,7 +260,7 @@
       "roles": ["all"],
       "tools": [],
       "services": ["exa", "readwise"],
-      "prompt": "Use {!exa} to get the archived version of {^field:URL} using archive.is or archive.org. Use {!readwise} to save the full article with {%tag} for later reading."
+      "prompt": "Use {!exa} to get the archived version of {^URL} using archive.is or archive.org. Use {!readwise} to save the full article with {%tag} for later reading."
     },
     {
       "name": "Meeting Conflict Resolver",
@@ -296,7 +296,7 @@
       "roles": ["all"],
       "tools": [],
       "services": ["exa", "bear-notes", "readwise"],
-      "prompt": "Use {!exa} to crawl and extract content from {^field:URL}. Use {!bear-notes} to create a summary of key points. Use {!readwise} to save if worth reading later."
+      "prompt": "Use {!exa} to crawl and extract content from {^URL}. Use {!bear-notes} to create a summary of key points. Use {!readwise} to save if worth reading later."
     }
   ]
 }
