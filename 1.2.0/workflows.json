@@ -315,6 +315,51 @@
             "tools": [],
             "services": ["google-calendar"],
             "prompt": "Review all calendars in {!google-calendar} for the past 7 days. Analyze how my actual time spent aligned with my stated goals. Calculate percentage of time per goal area. Identify patterns of misalignment. Provide specific recommendations for improving goal focus."
+        },
+        {
+            "name": "Virtual Meeting Prep",
+            "description": "Prepare thoroughly for upcoming online meetings, including attendee insights and talking points.",
+            "category": "Meeting Management",
+            "roles": ["all"],
+            "tools": [],
+            "services": ["google-calendar", "orbit-crm", "research"],
+            "prompt": "Prepare for virtual meeting '{^meeting_title}'. Use {!google-calendar} to get full meeting details and list all attendees. Use {!orbit-crm} to search for and review information on each attendee. For any attendees not found in {!orbit-crm}, use {!research} to find their background and company information. Prepare talking points and check if screen sharing is needed."
+        },
+        {
+            "name": "In-Person Meeting Prep",
+            "description": "Plan logistics and attendee research for face-to-face meetings.",
+            "category": "Meeting Management",
+            "roles": ["all"],
+            "tools": [],
+            "services": ["google-calendar", "orbit-crm", "research", "web-search"],
+            "prompt": "Prepare for in-person meeting '{^meeting_title}' at {&location}. Use {!google-calendar} to get meeting details and attendee list. Use {!orbit-crm} to search for each attendee and review their information. For attendees not in {!orbit-crm}, use {!research} to find their background. Use {!web-search} to find appropriate venues near {&location} based on meeting time. Check travel time and parking options."
+        },
+        {
+            "name": "All-Day Event Prep",
+            "description": "Coordinate schedules and logistics for full-day events.",
+            "category": "Meeting Management",
+            "roles": ["all"],
+            "tools": [],
+            "services": ["google-calendar"],
+            "prompt": "Plan for all-day event '{^event_title}'. Use {!google-calendar} to get event details. Review schedule conflicts for the day and identify any meetings that need to be rescheduled. Plan logistics if travel is required."
+        },
+        {
+            "name": "Meeting Follow-Up",
+            "description": "Capture outcomes, update records, and draft follow-up actions.",
+            "category": "Meeting Management",
+            "roles": ["all"],
+            "tools": [],
+            "services": ["google-calendar", "orbit-crm"],
+            "prompt": "Follow up on meeting '{^meeting_title}'. Use {!google-calendar} to review meeting details and get attendee list. Use {!orbit-crm} to log meeting notes and update last contacted date for each attendee found in the system. Draft follow-up email summarizing key decisions and action items. Identify and track any commitments or next steps."
+        },
+        {
+            "name": "Team Dynamics Retrospective",
+            "description": "Reflect on team behaviors and identify one improvement for future meetings.",
+            "category": "Meeting Management",
+            "roles": ["all"],
+            "tools": [],
+            "services": ["granola"],
+            "prompt": "Ask {!granola} about the last meeting:\n1. Trust (1–5): What built or hurt trust?\n2. Conflict (1–5): Where did we avoid or embrace debate?\n3. Commitment (1–5): What would make decisions clearer?\n4. Accountability (1–5): What gap in follow-through did I notice?\n5. Results (1–5): Where did focus drift from team goals?\n→ Pick 1 action to improve next time."
         }
     ]
 }
