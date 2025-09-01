@@ -40,7 +40,7 @@
         {
             "prefix": "beeper",
             "mcp_server_type": "proxy",
-            "fixed_url": "http://localhost:23373/v0/mcp",
+            "url": "http://localhost:23373/v0/mcp",
             "metadata_overrides": {
                 "description": "Access your Beeper Chat messages",
                 "category": "Communication",
@@ -57,6 +57,44 @@
                 }]
             }
         },
+        {
+            "prefix": "Github",
+            "mcp_server_type": "proxy",
+            "url": "https://api.githubcopilot.com/mcp/",
+            "metadata_overrides": {
+                "description": "Access your Github repositories",
+                "category": "Engineering",
+                "server_type": "user",
+                "security_type": "oauth",
+                "logo_url": "https://raw.githubusercontent.com/ajram23/Orbit/refs/heads/main/logos/github_512x512.png",
+                "icon_url": "https://raw.githubusercontent.com/ajram23/Orbit/refs/heads/main/logos/github_256x256.png",
+                "credentials": [{
+                    "name": "AUTH_TOKEN",
+                    "description": "Sign in with your Github account",
+                    "required": true
+                }]
+            }
+        },
+        {
+            "prefix": "Notion",
+            "mcp_server_type": "proxy",
+            "url": "https://api.githubcopilot.com/mcp/",
+            "metadata_overrides": {
+                "description": "Access your Notion information",
+                "category": "Productivity",
+                "server_type": "user",
+                "security_type": "oauth",
+                "logo_url": "https://raw.githubusercontent.com/ajram23/Orbit/refs/heads/main/logos/notion_512x512.png",
+                "icon_url": "https://raw.githubusercontent.com/ajram23/Orbit/refs/heads/main/logos/notion_256x256.png",
+                "credentials": [{
+                    "name": "AUTH_TOKEN",
+                    "description": "Sign in with your Github account",
+                    "required": true
+                }]
+            }
+        },
+        {
+            "prefix": "zapier",
         {
             "prefix": "zapier",
             "mcp_server_type": "zapier",
