@@ -1,0 +1,80 @@
+{
+    "version": "1.2.0",
+    "servers": [
+        {
+            "prefix": "google-gmail",
+            "composio_mcp_id": "5788e415-ed96-4d47-a62a-3e0fedbd4b2c",
+            "integration_id": "73b42e5a-1a41-463a-a9ee-55eb62f71ff7",
+            "metadata_overrides": {
+                "description": "Manage your GMail/Google Workspace emails",
+                "category":  "Productivity",
+                "server_type": "user",
+                "security_type": "oauth",
+                "logo_url": "https://raw.githubusercontent.com/ajram23/Orbit/refs/heads/main/logos/google_gmail_64x64.png",
+                "icon_url": "https://raw.githubusercontent.com/ajram23/Orbit/refs/heads/main/logos/google_gmail_32x32.png",
+                "credentials": [{
+                    "name": "connected_account_id",
+                    "description": "Sign in with your Google account",
+                    "required": true
+                }]
+            }
+        },
+        {
+            "prefix": "google-calendar",
+            "composio_mcp_id": "c3fbccc9-ae7c-44e5-8116-829d1c4e7316",
+            "integration_id": "a816400b-a6da-4046-a89b-c9014829583a",
+            "metadata_overrides": {
+                "description": "Manage your calendar events on Google Calendar",
+                "category":  "Productivity",
+                "server_type": "user",
+                "security_type": "oauth",
+                "logo_url": "https://raw.githubusercontent.com/ajram23/Orbit/refs/heads/main/logos/google_calendar_64x64.png",
+                "icon_url": "https://raw.githubusercontent.com/ajram23/Orbit/refs/heads/main/logos/google_calendar_32x32.png",
+                "credentials": [{
+                    "name": "connected_account_id",
+                    "description": "Sign in with your Google account",
+                    "required": true
+                }]
+            }
+        },
+        {
+            "prefix": "beeper",
+            "mcp_server_type": "proxy",
+            "fixed_url": "http://localhost:23373/v0/mcp",
+            "metadata_overrides": {
+                "description": "Access your Beeper Chat messages",
+                "category": "Communication",
+                "server_type": "user",
+                "security_type": "token",
+                "logo_url": "https://raw.githubusercontent.com/ajram23/Orbit/refs/heads/main/logos/beeper_512x512.png",
+                "icon_url": "https://raw.githubusercontent.com/ajram23/Orbit/refs/heads/main/logos/beeper_256x256.png",
+                "credentials": [{
+                    "name": "AUTH_TOKEN",
+                    "description": "Your Beeper authentication token (required)",
+                    "url": "https://beeper.com/settings/api",
+                    "link_text": "Get Your Beeper API Token",
+                    "required": true
+                }]
+            }
+        },
+        {
+            "prefix": "zapier",
+            "mcp_server_type": "zapier",
+            "metadata_overrides": {
+                "description": "Connect your custom Zapier workflows",
+                "category": "Productivity",
+                "server_type": "user",
+                "security_type": "zapier",
+                "logo_url": "https://raw.githubusercontent.com/ajram23/Orbit/refs/heads/main/logos/zapier_512x512.png",
+                "icon_url": "https://raw.githubusercontent.com/ajram23/Orbit/refs/heads/main/logos/zapier_32x32.png",
+                "credentials": [{
+                    "name": "server_url",
+                    "description": "Your Zapier server URL (required)",
+                    "url": "https://mcp.zapier.com/mcp/servers/",
+                    "link_text": "Get Your Zapier Server",
+                    "required": true
+                }]
+            }
+        }
+    ]
+}
