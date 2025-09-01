@@ -95,8 +95,6 @@
         },
         {
             "prefix": "zapier",
-        {
-            "prefix": "zapier",
             "mcp_server_type": "zapier",
             "metadata_overrides": {
                 "description": "Connect your custom Zapier workflows",
