@@ -69,12 +69,14 @@
                 "description": "Access your Github repositories",
                 "category": "Engineering",
                 "server_type": "user",
-                "security_type": "oauth",
+                "security_type": "token",
                 "logo_url": "https://raw.githubusercontent.com/ajram23/Orbit/refs/heads/main/logos/github_512x512.png",
                 "icon_url": "https://raw.githubusercontent.com/ajram23/Orbit/refs/heads/main/logos/github_256x256.png",
                 "credentials": [{
-                    "name": "AUTH_TOKEN",
-                    "description": "Sign in with your Github account",
+                    "name": "GITHUB_PAT",
+                    "description": "GitHub Personal Access Token",
+                    "url": "https://github.com/settings/tokens",
+                    "link_text": "Create GitHub PAT",
                     "required": true
                 }]
             }
@@ -83,9 +85,9 @@
             "prefix": "Notion",
             "mcp_server_type": "proxy",
             "transport_type": "streamable-http",
-            "url": "https://api.githubcopilot.com/mcp/",
+            "url": "https://mcp.notion.com/mcp",
             "metadata_overrides": {
-                "description": "Access your Notion information",
+                "description": "Access your Notion workspace pages and databases",
                 "category": "Productivity",
                 "server_type": "user",
                 "security_type": "oauth",
@@ -93,7 +95,7 @@
                 "icon_url": "https://raw.githubusercontent.com/ajram23/Orbit/refs/heads/main/logos/notion_256x256.png",
                 "credentials": [{
                     "name": "AUTH_TOKEN",
-                    "description": "Sign in with your Github account",
+                    "description": "Sign in with your Notion account via OAuth",
                     "required": true
                 }]
             }
