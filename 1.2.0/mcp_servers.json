@@ -5,6 +5,7 @@
             "prefix": "google-gmail",
             "composio_mcp_id": "5788e415-ed96-4d47-a62a-3e0fedbd4b2c",
             "integration_id": "73b42e5a-1a41-463a-a9ee-55eb62f71ff7",
+            "transport_type": "streamable-http",
             "metadata_overrides": {
                 "description": "Manage your GMail/Google Workspace emails",
                 "category":  "Productivity",
@@ -23,6 +24,7 @@
             "prefix": "google-calendar",
             "composio_mcp_id": "c3fbccc9-ae7c-44e5-8116-829d1c4e7316",
             "integration_id": "a816400b-a6da-4046-a89b-c9014829583a",
+            "transport_type": "streamable-http",
             "metadata_overrides": {
                 "description": "Manage your calendar events on Google Calendar",
                 "category":  "Productivity",
@@ -40,6 +42,7 @@
         {
             "prefix": "beeper",
             "mcp_server_type": "proxy",
+            "transport_type": "streamable-http",
             "url": "http://localhost:23373/v0/mcp",
             "metadata_overrides": {
                 "description": "Access your Beeper Chat messages",
@@ -60,6 +63,7 @@
         {
             "prefix": "Github",
             "mcp_server_type": "proxy",
+            "transport_type": "streamable-http",
             "url": "https://api.githubcopilot.com/mcp/",
             "metadata_overrides": {
                 "description": "Access your Github repositories",
@@ -78,6 +82,7 @@
         {
             "prefix": "Notion",
             "mcp_server_type": "proxy",
+            "transport_type": "streamable-http",
             "url": "https://api.githubcopilot.com/mcp/",
             "metadata_overrides": {
                 "description": "Access your Notion information",
@@ -96,6 +101,7 @@
         {
             "prefix": "zapier",
             "mcp_server_type": "zapier",
+            "transport_type": "streamable-http",
             "metadata_overrides": {
                 "description": "Connect your custom Zapier workflows",
                 "category": "Productivity",
