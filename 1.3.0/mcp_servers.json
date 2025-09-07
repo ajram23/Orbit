@@ -231,7 +231,7 @@
                 "description": "Payment processing, subscription management, and financial transactions",
                 "category": "Commerce",
                 "server_type": "user",
-                "security_type": "mixed",
+                "security_type": "api_key",
                 "logo_url": "https://raw.githubusercontent.com/ajram23/Orbit/refs/heads/main/logos/stripe_512x512.png",
                 "icon_url": "https://raw.githubusercontent.com/ajram23/Orbit/refs/heads/main/logos/stripe_256x256.png",
                 "credentials": [{
