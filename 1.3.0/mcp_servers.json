@@ -7,7 +7,7 @@
             "integration_id": "73b42e5a-1a41-463a-a9ee-55eb62f71ff7",
             "transport_type": "streamable-http",
             "metadata_overrides": {
-                "description": "Manage your GMail/Google Workspace emails",
+                "description": "Manage Gmail and Google Workspace emails",
                 "category":  "Productivity",
                 "server_type": "user",
                 "security_type": "oauth",
@@ -47,7 +47,7 @@
             "transport_type": "streamable-http",
             "url": "https://api.githubcopilot.com/mcp/",
             "metadata_overrides": {
-                "description": "Access your Github repositories",
+                "description": "Access your GitHub repositories",
                 "category": "Engineering",
                 "server_type": "user",
                 "security_type": "token",
@@ -68,7 +68,7 @@
             "transport_type": "streamable-http",
             "url": "https://mcp.notion.com/mcp",
             "metadata_overrides": {
-                "description": "Access your Notion workspace pages and databases",
+                "description": "Access Notion pages and databases",
                 "category": "Productivity",
                 "server_type": "user",
                 "security_type": "oauth",
@@ -86,7 +86,7 @@
             "mcp_server_type": "zapier",
             "transport_type": "streamable-http",
             "metadata_overrides": {
-                "description": "Connect your custom Zapier workflows",
+                "description": "Connect custom Zapier workflows",
                 "category": "Productivity",
                 "server_type": "user",
                 "security_type": "zapier",
@@ -107,7 +107,7 @@
             "transport_type": "streamable-http",
             "url": "https://mcp.box.com",
             "metadata_overrides": {
-                "description": "Ask questions about your enterprise content, get insights from unstructured data, automate content workflows",
+                "description": "Access Box files and folders",
                 "category": "Productivity",
                 "server_type": "user",
                 "security_type": "oauth",
@@ -126,7 +126,7 @@
             "transport_type": "sse",
             "url": "https://mcp.asana.com/sse",
             "metadata_overrides": {
-                "description": "Create and manage Asana tasks and projects",
+                "description": "Manage tasks and projects",
                 "category": "Productivity",
                 "server_type": "user",
                 "security_type": "oauth",
@@ -145,7 +145,7 @@
             "transport_type": "sse",
             "url": "https://mcp.monday.com/sse",
             "metadata_overrides": {
-                "description": "Manage monday.com boards by creating items, updating columns, assigning owners, setting timelines, adding CRM activities, and writing summaries",
+                "description": "Manage monday.com boards and workflows",
                 "category": "Productivity",
                 "server_type": "user",
                 "security_type": "oauth",
@@ -164,7 +164,7 @@
             "transport_type": "sse",
             "url": "https://mcp.linear.app/sse",
             "metadata_overrides": {
-                "description": "Integrate with Linear's issue tracking and project management",
+                "description": "Issue tracking and project management",
                 "category": "Productivity",
                 "server_type": "user",
                 "security_type": "oauth",
@@ -183,7 +183,7 @@
             "transport_type": "sse",
             "url": "https://mcp.atlassian.com/v1/sse",
             "metadata_overrides": {
-                "description": "Manage your Jira tickets and Confluence docs",
+                "description": "Manage Jira and Confluence",
                 "category": "Productivity",
                 "server_type": "user",
                 "security_type": "oauth",
@@ -202,7 +202,7 @@
             "transport_type": "streamable-http",
             "url": "https://mcp.paypal.com/mcp",
             "metadata_overrides": {
-                "description": "AI agent integration with PayPal services",
+                "description": "Process payments and transactions",
                 "category": "Commerce",
                 "server_type": "user",
                 "security_type": "oauth",
@@ -228,22 +228,18 @@
             "transport_type": "streamable-http",
             "url": "https://mcp.stripe.com/",
             "metadata_overrides": {
-                "description": "Payment processing, subscription management, and financial transactions",
+                "description": "Payment processing and subscriptions",
                 "category": "Commerce",
                 "server_type": "user",
                 "security_type": "api_key",
                 "logo_url": "https://raw.githubusercontent.com/ajram23/Orbit/refs/heads/main/logos/stripe_512x512.png",
                 "icon_url": "https://raw.githubusercontent.com/ajram23/Orbit/refs/heads/main/logos/stripe_256x256.png",
                 "credentials": [{
-                    "name": "AUTH_METHOD",
-                    "description": "Choose OAuth for secure access (admin only) or use API Key",
-                    "required": true
-                }, {
                     "name": "STRIPE_API_KEY",
-                    "description": "Stripe Secret Key (if using API Key method)",
+                    "description": "Stripe Secret Key",
                     "url": "https://dashboard.stripe.com/apikeys",
                     "link_text": "Get Stripe API Key",
-                    "required": false
+                    "required": true
                 }]
             }
         },
@@ -253,7 +249,7 @@
             "transport_type": "sse",
             "url": "https://mcp.squareup.com/sse",
             "metadata_overrides": {
-                "description": "Use an agent to build on Square APIs. Payments, inventory, orders, and more",
+                "description": "Square payments and inventory",
                 "category": "Commerce",
                 "server_type": "user",
                 "security_type": "oauth",
@@ -272,7 +268,7 @@
             "transport_type": "sse",
             "url": "https://api.dashboard.plaid.com/mcp/sse",
             "metadata_overrides": {
-                "description": "Analyze, troubleshoot, and optimize Plaid integrations. Banking data, financial account linking",
+                "description": "Banking data and account linking",
                 "category": "Commerce",
                 "server_type": "user",
                 "security_type": "oauth",
@@ -291,7 +287,7 @@
             "transport_type": "sse",
             "url": "https://mcp.sentry.dev/sse",
             "metadata_overrides": {
-                "description": "Monitor errors, performance issues, and track application health",
+                "description": "Monitor errors and app health",
                 "category": "Engineering",
                 "server_type": "user",
                 "security_type": "oauth",
@@ -310,7 +306,7 @@
             "transport_type": "streamable-http",
             "url": "http://mcp.stytch.dev/mcp",
             "metadata_overrides": {
-                "description": "Configure and manage Stytch authentication services, redirect URLs, email templates, and workspace settings",
+                "description": "Authentication services",
                 "category": "Engineering",
                 "server_type": "user",
                 "security_type": "oauth",
@@ -329,7 +325,7 @@
             "transport_type": "streamable-http",
             "url": "https://mcp.vercel.com/",
             "metadata_overrides": {
-                "description": "Vercel's official MCP server, allowing you to search and navigate documentation, manage projects and deployments, and analyze deployment logs—all in one place",
+                "description": "Deploy and manage web apps",
                 "category": "Engineering",
                 "server_type": "user",
                 "security_type": "oauth",
@@ -348,7 +344,7 @@
             "transport_type": "streamable-http",
             "url": "https://mcp.intercom.com/mcp",
             "metadata_overrides": {
-                "description": "Access real-time customer conversations, tickets, and user data",
+                "description": "Customer support and conversations",
                 "category": "Communication",
                 "server_type": "user",
                 "security_type": "oauth",
