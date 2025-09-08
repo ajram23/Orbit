@@ -35,7 +35,7 @@
                 "credentials": [{
                     "name": "AUTH_TOKEN",
                     "description": "Your Beeper authentication token (required)",
-                    "url": "https://beeper.com/settings/api",
+                    "url": "https://developers.beeper.com/desktop-api/auth",
                     "link_text": "Get Your Beeper API Token",
                     "required": true
                 }]
