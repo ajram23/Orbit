@@ -34,7 +34,7 @@
                 "icon_url": "https://raw.githubusercontent.com/ajram23/Orbit/refs/heads/main/logos/beeper_256x256.png",
                 "credentials": [{
                     "name": "AUTH_TOKEN",
-                    "description": "Your Beeper authentication token (required)",
+                    "description": "Your Beeper authentication token (required). Beeper has to be open to connect & use.",
                     "url": "https://developers.beeper.com/desktop-api/auth",
                     "link_text": "Get Your Beeper API Token",
                     "required": true
