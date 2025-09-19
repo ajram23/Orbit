@@ -360,6 +360,15 @@
             "tools": [],
             "services": ["granola"],
             "prompt": "Ask {!granola} about the last meeting:\n1. Trust (1–5): What built or hurt trust?\n2. Conflict (1–5): Where did we avoid or embrace debate?\n3. Commitment (1–5): What would make decisions clearer?\n4. Accountability (1–5): What gap in follow-through did I notice?\n5. Results (1–5): Where did focus drift from team goals?\n→ Pick 1 action to improve next time."
+        },
+        {
+            "name": "Post-Meeting Follow-Up",
+            "description": "Generate personalized, casual follow-up emails focused on action items rather than discussion summaries",
+            "category": "Meeting Management",
+            "roles": ["all"],
+            "tools": [],
+            "services": ["granola", "orbit-crm"],
+            "prompt": "Get the last meeting summary from {!granola}. Make sure to ask all details for the participants using {!orbit-crm}. Use the collective information to Write a super short and casual follow-up email that I can send based on the meeting provided. Use the CRM information for the tone of the email. Come up with the subject line based on the title & contents of the email. The email should be action oriented instead of focusing on what was discussed. In general, if there's any information you want to include in the email but you don't have it, put a placeholder in (e.g. \"[Insert current ARR]\" or \"[Insert LINK to DPA]\" or \"[Insert slide-deck-link]\" or \"[Attach DPA]\"). When I promised to do something in the meeting: - If it's something that can be done in under 5 minutes (e.g. find a document, look up some information) assume that I've done it already and put in placeholders as needed. For example, let's say I promised to reschedule our next meeting to later, you could write \"I rescheduled our next meeting to [Insert DATE]\". - If it takes more than a couple minutes and is important, mention that I'll do it. When other people promised to do something: - If it's important, mention the things other people promised to do. It's always good to push people toward action, so instead of saying that Amanda needs to do X, perhaps say \"Amanda, when do you think you'll be able to do X by?\". Do not quote the transcript directly within the email, this messes up the formatting."
         }
     ]
 }
