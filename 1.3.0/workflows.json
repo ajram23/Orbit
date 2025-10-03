@@ -17,7 +17,7 @@
             "roles": ["all"],
             "tools": [],
             "services": ["google-calendar", "orbit-crm", "research", "bear-notes"],
-            "prompt": "Use {!google-calendar} to get my next meeting details. Use {!orbit-crm} to find background on {@person} I'm meeting. Use {!research} to research {#company} recent news. Use {!bear-notes} to create a meeting prep note with agenda items."
+            "prompt": "Use {!google-calendar} to get my next meeting details. Use {!orbit-crm} to find background on {$person} I'm meeting. Use {!research} to research {#company} recent news. Use {!bear-notes} to create a meeting prep note with agenda items."
         },
         {
             "name": "Post-Meeting Workflow",
@@ -71,7 +71,7 @@
             "roles": ["all"],
             "tools": [],
             "services": ["web-search", "orbit-crm", "readwise-reader"],
-            "prompt": "Use {!web-search} to find recent information about {@person}. Use {!orbit-crm} to review our interaction history. Use {!readwise-reader} to check if I've saved any articles about them or their company."
+            "prompt": "Use {!web-search} to find recent information about {$person}. Use {!orbit-crm} to review our interaction history. Use {!readwise-reader} to check if I've saved any articles about them or their company."
         },
         {
             "name": "Travel Meeting Optimizer",
@@ -116,7 +116,7 @@
             "roles": ["all"],
             "tools": [],
             "services": ["google-calendar", "orbit-crm", "web-search"],
-            "prompt": "Use {!google-calendar} to get tomorrow's meeting with {@person}. Use {!orbit-crm} to find their office location. Use {!web-search} to find coffee shops within walking distance."
+            "prompt": "Use {!google-calendar} to get tomorrow's meeting with {$person}. Use {!orbit-crm} to find their office location. Use {!web-search} to find coffee shops within walking distance."
         },
         {
             "name": "Process Meeting Recording",
@@ -206,7 +206,7 @@
             "roles": ["all"],
             "tools": [],
             "services": ["orbit-crm", "google-gmail", "granola"],
-            "prompt": "Use {!orbit-crm} to get background on {@person}. Use {!google-gmail} to find our last email exchange. Use {!granola} to check notes from our previous meetings."
+            "prompt": "Use {!orbit-crm} to get background on {$person}. Use {!google-gmail} to find our last email exchange. Use {!granola} to check notes from our previous meetings."
         },
         {
             "name": "End of Day Wrap-up",
@@ -323,7 +323,7 @@
             "roles": ["all"],
             "tools": [],
             "services": ["google-calendar", "orbit-crm", "research"],
-            "prompt": "Prepare for virtual meeting '{^meeting_title}'. Use {!google-calendar} to get full meeting details and list all attendees. Use {!orbit-crm} to search for and review information on each attendee. For any attendees not found in {!orbit-crm}, use {!research} to find their background and company information. Prepare talking points and check if screen sharing is needed."
+            "prompt": "Prepare for virtual meeting '{^meeting_title}' from {$calendar_name} calendar. Use {!google-calendar} to get full meeting details and list all attendees. Use {!orbit-crm} to search for and review information on each attendee. For any attendees not found in {!orbit-crm}, use {!research} to find their background and company information. Prepare talking points and check if screen sharing is needed."
         },
         {
             "name": "In-Person Meeting Prep",
@@ -332,7 +332,7 @@
             "roles": ["all"],
             "tools": [],
             "services": ["google-calendar", "orbit-crm", "research", "web-search"],
-            "prompt": "Prepare for in-person meeting '{^meeting_title}' at {&location}. Use {!google-calendar} to get meeting details and attendee list. Use {!orbit-crm} to search for each attendee and review their information. For attendees not in {!orbit-crm}, use {!research} to find their background. Use {!web-search} to find appropriate venues near {&location} based on meeting time. Check travel time and parking options."
+            "prompt": "Prepare for in-person meeting '{^meeting_title}' from {$calendar_name} calendar at {&location}. Use {!google-calendar} to get meeting details and attendee list. Use {!orbit-crm} to search for each attendee and review their information. For attendees not in {!orbit-crm}, use {!research} to find their background. Use {!web-search} to find appropriate venues near {&location} based on meeting time. Check travel time and parking options."
         },
         {
             "name": "All-Day Event Prep",
@@ -341,7 +341,7 @@
             "roles": ["all"],
             "tools": [],
             "services": ["google-calendar"],
-            "prompt": "Plan for all-day event '{^event_title}'. Use {!google-calendar} to get event details. Review schedule conflicts for the day and identify any meetings that need to be rescheduled. Plan logistics if travel is required."
+            "prompt": "Plan for all-day event '{^event_title}' from {$calendar_name} calendar. Use {!google-calendar} to get event details. Review schedule conflicts for the day and identify any meetings that need to be rescheduled. Plan logistics if travel is required."
         },
         {
             "name": "Meeting Follow-Up",
@@ -350,7 +350,7 @@
             "roles": ["all"],
             "tools": [],
             "services": ["google-calendar", "orbit-crm"],
-            "prompt": "Follow up on meeting '{^meeting_title}'. Use {!google-calendar} to review meeting details and get attendee list. Use {!orbit-crm} to log meeting notes and update last contacted date for each attendee found in the system. Draft follow-up email summarizing key decisions and action items. Identify and track any commitments or next steps."
+            "prompt": "Follow up on meeting '{^meeting_title}' from {$calendar_name} calendar. Use {!google-calendar} to review meeting details and get attendee list. Use {!orbit-crm} to log meeting notes and update last contacted date for each attendee found in the system. Draft follow-up email summarizing key decisions and action items. Identify and track any commitments or next steps."
         },
         {
             "name": "Team Dynamics Retrospective",
@@ -377,7 +377,7 @@
             "roles": ["all"],
             "tools": [],
             "services": ["google-calendar", "orbit-crm"],
-            "prompt": "Ask {!orbit-crm} to review all information for {@person}. Draft short message for upcoming Birthday ({$years} years) to text 💬 and an email 📧. Keep it genuine and reference our shared history or recent interactions."
+            "prompt": "Ask {!orbit-crm} to review all information for {$person}. Draft short message for upcoming Birthday ({$years} years) to text 💬 and an email 📧. Keep it genuine and reference our shared history or recent interactions."
         },
         {
             "name": "Anniversary Wishes",
@@ -386,7 +386,7 @@
             "roles": ["all"],
             "tools": [],
             "services": ["google-calendar", "orbit-crm"],
-            "prompt": "Ask {!orbit-crm} to review all information for {@person}. Draft a thoughtful message for their {$anniversary_type} anniversary ({$years} years). Create versions for text 💬 and email 📧, referencing something specific about their journey."
+            "prompt": "Ask {!orbit-crm} to review all information for {$person}. Draft a thoughtful message for their {$anniversary_type} anniversary ({$years} years). Create versions for text 💬 and email 📧, referencing something specific about their journey."
         },
         {
             "name": "Contact Check-in",
@@ -395,7 +395,7 @@
             "roles": ["all"],
             "tools": [],
             "services": ["orbit-crm"],
-            "prompt": "Ask {!orbit-crm} to review all information for {@person}. It's been {$days_until} days since our check-in reminder. Draft a natural, friendly message to reconnect. Create versions for text 💬 and email 📧."
+            "prompt": "Ask {!orbit-crm} to review all information for {$person}. It's been {$days_until} days since our check-in reminder. Draft a natural, friendly message to reconnect. Create versions for text 💬 and email 📧."
         },
         {
             "name": "Reconnect with Contact",
@@ -404,7 +404,7 @@
             "roles": ["all"],
             "tools": [],
             "services": ["orbit-crm", "web-search"],
-            "prompt": "Ask {!orbit-crm} to review all information for {@person}. It's been {$days_elapsed} days since our last interaction. Use {!web-search} to find recent updates about them. Draft a thoughtful reconnection message referencing something current in their life."
+            "prompt": "Ask {!orbit-crm} to review all information for {$person}. It's been {$days_elapsed} days since our last interaction. Use {!web-search} to find recent updates about them. Draft a thoughtful reconnection message referencing something current in their life."
         },
         {
             "name": "Schedule Meeting with Contact",
@@ -413,7 +413,7 @@
             "roles": ["all"],
             "tools": [],
             "services": ["orbit-crm", "google-calendar"],
-            "prompt": "Ask {!orbit-crm} to review all information for {@person}. It's been {$days_elapsed} days since we last met. Check {!google-calendar} for my availability this week. Draft a message proposing 2-3 specific times to meet, either virtually or in person based on our usual preference."
+            "prompt": "Ask {!orbit-crm} to review all information for {$person}. It's been {$days_elapsed} days since we last met. Check {!google-calendar} for my availability this week. Draft a message proposing 2-3 specific times to meet, either virtually or in person based on our usual preference."
         },
         {
             "name": "Team Meeting Prep",
@@ -422,7 +422,7 @@
             "roles": ["all"],
             "tools": [],
             "services": ["google-calendar", "orbit-crm"],
-            "prompt": "Prepare for team meeting '{$event_title}' with {$attendee_count} people: {$attendees}. Use {!orbit-crm} to review recent interactions with the team. Suggest: 1) Updates to share, 2) Topics for discussion, 3) Questions for the group, 4) Follow-up items from last meeting."
+            "prompt": "Prepare for team meeting '{$event_title}' from {$calendar_name} calendar with {$attendee_count} people: {$attendees}. Use {!orbit-crm} to review recent interactions with the team. Suggest: 1) Updates to share, 2) Topics for discussion, 3) Questions for the group, 4) Follow-up items from last meeting."
         },
         {
             "name": "One-on-One Meeting Prep",
@@ -431,7 +431,7 @@
             "roles": ["all"],
             "tools": [],
             "services": ["google-calendar", "orbit-crm"],
-            "prompt": "Prepare for 1:1 with {$attendees} about '{$event_title}'. Use {!orbit-crm} to review our interaction history and any pending items. Suggest: 1) Status updates to share, 2) Feedback to give, 3) Questions to ask, 4) Development topics to discuss."
+            "prompt": "Prepare for 1:1 with {$attendees} about '{$event_title}' from {$calendar_name} calendar. Use {!orbit-crm} to review our interaction history and any pending items. Suggest: 1) Status updates to share, 2) Feedback to give, 3) Questions to ask, 4) Development topics to discuss."
         },
         {
             "name": "Recurring Meeting Review",
@@ -440,7 +440,7 @@
             "roles": ["all"],
             "tools": [],
             "services": ["google-calendar"],
-            "prompt": "Review recurring meeting '{$event_title}' happening at {$start_time}. This meeting occurs regularly. Analyze: 1) Is this meeting still necessary? 2) Could it be shorter or less frequent? 3) Are the right people attending? 4) How to make it more effective?"
+            "prompt": "Review recurring meeting '{$event_title}' from {$calendar_name} calendar happening at {$start_time}. This meeting occurs regularly. Analyze: 1) Is this meeting still necessary? 2) Could it be shorter or less frequent? 3) Are the right people attending? 4) How to make it more effective?"
         },
         {
             "name": "Hybrid Meeting Management",
@@ -449,7 +449,7 @@
             "roles": ["all"],
             "tools": [],
             "services": ["google-calendar", "orbit-crm"],
-            "prompt": "Help me manage hybrid meeting '{$event_title}' at {$start_time}. In-person at: {$location}, Virtual link: {$meeting_url}. Total attendees: {$attendee_count}. Create a plan to: 1) Ensure equal participation, 2) Technical setup needed, 3) How to share materials with both groups."
+            "prompt": "Help me manage hybrid meeting '{$event_title}' from {$calendar_name} calendar at {$start_time}. In-person at: {$location}, Virtual link: {$meeting_url}. Total attendees: {$attendee_count}. Create a plan to: 1) Ensure equal participation, 2) Technical setup needed, 3) How to share materials with both groups."
         }
     ]
 }
