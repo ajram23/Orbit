@@ -53,7 +53,7 @@
             "roles": ["all"],
             "tools": [],
             "services": ["web-search", "readwise-reader", "bear-notes"],
-            "prompt": "Use {!web-search} to research {^field}. Use {!readwise-reader} to save the most relevant articles. Use {!bear-notes} to create a summary of key findings."
+            "prompt": "Use {!web-search} to research {$field}. Use {!readwise-reader} to save the most relevant articles. Use {!bear-notes} to create a summary of key findings."
         },
         {
             "name": "Stay in Touch System",
@@ -188,7 +188,7 @@
             "roles": ["all"],
             "tools": [],
             "services": ["orbit-crm", "google-gmail"],
-            "prompt": "Use {!orbit-crm} to find contacts who work in {^Industry} or have {^Expertise}. Use {!google-gmail} to draft an outreach email."
+            "prompt": "Use {!orbit-crm} to find contacts who work in {$industry} or have {$expertise}. Use {!google-gmail} to draft an outreach email."
         },
         {
             "name": "Article to Action",
@@ -233,7 +233,7 @@
             "roles": ["all"],
             "tools": [],
             "services": ["orbit-crm", "google-gmail"],
-            "prompt": "Use {!orbit-crm} to list key contacts sorted by {^Last Contact}. Use {!google-gmail} to check response rates and engagement levels with each person."
+            "prompt": "Use {!orbit-crm} to list key contacts sorted by {$last_contact}. Use {!google-gmail} to check response rates and engagement levels with each person."
         },
         {
             "name": "Focus Time Protector",
@@ -251,7 +251,7 @@
             "roles": ["all"],
             "tools": [],
             "services": ["orbit-crm", "google-gmail"],
-            "prompt": "Use {!orbit-crm} to find two contacts who should know each other based on {^Industry} or {^Interests}. Use {!google-gmail} to draft a double opt-in introduction email."
+            "prompt": "Use {!orbit-crm} to find two contacts who should know each other based on {$industry} or {$interests}. Use {!google-gmail} to draft a double opt-in introduction email."
         },
         {
             "name": "Save Paywalled Articles",
@@ -260,7 +260,7 @@
             "roles": ["all"],
             "tools": [],
             "services": ["web-crawler", "readwise-reader"],
-            "prompt": "Use {!web-crawler} to get the archived version of {^URL} using archive.is or archive.org. Use {!readwise-reader} to save the full article with [tag] for later reading."
+            "prompt": "Use {!web-crawler} to get the archived version of {$url} using archive.is or archive.org. Use {!readwise-reader} to save the full article with [tag] for later reading."
         },
         {
             "name": "Meeting Conflict Resolver",
@@ -296,7 +296,7 @@
             "roles": ["all"],
             "tools": [],
             "services": ["web-crawler", "bear-notes", "readwise-reader"],
-            "prompt": "Use {!web-crawler} to crawl and extract content from {^URL}. Use {!bear-notes} to create a summary of key points. Use {!readwise-reader} to save if worth reading later."
+            "prompt": "Use {!web-crawler} to crawl and extract content from {$url}. Use {!bear-notes} to create a summary of key points. Use {!readwise-reader} to save if worth reading later."
         },
         {
             "name": "Weekly Planning & Alignment",
@@ -323,7 +323,7 @@
             "roles": ["all"],
             "tools": [],
             "services": ["google-calendar", "orbit-crm", "research"],
-            "prompt": "Prepare for virtual meeting '{^meeting_title}' from {$calendar_name} calendar. Use {!google-calendar} to get full meeting details and list all attendees. Use {!orbit-crm} to search for and review information on each attendee. For any attendees not found in {!orbit-crm}, use {!research} to find their background and company information. Prepare talking points and check if screen sharing is needed."
+            "prompt": "Prepare for virtual meeting '{$meeting_title}' from {$calendar_name} calendar. Use {!google-calendar} to get full meeting details and list all attendees. Use {!orbit-crm} to search for and review information on each attendee. For any attendees not found in {!orbit-crm}, use {!research} to find their background and company information. Prepare talking points and check if screen sharing is needed."
         },
         {
             "name": "In-Person Meeting Prep",
@@ -332,7 +332,7 @@
             "roles": ["all"],
             "tools": [],
             "services": ["google-calendar", "orbit-crm", "research", "web-search"],
-            "prompt": "Prepare for in-person meeting '{^meeting_title}' from {$calendar_name} calendar at {&location}. Use {!google-calendar} to get meeting details and attendee list. Use {!orbit-crm} to search for each attendee and review their information. For attendees not in {!orbit-crm}, use {!research} to find their background. Use {!web-search} to find appropriate venues near {&location} based on meeting time. Check travel time and parking options."
+            "prompt": "Prepare for in-person meeting '{$meeting_title}' from {$calendar_name} calendar at {&location}. Use {!google-calendar} to get meeting details and attendee list. Use {!orbit-crm} to search for each attendee and review their information. For attendees not in {!orbit-crm}, use {!research} to find their background. Use {!web-search} to find appropriate venues near {&location} based on meeting time. Check travel time and parking options."
         },
         {
             "name": "All-Day Event Prep",
@@ -341,7 +341,7 @@
             "roles": ["all"],
             "tools": [],
             "services": ["google-calendar"],
-            "prompt": "Plan for all-day event '{^event_title}' from {$calendar_name} calendar. Use {!google-calendar} to get event details. Review schedule conflicts for the day and identify any meetings that need to be rescheduled. Plan logistics if travel is required."
+            "prompt": "Plan for all-day event '{$event_title}' from {$calendar_name} calendar. Use {!google-calendar} to get event details. Review schedule conflicts for the day and identify any meetings that need to be rescheduled. Plan logistics if travel is required."
         },
         {
             "name": "Meeting Follow-Up",
@@ -350,7 +350,7 @@
             "roles": ["all"],
             "tools": [],
             "services": ["google-calendar", "orbit-crm"],
-            "prompt": "Follow up on meeting '{^meeting_title}' from {$calendar_name} calendar. Use {!google-calendar} to review meeting details and get attendee list. Use {!orbit-crm} to log meeting notes and update last contacted date for each attendee found in the system. Draft follow-up email summarizing key decisions and action items. Identify and track any commitments or next steps."
+            "prompt": "Follow up on meeting '{$meeting_title}' from {$calendar_name} calendar. Use {!google-calendar} to review meeting details and get attendee list. Use {!orbit-crm} to log meeting notes and update last contacted date for each attendee found in the system. Draft follow-up email summarizing key decisions and action items. Identify and track any commitments or next steps."
         },
         {
             "name": "Team Dynamics Retrospective",
