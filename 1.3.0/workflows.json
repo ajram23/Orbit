@@ -80,7 +80,7 @@
             "roles": ["all"],
             "tools": [],
             "services": ["google-calendar", "orbit-crm", "web-search"],
-            "prompt": "Use {!google-calendar} to find my travel dates to {&address}. Use {!orbit-crm} to list contacts in that city. Use {!web-search} to find good meeting spots near my hotel."
+            "prompt": "Use {!google-calendar} to find my travel dates to {$location}. Use {!orbit-crm} to list contacts in that city. Use {!web-search} to find good meeting spots near my hotel."
         },
         {
             "name": "Reading Time Scheduler",
@@ -332,7 +332,7 @@
             "roles": ["all"],
             "tools": [],
             "services": ["google-calendar", "orbit-crm", "research", "web-search"],
-            "prompt": "Prepare for in-person meeting '{$event_title}' from {$calendar_name} calendar at {&location}. Use {!google-calendar} to get meeting details and attendee list. Use {!orbit-crm} to search for each attendee and review their information. For attendees not in {!orbit-crm}, use {!research} to find their background. Use {!web-search} to find appropriate venues near {&location} based on meeting time. Check travel time and parking options."
+            "prompt": "Prepare for in-person meeting '{$event_title}' from {$calendar_name} calendar. Use {!google-calendar} to get meeting details and attendee list. Use {!orbit-crm} to search for each attendee and review their information. For attendees not in {!orbit-crm}, use {!research} to find their background. Use {!web-search} to find appropriate venues near location based on meeting time. Check travel time and parking options."
         },
         {
             "name": "All-Day Event Prep",
