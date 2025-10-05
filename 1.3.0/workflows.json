@@ -323,7 +323,7 @@
             "roles": ["all"],
             "tools": [],
             "services": ["google-calendar", "orbit-crm", "research"],
-            "prompt": "Prepare for virtual meeting '{$meeting_title}' from {$calendar_name} calendar. Use {!google-calendar} to get full meeting details and list all attendees. Use {!orbit-crm} to search for and review information on each attendee. For any attendees not found in {!orbit-crm}, use {!research} to find their background and company information. Prepare talking points and check if screen sharing is needed."
+            "prompt": "Prepare for virtual meeting '{$event_title}' from {$calendar_name} calendar. Use {!google-calendar} to get full meeting details and list all attendees. Use {!orbit-crm} to search for and review information on each attendee. For any attendees not found in {!orbit-crm}, use {!research} to find their background and company information. Prepare talking points and check if screen sharing is needed."
         },
         {
             "name": "In-Person Meeting Prep",
@@ -332,7 +332,7 @@
             "roles": ["all"],
             "tools": [],
             "services": ["google-calendar", "orbit-crm", "research", "web-search"],
-            "prompt": "Prepare for in-person meeting '{$meeting_title}' from {$calendar_name} calendar at {&location}. Use {!google-calendar} to get meeting details and attendee list. Use {!orbit-crm} to search for each attendee and review their information. For attendees not in {!orbit-crm}, use {!research} to find their background. Use {!web-search} to find appropriate venues near {&location} based on meeting time. Check travel time and parking options."
+            "prompt": "Prepare for in-person meeting '{$event_title}' from {$calendar_name} calendar at {&location}. Use {!google-calendar} to get meeting details and attendee list. Use {!orbit-crm} to search for each attendee and review their information. For attendees not in {!orbit-crm}, use {!research} to find their background. Use {!web-search} to find appropriate venues near {&location} based on meeting time. Check travel time and parking options."
         },
         {
             "name": "All-Day Event Prep",
@@ -350,7 +350,7 @@
             "roles": ["all"],
             "tools": [],
             "services": ["google-calendar", "orbit-crm"],
-            "prompt": "Follow up on meeting '{$meeting_title}' from {$calendar_name} calendar. Use {!google-calendar} to review meeting details and get attendee list. Use {!orbit-crm} to log meeting notes and update last contacted date for each attendee found in the system. Draft follow-up email summarizing key decisions and action items. Identify and track any commitments or next steps."
+            "prompt": "Follow up on meeting '{$event_title}' from {$calendar_name} calendar. Use {!google-calendar} to review meeting details and get attendee list. Use {!orbit-crm} to log meeting notes and update last contacted date for each attendee found in the system. Draft follow-up email summarizing key decisions and action items. Identify and track any commitments or next steps."
         },
         {
             "name": "Team Dynamics Retrospective",
