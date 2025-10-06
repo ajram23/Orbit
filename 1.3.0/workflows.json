@@ -361,8 +361,17 @@
             "services": ["granola"],
             "prompt": "Ask {!granola} about the last meeting:\n1. Trust (1–5): What built or hurt trust?\n2. Conflict (1–5): Where did we avoid or embrace debate?\n3. Commitment (1–5): What would make decisions clearer?\n4. Accountability (1–5): What gap in follow-through did I notice?\n5. Results (1–5): Where did focus drift from team goals?\n→ Pick 1 action to improve next time."
         },
+	{
+	    "name": "Post-Meeting Follow-Up",
+	    "description": "Generate follow-up email based on meeting details and attendee information",
+	    "category": "Meeting Management",
+	    "roles": ["all"],
+	    "tools": [],
+	    "services": ["google-calendar", "orbit-crm"],
+	    "prompt": "Follow up on meeting '{$event_title}' from {$calendar_name} calendar that occurred at {$start_time}. Use {!google-calendar} to get meeting details and full attendee list. Use {!orbit-crm} to search for and review information on each attendee for tone and context. Write a super short and casual follow-up email based on the meeting context. Use the CRM information to personalize the tone. Come up with the subject line based on the title & contents. The email should be action oriented. Include placeholders for any specific information needed (e.g. \"[Insert current ARR]\" or \"[Insert LINK to DPA]\"). Keep it genuine and reference our shared history with attendees where relevant."
+	},
         {
-            "name": "Post-Meeting Follow-Up",
+            "name": "Meeting Notes Post-Meeting Follow-Up",
             "description": "Generate personalized, casual follow-up emails focused on action items rather than discussion summaries",
             "category": "Meeting Management",
             "roles": ["all"],
