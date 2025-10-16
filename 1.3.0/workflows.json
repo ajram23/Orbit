@@ -305,7 +305,7 @@
             "roles": ["all"],
             "tools": [],
             "services": ["google-calendar"],
-            "prompt": "Review all calendars in {!google-calendar} for the next 7 days. Compare time allocation against my goals and priorities. Provide honest feedback on whether I'm spending time on the right things. Identify meetings that don't align with goals. Suggest calendar adjustments to better match priorities."
+            "prompt": "Review all calendars in {!google-calendar} for the next 7 days. Reference goals and personal context provided. Use calendar names (e.g., Work, Personal, Side Project) and personal context to understand what matters. Connect scheduled time back to stated goals. Structure the output as an executive briefing: **Your Goals** (brief recap from context)**What Looks Good** [2-3 meetings/blocks that clearly advance your goals - reference which calendar and why it matters given your context] **What Looks Questionable** [2-3 meetings that may not align with goals - include calendar name, time commitment, and why it seems misaligned given your priorities] **Suggested Adjustments** [2-3 specific calendar changes: decline, delegate, or reschedule specific meetings with reasoning tied to goals] **Details** | Goal Area | Scheduled Hours | Key Meetings | |-----------|-----------------|--------------| [Where time is allocated - top 5 areas only]**Bottom Line** [2-3 sentences on overall week outlook, biggest opportunity, biggest risk]"
         },
         {
             "name": "Weekly Calendar Retrospective",
