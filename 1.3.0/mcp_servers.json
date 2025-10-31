@@ -3,6 +3,7 @@
     "servers": [
         {
             "prefix": "google-gmail",
+            "version": "1.1.0",
             "composio_mcp_id": "5788e415-ed96-4d47-a62a-3e0fedbd4b2c",
             "auth_config_id": "ac__o2XSYs85YfG",
             "transport_type": "streamable-http",
