@@ -4,10 +4,10 @@
         {
             "prefix": "google-gmail",
             "composio_mcp_id": "5788e415-ed96-4d47-a62a-3e0fedbd4b2c",
-            "integration_id": "73b42e5a-1a41-463a-a9ee-55eb62f71ff7",
+            "auth_config_id": "ac__o2XSYs85YfG",
             "transport_type": "streamable-http",
             "metadata_overrides": {
-                "description": "Manage Gmail and Google Workspace emails",
+                "description": "Manage your GMail/Google Workspace emails",
                 "category":  "Productivity",
                 "server_type": "user",
                 "security_type": "oauth",
@@ -47,7 +47,7 @@
             "transport_type": "streamable-http",
             "url": "https://api.githubcopilot.com/mcp/",
             "metadata_overrides": {
-                "description": "Access your GitHub repositories",
+                "description": "Access your Github repositories",
                 "category": "Engineering",
                 "server_type": "user",
                 "security_type": "token",
@@ -63,30 +63,11 @@
             }
         },
         {
-            "prefix": "notion",
-            "mcp_server_type": "proxy",
-            "transport_type": "streamable-http",
-            "url": "https://mcp.notion.com/mcp",
-            "metadata_overrides": {
-                "description": "Access Notion pages and databases",
-                "category": "Productivity",
-                "server_type": "user",
-                "security_type": "oauth",
-                "logo_url": "https://raw.githubusercontent.com/ajram23/Orbit/refs/heads/main/logos/notion_512x512.png",
-                "icon_url": "https://raw.githubusercontent.com/ajram23/Orbit/refs/heads/main/logos/notion_256x256.png",
-                "credentials": [{
-                    "name": "AUTH_TOKEN",
-                    "description": "Sign in with your Notion account via OAuth",
-                    "required": true
-                }]
-            }
-        },
-        {
             "prefix": "zapier",
             "mcp_server_type": "zapier",
             "transport_type": "streamable-http",
             "metadata_overrides": {
-                "description": "Connect custom Zapier workflows",
+                "description": "Connect your custom Zapier workflows",
                 "category": "Productivity",
                 "server_type": "user",
                 "security_type": "zapier",
@@ -97,262 +78,6 @@
                     "description": "Your Zapier server URL (required)",
                     "url": "https://mcp.zapier.com/mcp/servers/",
                     "link_text": "Get Your Zapier Server",
-                    "required": true
-                }]
-            }
-        },
-        {
-            "prefix": "box",
-            "mcp_server_type": "proxy",
-            "transport_type": "streamable-http",
-            "url": "https://mcp.box.com",
-            "metadata_overrides": {
-                "description": "Access Box files and folders",
-                "category": "Productivity",
-                "server_type": "user",
-                "security_type": "oauth",
-                "logo_url": "https://raw.githubusercontent.com/ajram23/Orbit/refs/heads/main/logos/box_512x512.png",
-                "icon_url": "https://raw.githubusercontent.com/ajram23/Orbit/refs/heads/main/logos/box_256x256.png",
-                "credentials": [{
-                    "name": "AUTH_TOKEN",
-                    "description": "Sign in with your Box account via OAuth",
-                    "required": true
-                }]
-            }
-        },
-        {
-            "prefix": "asana",
-            "mcp_server_type": "proxy",
-            "transport_type": "sse",
-            "url": "https://mcp.asana.com/sse",
-            "metadata_overrides": {
-                "description": "Manage tasks and projects",
-                "category": "Productivity",
-                "server_type": "user",
-                "security_type": "oauth",
-                "logo_url": "https://raw.githubusercontent.com/ajram23/Orbit/refs/heads/main/logos/asana_512x512.png",
-                "icon_url": "https://raw.githubusercontent.com/ajram23/Orbit/refs/heads/main/logos/asana_256x256.png",
-                "credentials": [{
-                    "name": "AUTH_TOKEN",
-                    "description": "Sign in with your Asana account via OAuth",
-                    "required": true
-                }]
-            }
-        },
-        {
-            "prefix": "monday",
-            "mcp_server_type": "proxy",
-            "transport_type": "sse",
-            "url": "https://mcp.monday.com/sse",
-            "metadata_overrides": {
-                "description": "Manage monday.com boards and workflows",
-                "category": "Productivity",
-                "server_type": "user",
-                "security_type": "oauth",
-                "logo_url": "https://raw.githubusercontent.com/ajram23/Orbit/refs/heads/main/logos/monday_512x512.png",
-                "icon_url": "https://raw.githubusercontent.com/ajram23/Orbit/refs/heads/main/logos/monday_256x256.png",
-                "credentials": [{
-                    "name": "AUTH_TOKEN",
-                    "description": "Sign in with your monday.com account via OAuth",
-                    "required": true
-                }]
-            }
-        },
-        {
-            "prefix": "linear",
-            "mcp_server_type": "proxy",
-            "transport_type": "sse",
-            "url": "https://mcp.linear.app/sse",
-            "metadata_overrides": {
-                "description": "Issue tracking and project management",
-                "category": "Productivity",
-                "server_type": "user",
-                "security_type": "oauth",
-                "logo_url": "https://raw.githubusercontent.com/ajram23/Orbit/refs/heads/main/logos/linear_512x512.png",
-                "icon_url": "https://raw.githubusercontent.com/ajram23/Orbit/refs/heads/main/logos/linear_256x256.png",
-                "credentials": [{
-                    "name": "AUTH_TOKEN",
-                    "description": "Sign in with your Linear account via OAuth",
-                    "required": true
-                }]
-            }
-        },
-        {
-            "prefix": "atlassian",
-            "mcp_server_type": "proxy",
-            "transport_type": "sse",
-            "url": "https://mcp.atlassian.com/v1/sse",
-            "metadata_overrides": {
-                "description": "Manage Jira and Confluence",
-                "category": "Productivity",
-                "server_type": "user",
-                "security_type": "oauth",
-                "logo_url": "https://raw.githubusercontent.com/ajram23/Orbit/refs/heads/main/logos/atlassian_512x512.png",
-                "icon_url": "https://raw.githubusercontent.com/ajram23/Orbit/refs/heads/main/logos/atlassian_256x256.png",
-                "credentials": [{
-                    "name": "AUTH_TOKEN",
-                    "description": "Sign in with your Atlassian account via OAuth",
-                    "required": true
-                }]
-            }
-        },
-        {
-            "prefix": "paypal",
-            "mcp_server_type": "proxy",
-            "transport_type": "streamable-http",
-            "url": "https://mcp.paypal.com/mcp",
-            "metadata_overrides": {
-                "description": "Process payments and transactions",
-                "category": "Commerce",
-                "server_type": "user",
-                "security_type": "oauth",
-                "logo_url": "https://raw.githubusercontent.com/ajram23/Orbit/refs/heads/main/logos/paypal_512x512.png",
-                "icon_url": "https://raw.githubusercontent.com/ajram23/Orbit/refs/heads/main/logos/paypal_256x256.png",
-                "credentials": [{
-                    "name": "AUTH_TOKEN",
-                    "description": "Sign in with your PayPal account via OAuth",
-                    "required": true
-                }],
-                "additional_urls": {
-                    "sse": "https://mcp.paypal.com/sse",
-                    "http": "https://mcp.paypal.com/http",
-                    "sandbox_mcp": "https://mcp.sandbox.paypal.com/mcp",
-                    "sandbox_sse": "https://mcp.sandbox.paypal.com/sse",
-                    "sandbox_http": "https://mcp.sandbox.paypal.com/http"
-                }
-            }
-        },
-        {
-            "prefix": "stripe",
-            "mcp_server_type": "proxy",
-            "transport_type": "streamable-http",
-            "url": "https://mcp.stripe.com/",
-            "metadata_overrides": {
-                "description": "Payment processing and subscriptions",
-                "category": "Commerce",
-                "server_type": "user",
-                "security_type": "api_key",
-                "logo_url": "https://raw.githubusercontent.com/ajram23/Orbit/refs/heads/main/logos/stripe_512x512.png",
-                "icon_url": "https://raw.githubusercontent.com/ajram23/Orbit/refs/heads/main/logos/stripe_256x256.png",
-                "credentials": [{
-                    "name": "STRIPE_API_KEY",
-                    "description": "Stripe Secret Key",
-                    "url": "https://dashboard.stripe.com/apikeys",
-                    "link_text": "Get Stripe API Key",
-                    "required": true
-                }]
-            }
-        },
-        {
-            "prefix": "square",
-            "mcp_server_type": "proxy",
-            "transport_type": "sse",
-            "url": "https://mcp.squareup.com/sse",
-            "metadata_overrides": {
-                "description": "Square payments and inventory",
-                "category": "Commerce",
-                "server_type": "user",
-                "security_type": "oauth",
-                "logo_url": "https://raw.githubusercontent.com/ajram23/Orbit/refs/heads/main/logos/square_512x512.png",
-                "icon_url": "https://raw.githubusercontent.com/ajram23/Orbit/refs/heads/main/logos/square_256x256.png",
-                "credentials": [{
-                    "name": "AUTH_TOKEN",
-                    "description": "Sign in with your Square account via OAuth",
-                    "required": true
-                }]
-            }
-        },
-        {
-            "prefix": "plaid",
-            "mcp_server_type": "proxy",
-            "transport_type": "sse",
-            "url": "https://api.dashboard.plaid.com/mcp/sse",
-            "metadata_overrides": {
-                "description": "Banking data and account linking",
-                "category": "Commerce",
-                "server_type": "user",
-                "security_type": "oauth",
-                "logo_url": "https://raw.githubusercontent.com/ajram23/Orbit/refs/heads/main/logos/plaid_512x512.png",
-                "icon_url": "https://raw.githubusercontent.com/ajram23/Orbit/refs/heads/main/logos/plaid_256x256.png",
-                "credentials": [{
-                    "name": "AUTH_TOKEN",
-                    "description": "Sign in with your Plaid account via OAuth",
-                    "required": true
-                }]
-            }
-        },
-        {
-            "prefix": "sentry",
-            "mcp_server_type": "proxy",
-            "transport_type": "sse",
-            "url": "https://mcp.sentry.dev/sse",
-            "metadata_overrides": {
-                "description": "Monitor errors and app health",
-                "category": "Engineering",
-                "server_type": "user",
-                "security_type": "oauth",
-                "logo_url": "https://raw.githubusercontent.com/ajram23/Orbit/refs/heads/main/logos/sentry_512x512.png",
-                "icon_url": "https://raw.githubusercontent.com/ajram23/Orbit/refs/heads/main/logos/sentry_256x256.png",
-                "credentials": [{
-                    "name": "AUTH_TOKEN",
-                    "description": "Sign in with your Sentry account via OAuth",
-                    "required": true
-                }]
-            }
-        },
-        {
-            "prefix": "stytch",
-            "mcp_server_type": "proxy",
-            "transport_type": "streamable-http",
-            "url": "http://mcp.stytch.dev/mcp",
-            "metadata_overrides": {
-                "description": "Authentication services",
-                "category": "Engineering",
-                "server_type": "user",
-                "security_type": "oauth",
-                "logo_url": "https://raw.githubusercontent.com/ajram23/Orbit/refs/heads/main/logos/stytch_512x512.png",
-                "icon_url": "https://raw.githubusercontent.com/ajram23/Orbit/refs/heads/main/logos/stytch_256x256.png",
-                "credentials": [{
-                    "name": "AUTH_TOKEN",
-                    "description": "Sign in with your Stytch account via OAuth",
-                    "required": true
-                }]
-            }
-        },
-        {
-            "prefix": "vercel",
-            "mcp_server_type": "proxy",
-            "transport_type": "streamable-http",
-            "url": "https://mcp.vercel.com/",
-            "metadata_overrides": {
-                "description": "Deploy and manage web apps",
-                "category": "Engineering",
-                "server_type": "user",
-                "security_type": "oauth",
-                "logo_url": "https://raw.githubusercontent.com/ajram23/Orbit/refs/heads/main/logos/vercel_512x512.png",
-                "icon_url": "https://raw.githubusercontent.com/ajram23/Orbit/refs/heads/main/logos/vercel_256x256.png",
-                "credentials": [{
-                    "name": "AUTH_TOKEN",
-                    "description": "Sign in with your Vercel account via OAuth",
-                    "required": true
-                }]
-            }
-        },
-        {
-            "prefix": "intercom",
-            "mcp_server_type": "proxy",
-            "transport_type": "streamable-http",
-            "url": "https://mcp.intercom.com/mcp",
-            "metadata_overrides": {
-                "description": "Customer support and conversations",
-                "category": "Communication",
-                "server_type": "user",
-                "security_type": "oauth",
-                "logo_url": "https://raw.githubusercontent.com/ajram23/Orbit/refs/heads/main/logos/intercom_512x512.png",
-                "icon_url": "https://raw.githubusercontent.com/ajram23/Orbit/refs/heads/main/logos/intercom_256x256.png",
-                "credentials": [{
-                    "name": "AUTH_TOKEN",
-                    "description": "Sign in with your Intercom account via OAuth",
                     "required": true
                 }]
             }
