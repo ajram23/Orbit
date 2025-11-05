@@ -12,8 +12,8 @@
                 "category":  "Productivity",
                 "server_type": "user",
                 "security_type": "oauth",
-                "logo_url": "https://raw.githubusercontent.com/ajram23/Orbit/refs/heads/main/logos/google_gmail_64x64.png",
-                "icon_url": "https://raw.githubusercontent.com/ajram23/Orbit/refs/heads/main/logos/google_gmail_32x32.png",
+                "logo_url": "https://pub-4421542fcd47468da3bde597fe7b682f.r2.dev/logos/google_gmail_64x64.png",
+                "icon_url": "https://pub-4421542fcd47468da3bde597fe7b682f.r2.dev/logos/google_gmail_32x32.png",
                 "credentials": [{
                     "name": "connected_account_id",
                     "description": "Sign in with your Google account",
@@ -31,8 +31,8 @@
                 "category": "Communication",
                 "server_type": "user",
                 "security_type": "token",
-                "logo_url": "https://raw.githubusercontent.com/ajram23/Orbit/refs/heads/main/logos/beeper_512x512.png",
-                "icon_url": "https://raw.githubusercontent.com/ajram23/Orbit/refs/heads/main/logos/beeper_256x256.png",
+                "logo_url": "https://pub-4421542fcd47468da3bde597fe7b682f.r2.dev/logos/beeper_512x512.png",
+                "icon_url": "https://pub-4421542fcd47468da3bde597fe7b682f.r2.dev/logos/beeper_256x256.png",
                 "credentials": [{
                     "name": "AUTH_TOKEN",
                     "description": "Your Beeper authentication token (required). Beeper has to be open to connect & use.",
@@ -52,8 +52,8 @@
                 "category": "Engineering",
                 "server_type": "user",
                 "security_type": "token",
-                "logo_url": "https://raw.githubusercontent.com/ajram23/Orbit/refs/heads/main/logos/github_512x512.png",
-                "icon_url": "https://raw.githubusercontent.com/ajram23/Orbit/refs/heads/main/logos/github_256x256.png",
+                "logo_url": "https://pub-4421542fcd47468da3bde597fe7b682f.r2.dev/logos/github_512x512.png",
+                "icon_url": "https://pub-4421542fcd47468da3bde597fe7b682f.r2.dev/logos/github_256x256.png",
                 "credentials": [{
                     "name": "GITHUB_PAT",
                     "description": "GitHub Personal Access Token",
@@ -72,8 +72,8 @@
                 "category": "Productivity",
                 "server_type": "user",
                 "security_type": "zapier",
-                "logo_url": "https://raw.githubusercontent.com/ajram23/Orbit/refs/heads/main/logos/zapier_512x512.png",
-                "icon_url": "https://raw.githubusercontent.com/ajram23/Orbit/refs/heads/main/logos/zapier_32x32.png",
+                "logo_url": "https://pub-4421542fcd47468da3bde597fe7b682f.r2.dev/logos/zapier_512x512.png",
+                "icon_url": "https://pub-4421542fcd47468da3bde597fe7b682f.r2.dev/logos/zapier_32x32.png",
                 "credentials": [{
                     "name": "server_url",
                     "description": "Your Zapier server URL (required)",
