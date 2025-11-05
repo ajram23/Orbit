@@ -467,7 +467,7 @@
             "roles": ["all"],
             "tools": [],
             "services": ["google-calendar"],
-            "prompt": "Review time block '{$event_title}' from {$calendar_name} calendar ({$duration_minutes} minutes starting at {$start_time}). Use {!google-calendar} to check what comes before and after this block. Help me: 1) Clarify what success looks like for this block, 2) Identify which of my goals this supports, 3) List 2-3 specific outcomes I should aim for, 4) Suggest how to eliminate distractions during this time."
+            "prompt": "Review time block '{$event_title}' (event ID: {$event_id}) from {$calendar_name} calendar ({$duration} starting at {$start_time}). Use {!google-calendar} to check what comes before and after this block. Help me: 1) Clarify what success looks like for this block, 2) Identify which of my goals this supports, 3) List 2-3 specific outcomes I should aim for, 4) Suggest how to eliminate distractions during this time."
         }
     ]
 }
