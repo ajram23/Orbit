@@ -3,206 +3,28 @@
     <channel>
         <title>Orbit</title>
         <item>
-            <title>0.9.9.1</title>
-            <pubDate>Tue, 15 Apr 2025 14:32:31 -0400</pubDate>
-            <sparkle:version>412</sparkle:version>
-            <sparkle:shortVersionString>0.9.9.1</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
-            <enclosure url="https://github.com/ajram23/Orbit/releases/download/0.9.9.1/Orbit-0.9.9.1.zip" length="247322859" type="application/octet-stream" sparkle:edSignature="lR4aCV7B5V7rdw0CyE2cIAyhuhaiQhyd//nVtO3mT5A+iiygnsnZq2vpp5uLgk7fh6awnXTHg6TY3e4o5OzjBQ=="/>
-            <sparkle:deltas>
-                <enclosure url="https://github.com/ajram23/Orbit/releases/download/0.9.9.1/Orbit412-397.delta" sparkle:deltaFrom="397" length="3292642" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="864784" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,en" sparkle:edSignature="batcO1WUyRCrfUg0P52/wf5IkrDK6l1YrmWqgp10tpFhmlpMh/+lGKsE60agr2D1Q1qVRPnQkPbB1evCemYyCQ=="/>
-            </sparkle:deltas>
-	    <description><![CDATA[<h1><span class="emoji">🚀</span> Orbit Release 0.9.9.1</h1>
-    <p>April 15, 2025</p>
-    
-    <p>This update brings major performance improvements, new integrations, and important enhancements based on your feedback!</p>
-    
-    <h2><span class="emoji">✨</span> New Features & Enhancements</h2>
-    
-    <h3><span class="emoji">💬</span> iMessage Integration <span class="feedback-tag">📣 Feedback</span></h3>
-    <ul>
-        <li>Added support for iMessage metadata integration</li>
-        <li><span class="bold">Note:</span> Only metadata is accessed—your message content remains private</li>
-    </ul>
-    
-    <h3><span class="emoji">💼</span> Enhanced LinkedIn Integration <span class="feedback-tag">📣 Feedback</span></h3>
-    <ul>
-        <li>LinkedIn enrichment now supports education data, including degrees, institutions, and graduation years</li>
-        <li>Added support for skills and certifications from LinkedIn profiles</li>
-    </ul>
-    
-    <h3><span class="emoji">🔍</span> Smarter Search & Answers <span class="feedback-tag">📣 Feedback</span></h3>
-    <ul>
-        <li>Made search capabilities more intelligent with query expansion</li>
-        <li>Enhanced ability to answer general questions about your network</li>
-    </ul>
-    
-    <h3><span class="emoji">💾</span> Data Protection <span class="feedback-tag">📣 Feedback</span></h3>
-    <ul>
-        <li>Added automatic backup creation during your first sync during onboarding</li>
-    </ul>
-    
-    <h3><span class="emoji">🙏🏼</span> Improved Onboarding Experience <span class="feedback-tag">📣 Feedback</span></h3>
-    <ul>
-        <li>Added clear permissions requests during the onboarding flow</li>
-        <li>Updated onboarding to better explain the initial data sync process</li>
-    </ul>
-    
-    <h3><span class="emoji">⛑️</span> Better Support & Diagnostics <span class="feedback-tag">📣 Feedback</span></h3>
-    <ul>
-        <li>Added ability to send diagnostics when encountering issues</li>
-        <li>Implemented direct connection to founders for faster resolution of problems</li>
-    </ul>
-    
-    <h3><span class="emoji">💁🏻‍♀️</span> User Experience Improvements <span class="feedback-tag">📣 Feedback</span></h3>
-    <ul>
-        <li>Added helpful explanatory text for usage in Settings and Packs sections</li>
-        <li>Implemented tips for updates and other features</li>
-    </ul>
-    
-    <h2><span class="emoji">🚀</span> Performance Improvements</h2>
-    <ul>
-        <li><span class="bold">⚡️ Bulk Updates:</span> Dramatically improved speed of bulk contact updates <span class="feedback-tag">📣 Feedback</span></li>
-        <li><span class="bold">💪 Large Address Books:</span> Strengthened contact fetching for larger address books <span class="feedback-tag">📣 Feedback</span></li>
-    </ul>
-    
-    <h2><span class="emoji">🐛</span> Bug Fixes</h2>
-    <ul>
-        <li>Fixed issues with organization information retrieval</li>
-        <li>Resolved package update problems</li>
-        <li>Fixed user data not updating properly after data sync</li>
-        <li>Addressed bug where some organizations were missing name matching entries</li>
-    </ul>]]></description>
-        </item>
-        <item>
-            <title>0.9.9</title>
-            <pubDate>Mon, 31 Mar 2025 13:11:24 -0400</pubDate>
-            <sparkle:version>397</sparkle:version>
-            <sparkle:shortVersionString>0.9.9</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
-            <enclosure url="https://raw.githubusercontent.com/ajram23/orbit/main/Orbit-0.9.9.zip" length="244801688" type="application/octet-stream" sparkle:edSignature="SR8M+1sQBb5B89+88cG9o/IQ41ZKsE2G795qmMoiBwe6+XAw1L9F6YWfpLFGN9FZojZtnQFJizM/zERAzVCYBQ=="/>
-            <sparkle:deltas>
-                <enclosure url="https://raw.githubusercontent.com/ajram23/orbit/main/Orbit397-387.delta" sparkle:deltaFrom="387" length="1456494" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="864784" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,en" sparkle:edSignature="L3fOvoA5rVEfVABq5Usa1fBzGlanuenFjKWCp6GmkrUevDWQYfAX5vV5av70nkmxsuH77QRwRV0wVOQQCnNYAQ=="/>
-            </sparkle:deltas>
-        </item>
-        <item>
-            <title>0.9.8.9</title>
-            <pubDate>Fri, 21 Mar 2025 18:51:19 -0400</pubDate>
-            <sparkle:version>387</sparkle:version>
-            <sparkle:shortVersionString>0.9.8.9</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
-            <enclosure url="https://raw.githubusercontent.com/ajram23/orbit/main/Orbit%200.9.8.9.dmg" length="214711867" type="application/octet-stream" sparkle:edSignature="Yd4Wigs3IO5URHPXbWhGOORIGYR+498JFjd1XetVCiT/nsharh29wainmG4NNXUecK0TAEdfX0m6/o4gPj0hCQ=="/>
-            <description><![CDATA[<h1>🚀 Release 0.9.8.9 - March 21, 2025</h1>
-
-<h2>🔔 New Features</h2>
-<ul>
-    <li>🔔 Added support for daily feed notifications! <span style="background-color: #e1f5fe; border-radius: 3px; padding: 1px 5px; font-size: 0.85em; color: #0277bd;">📨</span></li>
-    <li>👤 Added familiarity to contact profiles and profile cards <span style="background-color: #e1f5fe; border-radius: 3px; padding: 1px 5px; font-size: 0.85em; color: #0277bd;">📨</span></li>
-    <li>💬 Feed links now ask assistant to write messages & emails <span style="background-color: #e1f5fe; border-radius: 3px; padding: 1px 5px; font-size: 0.85em; color: #0277bd;">📨</span></li>
-</ul>
-
-<h2>👑 Enhancements</h2>
-<ul>
-    <li>💯 Updated models for better responses</li>
-    <li>🙋‍♂️ Fixed Agent tone and removed concise paragraph formatting</li>
-    <li>🔍 Made typeahead scrollable with more results <span style="background-color: #e1f5fe; border-radius: 3px; padding: 1px 5px; font-size: 0.85em; color: #0277bd;">📨</span></li>
-    <li>👍 Fixed residual LinkedIn enrichment <span style="background-color: #e1f5fe; border-radius: 3px; padding: 1px 5px; font-size: 0.85em; color: #0277bd;">📨</span></li>
-    <li>🎁 Tweaked prompt for celebrations in feed</li>
-    <li>🧼 Cleaned up settings UI</li>
-</ul>
-
-<h2>🐛 Bug Fixes</h2>
-<ul>
-    <li>🔍 Made answer generation more resilient to failures <span style="background-color: #e1f5fe; border-radius: 3px; padding: 1px 5px; font-size: 0.85em; color: #0277bd;">📨</span></li>
-    <li>📦 Fixed issue where latest version of packs is not being downloaded</li>
-    <li>🔧 Updated pydantic class to support edge conditions <span style="background-color: #e1f5fe; border-radius: 3px; padding: 1px 5px; font-size: 0.85em; color: #0277bd;">📨</span></li>
-    <li>📱 Fixed regression for updates <span style="background-color: #e1f5fe; border-radius: 3px; padding: 1px 5px; font-size: 0.85em; color: #0277bd;">📨</span></li>
-    <li>📱 Fixed regression where key is missing but updates are made <span style="background-color: #e1f5fe; border-radius: 3px; padding: 1px 5px; font-size: 0.85em; color: #0277bd;">📨</span></li>
-    <li>📝 Fixed UI issue with user input text <span style="background-color: #e1f5fe; border-radius: 3px; padding: 1px 5px; font-size: 0.85em; color: #0277bd;">📨</span></li>
-    <li>📄 New line characters are now preserved & don't trigger submissions</li>
-    <li>⚙️ Fixed crash for settings window</li>
-    <li>🚀 Fixed bug where onboarding actions were called even after being completed</li>
-    <li>🔔 Fixed notifications</li>
-    <li>⚠️ Fixed various warnings in the codebase</li>
-</ul>
-
-<h2>📄 Documentation</h2>
-<ul>
-    <li>✅ Created a privacy page</li>
-    <li>✅ Created a Terms of Service page</li>
-</ul>
-
-<h2>🔧 Technical Improvements</h2>
-<ul>
-    <li>👨‍💻 Added support for environment for observability</li>
-    <li>📱 Updated GitHub action to use the latest labeller</li>
-    <li>✂️ Removed old code</li>
-    <li>🔧 Fixed check in context message</li>
-</ul>
-
-<hr>
-
-<p><span style="background-color: #e1f5fe; border-radius: 3px; padding: 1px 5px; font-size: 0.85em; color: #0277bd;">📨</span> Items implemented based on user feedback</p>
-
-<p>We love hearing from you! Have feedback or feature suggestions? Email us at <a href="mailto:hello@askorbit.co">hello@askorbit.co</a></p>
-
-<p><em>As always, we appreciate your feedback as we continue to evolve the Orbit platform!</em></p>
-]]></description>
-        </item>
-        <item>
-            <title>0.9.8.8</title>
-            <pubDate>Tue, 18 Mar 2025 10:13:41 -0400</pubDate>
-            <sparkle:version>384</sparkle:version>
-            <sparkle:shortVersionString>0.9.8.8</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
-            <enclosure url="https://raw.githubusercontent.com/ajram23/orbit/main/Orbit%200.9.8.8.dmg" length="214486168" type="application/octet-stream" sparkle:edSignature="aK5qFavcmEqfD26CRBEh6A2Tj6FZMbGEiZaJjy+aRzdy2SGeCLEDL/JnoeJZj+5UXRx5MFKi3FS25Jevecc6DQ=="/>
-            <description><![CDATA[<h1>✨ Orbit Release 0.9.8.8 🚀 - March 18, 2025 ✨</h1>
-
-<h2>🎯 Feed Customization & Settings 📱</h2>
-
-<h3>🌈 Personalized Activity Feed</h3>
-<ul>
-    <li>🔮 Create your perfect information feed with our new customization settings</li>
-    <li>🎚️ Control what appears in your upcoming feed with easy toggles</li>
-    <li>🔄 Feed automatically updates after contact sync to show the latest information</li>
-</ul>
-
-<h3>⚙️ Enhanced Settings</h3>
-<ul>
-    <li>🎛️ Configure your experience with our new comprehensive settings panel</li>
-    <li>👤 Customize your agent persona to match your personal style</li>
-    <li>🎯 Tailor feed preferences to focus on what matters most to you</li>
-</ul>
-
-<h3>📱 Improved App Experience</h3>
-<ul>
-    <li>⏰ Automatic app update checks every 3 hours to keep you on the latest version</li>
-    <li>⚡ Refreshed loading window for a smoother startup experience</li>
-    <li>🔍 Fixed minor UI bugs for a more polished interface</li>
-</ul>
-
-<h2>🛠️ Bug Fixes & Improvements 🛠️</h2>
-<ul>
-    <li>↩️ Fixed issues with undo functionality for more reliable editing</li>
-    <li>📊 Improved enrichment logs for better tracking</li>
-    <li>🤖 Resolved issue where agent persona updates weren't being applied</li>
-    <li>🧩 Fixed field pack structure to properly add new fields</li>
-    <li>📋 Added missing columns to field packs for complete data representation</li>
-    <li>📝 Corrected copy functionality to ensure data integrity</li>
-</ul>
-
-<h2>🔧 Behind the Scenes 🔧</h2>
-<ul>
-    <li>🧹 Significant code cleanup for better performance</li>
-    <li>🔄 Enhanced synchronization for more reliable data updates</li>
-    <li>⚡ Technical optimizations to improve overall app responsiveness</li>
-</ul>
-
-<p><em>✨ Coming Soon: Advanced organization filtering and more field packs tailored to your workflow! ✨</em></p>
-
-<h2>💬 Feedback</h2>
-<p>We're constantly improving Orbit based on your feedback. Please share your thoughts and suggestions through the app or by reaching out to our support team at <a href="mailto:hello@askorbit.com">hello@askorbit.com</a>.</p>
-]]></description>
-        </item>
+    <title>Version 0.9.9.6.1</title>
+    <description><![CDATA[
+        <h2>🚀 Release 0.9.9.6.1</h2>
+        <p>Making 0.9.9.6.1 rock-solid with critical bug fixes and performance improvements.</p>
+        <ul>
+            <li>⚡ <strong>Performance Boost</strong> - Moved Brief processing to server for faster responses</li>
+            <li>💼 <strong>The Brief: Solid & Reliable</strong> - Fixed missing cards, sorting, and meeting URLs</li>
+            <li>🤝 <strong>Integration Stability</strong> - Fixed Granola, Google APIs, and search tools</li>
+            <li>🏦 <strong>Organizations & Enrichment</strong> - LinkedIn enrichment and company profiles work reliably</li>
+            <li>📇 <strong>CRM Improvements</strong> - Fixed familiarity tracking and contact creation</li>
+            <li>🤖 <strong>Agent Reliability</strong> - LLM retry logic recovers from AI failures</li>
+            <li>🐛 <strong>Critical Fixes</strong> - Fixed sign out crash and re-enabled automatic updates</li>
+        </ul>
+    ]]></description>
+    <pubDate>Tue, 12 Nov 2025 12:00:00 +0000</pubDate>
+    <enclosure url="https://github.com/ajram23/Orbit/releases/download/0.9.9.6.1/Orbit-0.9.9.6.1.dmg" 
+               sparkle:version="623" 
+               sparkle:shortVersionString="0.9.9.6.1"
+               sparkle:edSignature="aO7CnWwWobAiN5VJ7141KDSFDZxbbI/7K7rlAzMrO5Xwd+n0B6NIKvrB6NHa+rr/gsPlkx+2gVM1u6RtEr1hAw=="
+               length="162013590"
+               type="application/octet-stream" />
+    <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
+</item>
     </channel>
 </rss>
