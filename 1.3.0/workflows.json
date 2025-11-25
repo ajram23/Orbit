@@ -449,7 +449,7 @@
             "roles": ["all"],
             "tools": [],
             "services": ["google-calendar"],
-            "prompt": "Review recurring meeting '{$event_title}' from {$calendar_name} calendar happening at {$start_time}. This meeting occurs regularly. Analyze: 1) Is this meeting still necessary? 2) Could it be shorter or less frequent? 3) Are the right people attending? 4) How to make it more effective?"
+            "prompt": "Review recurring meeting '{$event_title}' from {$calendar_name} calendar happening at {$start_time}. This meeting occurs regularly. Analyze: 1) Is this meeting still necessary? \n2) Could it be shorter or less frequent?\n 3) Are the right people attending?\n 4) How to make it more effective?"
         },
         {
             "name": "Hybrid Meeting Management",
@@ -458,7 +458,7 @@
             "roles": ["all"],
             "tools": [],
             "services": ["google-calendar", "orbit-crm"],
-            "prompt": "Help me manage hybrid meeting '{$event_title}' from {$calendar_name} calendar at {$start_time}. In-person at: {$location}, Virtual link: {$meeting_url}. Total attendees: {$attendee_count}. Create a plan to: 1) Ensure equal participation, 2) Technical setup needed, 3) How to share materials with both groups."
+            "prompt": "Help me manage hybrid meeting '{$event_title}' from {$calendar_name} calendar at {$start_time}. In-person at: {$location}, Virtual link: {$meeting_url}. Total attendees: {$attendee_count}. Create a plan to: 1) Ensure equal participation\n 2) Technical setup needed\n 3) How to share materials with both groups."
         },
         {
             "name": "Time Block Review",
@@ -467,7 +467,7 @@
             "roles": ["all"],
             "tools": [],
             "services": ["google-calendar"],
-            "prompt": "Review time block '{$event_title}' (event ID: {$event_id}) from {$calendar_name} calendar ({$duration} starting at {$start_time}). Use {!google-calendar} to check what comes before and after this block. Help me: 1) Clarify what success looks like for this block, 2) Identify which of my goals this supports, 3) List 2-3 specific outcomes I should aim for, 4) Suggest how to eliminate distractions during this time."
+            "prompt": "Review time block '{$event_title}' (event ID: {$event_id}) from {$calendar_name} calendar ({$duration} starting at {$start_time}). Use {!google-calendar} to check what comes before and after this block. Help me: 1) Clarify what success looks like for this block\n 2) Identify which of my goals this supports\n 3) List 2-3 specific outcomes I should aim for\n 4) Suggest how to eliminate distractions during this time."
         }
     ]
 }
