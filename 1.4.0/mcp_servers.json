@@ -1,0 +1,107 @@
+{
+    "version": "1.3.0",
+    "servers": [
+        {
+            "prefix": "google-gmail",
+            "version": "1.1.0",
+            "composio_mcp_id": "5788e415-ed96-4d47-a62a-3e0fedbd4b2c",
+            "auth_config_id": "ac__o2XSYs85YfG",
+            "transport_type": "streamable-http",
+            "metadata_overrides": {
+                "description": "Manage your GMail/Google Workspace emails",
+                "category":  "Productivity",
+                "server_type": "user",
+                "security_type": "oauth",
+                "logo_url": "https://pub-4421542fcd47468da3bde597fe7b682f.r2.dev/logos/google_gmail_64x64.png",
+                "icon_url": "https://pub-4421542fcd47468da3bde597fe7b682f.r2.dev/logos/google_gmail_32x32.png",
+                "credentials": [{
+                    "name": "connected_account_id",
+                    "description": "Sign in with your Google account",
+                    "required": true
+                }]
+            }
+        },
+        {
+            "prefix": "outlook-mail",
+            "version": "1.1.0",
+            "composio_mcp_id": "fd32a824-503c-4248-911b-c655cefa7940",
+            "auth_config_id": "ac_OowYMa7j-XMB",
+            "transport_type": "streamable-http",
+            "metadata_overrides": {
+                "description": "Manage your Outlook emails",
+                "category":  "Productivity",
+                "server_type": "user",
+                "security_type": "oauth",
+                "logo_url": "https://pub-4421542fcd47468da3bde597fe7b682f.r2.dev/logos/outlook_512x512.png",
+                "icon_url": "https://pub-4421542fcd47468da3bde597fe7b682f.r2.dev/logos/outlook_256x256.png",
+                "credentials": [{
+                    "name": "connected_account_id",
+                    "description": "Sign in with your Outlook account",
+                    "required": true
+                }]
+            }
+        },
+        {
+            "prefix": "beeper",
+            "mcp_server_type": "proxy",
+            "transport_type": "streamable-http",
+            "url": "http://localhost:23373/v0/mcp",
+            "metadata_overrides": {
+                "description": "Access your Beeper Chat messages",
+                "category": "Communication",
+                "server_type": "user",
+                "security_type": "token",
+                "logo_url": "https://pub-4421542fcd47468da3bde597fe7b682f.r2.dev/logos/beeper_512x512.png",
+                "icon_url": "https://pub-4421542fcd47468da3bde597fe7b682f.r2.dev/logos/beeper_256x256.png",
+                "credentials": [{
+                    "name": "AUTH_TOKEN",
+                    "description": "Your Beeper authentication token (required). Beeper has to be open to connect & use.",
+                    "url": "https://developers.beeper.com/desktop-api/auth",
+                    "link_text": "Get Your Beeper API Token",
+                    "required": true
+                }]
+            }
+        },
+        {
+            "prefix": "github",
+            "mcp_server_type": "proxy",
+            "transport_type": "streamable-http",
+            "url": "https://api.githubcopilot.com/mcp/",
+            "metadata_overrides": {
+                "description": "Access your Github repositories",
+                "category": "Engineering",
+                "server_type": "user",
+                "security_type": "token",
+                "logo_url": "https://pub-4421542fcd47468da3bde597fe7b682f.r2.dev/logos/github_512x512.png",
+                "icon_url": "https://pub-4421542fcd47468da3bde597fe7b682f.r2.dev/logos/github_256x256.png",
+                "credentials": [{
+                    "name": "GITHUB_PAT",
+                    "description": "GitHub Personal Access Token",
+                    "url": "https://github.com/settings/tokens",
+                    "link_text": "Create GitHub PAT",
+                    "required": true
+                }]
+            }
+        },
+        {
+            "prefix": "zapier",
+            "mcp_server_type": "zapier",
+            "transport_type": "streamable-http",
+            "metadata_overrides": {
+                "description": "Connect your custom Zapier workflows",
+                "category": "Productivity",
+                "server_type": "user",
+                "security_type": "zapier",
+                "logo_url": "https://pub-4421542fcd47468da3bde597fe7b682f.r2.dev/logos/zapier_512x512.png",
+                "icon_url": "https://pub-4421542fcd47468da3bde597fe7b682f.r2.dev/logos/zapier_32x32.png",
+                "credentials": [{
+                    "name": "server_url",
+                    "description": "Your Zapier server URL (required)",
+                    "url": "https://mcp.zapier.com/mcp/servers/",
+                    "link_text": "Get Your Zapier Server",
+                    "required": true
+                }]
+            }
+        }
+    ]
+}
