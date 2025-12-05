@@ -102,6 +102,50 @@
                     "required": true
                 }]
             }
+        },
+        {
+            "prefix": "linear",
+            "version": "1.0.0",
+            "mcp_server_type": "proxy",
+            "transport_type": "streamable-http",
+            "url": "https://mcp.linear.app/mcp",
+            "metadata_overrides": {
+                "description": "Manage Linear issues, projects, and comments",
+                "category": "Engineering",
+                "server_type": "user",
+                "security_type": "token",
+                "logo_url": "https://pub-4421542fcd47468da3bde597fe7b682f.r2.dev/logos/linear_512x512.png",
+                "icon_url": "https://pub-4421542fcd47468da3bde597fe7b682f.r2.dev/logos/linear_256x256.png",
+                "credentials": [{
+                    "name": "LINEAR_API_KEY",
+                    "description": "Linear API Key",
+                    "url": "https://linear.app/settings/api",
+                    "link_text": "Get Linear API Key",
+                    "required": true
+                }]
+            }
+        },
+        {
+            "prefix": "fireflies",
+            "version": "1.0.0",
+            "mcp_server_type": "proxy",
+            "transport_type": "streamable-http",
+            "url": "https://api.fireflies.ai/mcp",
+            "metadata_overrides": {
+                "description": "Access and analyze your meeting transcripts and data",
+                "category": "Productivity",
+                "server_type": "user",
+                "security_type": "token",
+                "logo_url": "https://pub-4421542fcd47468da3bde597fe7b682f.r2.dev/logos/fireflies_512x512.png",
+                "icon_url": "https://pub-4421542fcd47468da3bde597fe7b682f.r2.dev/logos/fireflies_256x256.png",
+                "credentials": [{
+                    "name": "FIREFLIES_API_KEY",
+                    "description": "Fireflies API Key",
+                    "url": "https://guide.fireflies.ai/hc/en-us/articles/360020249198-How-to-access-the-Fireflies-API-key",
+                    "link_text": "Get Fireflies API Key",
+                    "required": true
+                }]
+            }
         }
     ]
 }
