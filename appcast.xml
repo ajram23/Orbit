@@ -3,6 +3,50 @@
     <channel>
         <title>Orbit</title>
         <item>
+    <title>Version 0.9.9.6.2</title>
+    <description><![CDATA[
+        <h2>Workflow creation just got easier with AI</h2>
+        <p>Build faster, smarter workflows by turning rough ideas into polished automation.</p>
+        
+        <h3>✨ AI-Powered Workflows</h3>
+        <ul>
+            <li>AI generates names and descriptions, suggests improvements, and lets you test workflows before saving with "try and tweak"</li>
+            <li>Run custom workflows directly on Brief cards</li>
+            <li>Remix existing workflows with AI help</li>
+        </ul>
+        
+        <h3>🤝 New Integrations</h3>
+        <ul>
+            <li>Fireflies and Linear integrations (more coming soon!)</li>
+        </ul>
+        
+        <h3>🎯 Cleaner Navigation</h3>
+        <ul>
+            <li>Tools, Workflows, and CRM Packs now discoverable as tabs</li>
+            <li>Streamlined navigation throughout</li>
+        </ul>
+        
+        <h3>⌨️ The Brief Improvements</h3>
+        <ul>
+            <li>Full keyboard shortcuts to act on cards</li>
+            <li>Brief view mode persists across sessions</li>
+        </ul>
+        
+        <h3>🐛 Several bug fixes based on your feedback</h3>
+        
+        <p><strong>Built from your feedback:</strong> This release incorporates fixes and improvements from Raveesh, Shruti, Benjamin, Lucas, Matt H, Srini, and AJ's testing sessions.</p>
+    ]]></description>
+    <sparkle:releaseNotesLink>https://github.com/ajram23/Orbit/releases/tag/0.9.9.6.2</sparkle:releaseNotesLink>
+    <pubDate>Sat, 06 Dec 2025 00:00:00 +0000</pubDate>
+    <enclosure url="https://github.com/ajram23/Orbit/releases/download/0.9.9.6.2/Orbit.0.9.9.6.2.dmg"
+             sparkle:version="647"
+             sparkle:shortVersionString="0.9.9.6.2"
+             sparkle:edSignature="iv9PW13ZwyAlAjqMgtBKR8wULvZs58UPSkIqcjWXHwBkaCKyaP3p1QnU3AaFCYH/Dw9PXwTF44FHp7O0BTb2Bg=="
+             length="164173958"
+             type="application/octet-stream" />
+    <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
+</item>
+        <item>
     <title>Version 0.9.9.6.1</title>
     <description><![CDATA[
         <h2>🚀 Release 0.9.9.6.1</h2>
