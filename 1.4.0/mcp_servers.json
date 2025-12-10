@@ -102,7 +102,7 @@
             "url": "https://api.githubcopilot.com/mcp/",
             "metadata_overrides": {
                 "description": "Access your Github repositories",
-                "category": "Engineering",
+                "category": "Product",
                 "server_type": "user",
                 "security_type": "token",
                 "logo_url": "https://pub-4421542fcd47468da3bde597fe7b682f.r2.dev/logos/github_512x512.png",
@@ -144,7 +144,7 @@
             "url": "https://mcp.linear.app/mcp",
             "metadata_overrides": {
                 "description": "Manage Linear issues, projects, and comments",
-                "category": "Engineering",
+                "category": "Product",
                 "server_type": "user",
                 "security_type": "token",
                 "logo_url": "https://pub-4421542fcd47468da3bde597fe7b682f.r2.dev/logos/linear_512x512.png",
