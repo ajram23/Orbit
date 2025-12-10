@@ -182,19 +182,22 @@
         },
         {
             "prefix": "posthog",
+            "version": "1.0.1",
             "mcp_server_type": "proxy",
             "transport_type": "streamable-http",
             "url": "https://mcp.posthog.com/mcp",
             "metadata_overrides": {
-                "description": "Product analytics, feature flags, error tracking, and LLM cost monitoring",
+                "description": "Product analytics, feature flags, error tracking, & LLM monitoring",
                 "category": "Marketing",
                 "server_type": "user",
-                "security_type": "api_key",
+                "security_type": "token",
                 "logo_url": "https://raw.githubusercontent.com/ajram23/Orbit/refs/heads/main/logos/posthog_512x512.png",
                 "icon_url": "https://raw.githubusercontent.com/ajram23/Orbit/refs/heads/main/logos/posthog_256x256.png",
                 "credentials": [{
                     "name": "POSTHOG_AUTH_HEADER",
-                    "description": "Personal API key from PostHog (use MCP Server preset)",
+                    "description": "Posthog Personal API key (use MCP Server preset)",
+                    "url": "https://guide.fireflies.ai/hc/en-us/articles/360020249198-How-to-access-the-Fireflies-API-key",
+                    "link_text": "Get Posthog API Key",
                     "required": true
                 }]
             }
