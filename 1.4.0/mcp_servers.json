@@ -179,6 +179,25 @@
                     "required": true
                 }]
             }
+        },
+        {
+            "prefix": "posthog",
+            "mcp_server_type": "proxy",
+            "transport_type": "streamable-http",
+            "url": "https://mcp.posthog.com/mcp",
+            "metadata_overrides": {
+                "description": "Product analytics, feature flags, error tracking, and LLM cost monitoring",
+                "category": "Analytics",
+                "server_type": "user",
+                "security_type": "api_key",
+                "logo_url": "https://raw.githubusercontent.com/ajram23/Orbit/refs/heads/main/logos/posthog_512x512.png",
+                "icon_url": "https://raw.githubusercontent.com/ajram23/Orbit/refs/heads/main/logos/posthog_256x256.png",
+                "credentials": [{
+                    "name": "POSTHOG_AUTH_HEADER",
+                    "description": "Personal API key from PostHog (use MCP Server preset)",
+                    "required": true
+                }]
+            }
         }
     ]
 }
