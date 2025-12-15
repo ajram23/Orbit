@@ -3,7 +3,6 @@
     "servers": [
         {
             "prefix": "google-gmail",
-            "version": "1.1.0",
             "composio_mcp_id": "5788e415-ed96-4d47-a62a-3e0fedbd4b2c",
             "auth_config_id": "ac__o2XSYs85YfG",
             "transport_type": "streamable-http",
@@ -23,7 +22,6 @@
         },
         {
             "prefix": "outlook-mail",
-            "version": "1.1.0",
             "composio_mcp_id": "fd32a824-503c-4248-911b-c655cefa7940",
             "auth_config_id": "ac_OowYMa7j-XMB",
             "transport_type": "streamable-http",
@@ -90,7 +88,7 @@
             "url": "https://mcp.notion.com/mcp",
             "metadata_overrides": {
                 "description": "Access Notion pages and databases",
-                "category": "Productivity",
+                "category": "Product",
                 "server_type": "user",
                 "security_type": "oauth",
                 "logo_url": "https://raw.githubusercontent.com/ajram23/Orbit/refs/heads/main/logos/notion_512x512.png",
@@ -124,7 +122,6 @@
         },
         {
             "prefix": "linear",
-            "version": "1.0.0",
             "mcp_server_type": "proxy",
             "transport_type": "streamable-http",
             "url": "https://mcp.linear.app/mcp",
@@ -146,7 +143,6 @@
         },
         {
             "prefix": "fireflies",
-            "version": "1.0.0",
             "mcp_server_type": "proxy",
             "transport_type": "streamable-http",
             "url": "https://api.fireflies.ai/mcp",
@@ -168,7 +164,6 @@
         },
         {
             "prefix": "posthog",
-            "version": "1.0.2",
             "mcp_server_type": "proxy",
             "transport_type": "streamable-http",
             "url": "https://mcp.posthog.com/mcp",
