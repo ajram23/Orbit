@@ -82,25 +82,6 @@
             }
         },
         {
-            "prefix": "notion",
-            "mcp_server_type": "proxy",
-            "transport_type": "streamable-http",
-            "url": "https://mcp.notion.com/mcp",
-            "metadata_overrides": {
-                "description": "Access Notion pages and databases",
-                "category": "Product",
-                "server_type": "user",
-                "security_type": "oauth",
-                "logo_url": "https://raw.githubusercontent.com/ajram23/Orbit/refs/heads/main/logos/notion_512x512.png",
-                "icon_url": "https://raw.githubusercontent.com/ajram23/Orbit/refs/heads/main/logos/notion_256x256.png",
-                "credentials": [{
-                    "name": "AUTH_TOKEN",
-                    "description": "Sign in with your Notion account via OAuth",
-                    "required": true
-                }]
-            }
-        },
-        {
             "prefix": "zapier",
             "mcp_server_type": "zapier",
             "transport_type": "streamable-http",
