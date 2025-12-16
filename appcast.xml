@@ -3,72 +3,89 @@
     <channel>
         <title>Orbit</title>
         <item>
-    <title>Version 0.9.9.6.2</title>
-    <description><![CDATA[
-        <h2>Workflow creation just got easier with AI</h2>
-        <p>Build faster, smarter workflows by turning rough ideas into polished automation.</p>
-        
-        <h3>✨ AI-Powered Workflows</h3>
-        <ul>
-            <li>AI generates names and descriptions, suggests improvements, and lets you test workflows before saving with "try and tweak"</li>
-            <li>Run custom workflows directly on Brief cards</li>
-            <li>Remix existing workflows with AI help</li>
-        </ul>
-        
-        <h3>🤝 New Integrations</h3>
-        <ul>
-            <li>Fireflies and Linear integrations (more coming soon!)</li>
-        </ul>
-        
-        <h3>🎯 Cleaner Navigation</h3>
-        <ul>
-            <li>Tools, Workflows, and CRM Packs now discoverable as tabs</li>
-            <li>Streamlined navigation throughout</li>
-        </ul>
-        
-        <h3>⌨️ The Brief Improvements</h3>
-        <ul>
-            <li>Full keyboard shortcuts to act on cards</li>
-            <li>Brief view mode persists across sessions</li>
-        </ul>
-        
-        <h3>🐛 Several bug fixes based on your feedback</h3>
-        
-        <p><strong>Built from your feedback:</strong> This release incorporates fixes and improvements from Raveesh, Shruti, Benjamin, Lucas, Matt H, Srini, and AJ's testing sessions.</p>
-    ]]></description>
-    <sparkle:releaseNotesLink>https://github.com/ajram23/Orbit/releases/tag/0.9.9.6.2</sparkle:releaseNotesLink>
-    <pubDate>Sat, 06 Dec 2025 00:00:00 +0000</pubDate>
-    <enclosure url="https://github.com/ajram23/Orbit/releases/download/0.9.9.6.2/Orbit.0.9.9.6.2.dmg"
-             sparkle:version="647"
-             sparkle:shortVersionString="0.9.9.6.2"
-             sparkle:edSignature="iv9PW13ZwyAlAjqMgtBKR8wULvZs58UPSkIqcjWXHwBkaCKyaP3p1QnU3AaFCYH/Dw9PXwTF44FHp7O0BTb2Bg=="
-             length="164173958"
-             type="application/octet-stream" />
-    <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
-</item>
+            <title>Version 0.9.9.7</title>
+            <description><![CDATA[
+                <h2>Release 0.9.9.7</h2>
+                <p>Your conversations now have a home. Save threads, pick up where you left off, and enjoy cleaner responses with improved markdown rendering.</p>
+                <ul>
+                    <li><strong>Conversation Threads</strong> - Save and return to conversations anytime with named threads</li>
+                    <li><strong>Cleaner Responses</strong> - Completely refreshed markdown rendering for better readability</li>
+                    <li><strong>Your Data, Secured</strong> - Local database encryption with SQLCipher</li>
+                    <li><strong>Granola Gets Smarter</strong> - Access meeting folders and participants</li>
+                    <li><strong>Remote Tools</strong> - Periodic refresh of connected tools and improved proxy support</li>
+                    <li><strong>Bug Fixes</strong> - Fixed typeahead regressions, workflow bugs, and display crashes</li>
+                </ul>
+            ]]></description>
+            <pubDate>Mon, 16 Dec 2025 12:00:00 +0000</pubDate>
+            <enclosure url="https://github.com/ajram23/Orbit/releases/download/0.9.9.7/Orbit.0.9.9.7.dmg"
+                       sparkle:version="657"
+                       sparkle:shortVersionString="0.9.9.7"
+                       sparkle:edSignature="yFUB12PhMPXGC4LuGM8whe1Sd+1jUUt6my3XOQrJ+SV8VgARpN86ayJKyUBjD0FljvcicOKYefZSdBUMRJF8Cw=="
+                       length="177007131"
+                       type="application/octet-stream" />
+            <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
+        </item>
         <item>
-    <title>Version 0.9.9.6.1</title>
-    <description><![CDATA[
-        <h2>🚀 Release 0.9.9.6.1</h2>
-        <p>Making 0.9.9.6.1 rock-solid with critical bug fixes and performance improvements.</p>
-        <ul>
-            <li>⚡ <strong>Performance Boost</strong> - Moved Brief processing to server for faster responses</li>
-            <li>💼 <strong>The Brief: Solid & Reliable</strong> - Fixed missing cards, sorting, and meeting URLs</li>
-            <li>🤝 <strong>Integration Stability</strong> - Fixed Granola, Google APIs, and search tools</li>
-            <li>🏦 <strong>Organizations & Enrichment</strong> - LinkedIn enrichment and company profiles work reliably</li>
-            <li>📇 <strong>CRM Improvements</strong> - Fixed familiarity tracking and contact creation</li>
-            <li>🤖 <strong>Agent Reliability</strong> - LLM retry logic recovers from AI failures</li>
-            <li>🐛 <strong>Critical Fixes</strong> - Fixed sign out crash and re-enabled automatic updates</li>
-        </ul>
-    ]]></description>
-    <pubDate>Tue, 12 Nov 2025 12:00:00 +0000</pubDate>
-    <enclosure url="https://github.com/ajram23/Orbit/releases/download/0.9.9.6.1/Orbit-0.9.9.6.1.dmg" 
-               sparkle:version="623" 
-               sparkle:shortVersionString="0.9.9.6.1"
-               sparkle:edSignature="Z48gVjgG4k/SoDz2sfst/AXBYxBTBvjxu8YsVsq9KQTvTIqdEmtUf956G4yd2brDgXZmOM6gk4uwQV3aBayMAg=="
-               length="162022299"
-               type="application/octet-stream" />
-    <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
-</item>
+            <title>Version 0.9.9.6.2</title>
+            <description><![CDATA[
+                <h2>Workflow creation just got easier with AI</h2>
+                <p>Build faster, smarter workflows by turning rough ideas into polished automation.</p>
+                <h3>AI-Powered Workflows</h3>
+                <ul>
+                    <li>AI generates names and descriptions, suggests improvements, and lets you test workflows before saving with "try and tweak"</li>
+                    <li>Run custom workflows directly on Brief cards</li>
+                    <li>Remix existing workflows with AI help</li>
+                </ul>
+                <h3>New Integrations</h3>
+                <ul>
+                    <li>Fireflies and Linear integrations (more coming soon!)</li>
+                </ul>
+                <h3>Cleaner Navigation</h3>
+                <ul>
+                    <li>Tools, Workflows, and CRM Packs now discoverable as tabs</li>
+                    <li>Streamlined navigation throughout</li>
+                </ul>
+                <h3>The Brief Improvements</h3>
+                <ul>
+                    <li>Full keyboard shortcuts to act on cards</li>
+                    <li>Brief view mode persists across sessions</li>
+                </ul>
+                <h3>Several bug fixes based on your feedback</h3>
+                <p><strong>Built from your feedback:</strong> This release incorporates fixes and improvements from Raveesh, Shruti, Benjamin, Lucas, Matt H, Srini, and AJ's testing sessions.</p>
+            ]]></description>
+            <sparkle:releaseNotesLink>https://github.com/ajram23/Orbit/releases/tag/0.9.9.6.2</sparkle:releaseNotesLink>
+            <pubDate>Sat, 06 Dec 2025 00:00:00 +0000</pubDate>
+            <enclosure url="https://github.com/ajram23/Orbit/releases/download/0.9.9.6.2/Orbit.0.9.9.6.2.dmg"
+                       sparkle:version="647"
+                       sparkle:shortVersionString="0.9.9.6.2"
+                       sparkle:edSignature="iv9PW13ZwyAlAjqMgtBKR8wULvZs58UPSkIqcjWXHwBkaCKyaP3p1QnU3AaFCYH/Dw9PXwTF44FHp7O0BTb2Bg=="
+                       length="164173958"
+                       type="application/octet-stream" />
+            <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
+        </item>
+        <item>
+            <title>Version 0.9.9.6.1</title>
+            <description><![CDATA[
+                <h2>Release 0.9.9.6.1</h2>
+                <p>Making 0.9.9.6.1 rock-solid with critical bug fixes and performance improvements.</p>
+                <ul>
+                    <li><strong>Performance Boost</strong> - Moved Brief processing to server for faster responses</li>
+                    <li><strong>The Brief: Solid & Reliable</strong> - Fixed missing cards, sorting, and meeting URLs</li>
+                    <li><strong>Integration Stability</strong> - Fixed Granola, Google APIs, and search tools</li>
+                    <li><strong>Organizations & Enrichment</strong> - LinkedIn enrichment and company profiles work reliably</li>
+                    <li><strong>CRM Improvements</strong> - Fixed familiarity tracking and contact creation</li>
+                    <li><strong>Agent Reliability</strong> - LLM retry logic recovers from AI failures</li>
+                    <li><strong>Critical Fixes</strong> - Fixed sign out crash and re-enabled automatic updates</li>
+                </ul>
+            ]]></description>
+            <pubDate>Tue, 12 Nov 2025 12:00:00 +0000</pubDate>
+            <enclosure url="https://github.com/ajram23/Orbit/releases/download/0.9.9.6.1/Orbit-0.9.9.6.1.dmg"
+                       sparkle:version="623"
+                       sparkle:shortVersionString="0.9.9.6.1"
+                       sparkle:edSignature="Z48gVjgG4k/SoDz2sfst/AXBYxBTBvjxu8YsVsq9KQTvTIqdEmtUf956G4yd2brDgXZmOM6gk4uwQV3aBayMAg=="
+                       length="162022299"
+                       type="application/octet-stream" />
+            <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
+        </item>
     </channel>
 </rss>
