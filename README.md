@@ -2,7 +2,7 @@
 
 An AI-powered assistant that orchestrates your professional life from your Mac toolbar. Connect your apps, automate workflows, and let Orbit handle the repetitive work while you focus on what matters.
 
-**Your contacts. Your apps. One intelligent assistant. Zero friction.**
+**Your contacts. Your apps. Your workflows. One intelligent assistant. Zero friction.**
 
 ## What Orbit Does
 
