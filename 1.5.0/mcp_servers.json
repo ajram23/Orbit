@@ -9,8 +9,8 @@
             "metadata_overrides": {
                 "description": "Search places, get directions, and explore points of interest using Apple Maps",
                 "category": "Productivity",
-                "server_type": "native",
-                "security_type": "none",
+                "server_type": "default",
+                "security_type": "native",
                 "logo_url": "https://pub-4421542fcd47468da3bde597fe7b682f.r2.dev/logos/apple_maps_512x512.png",
                 "icon_url": "https://pub-4421542fcd47468da3bde597fe7b682f.r2.dev/logos/apple_maps_256x256.png",
                 "required_permissions": ["location"],
