@@ -215,6 +215,44 @@
                     "required": true
                 }]
             }
+        },
+        {
+            "prefix": "canva",
+            "mcp_server_type": "proxy",
+            "transport_type": "streamable-http",
+            "url": "https://mcp.canva.com/mcp",
+            "metadata_overrides": {
+                "description": "Create and manage Canva designs, templates, and exports",
+                "category": "Productivity",
+                "server_type": "user",
+                "security_type": "oauth",
+                "logo_url": "https://pub-4421542fcd47468da3bde597fe7b682f.r2.dev/logos/canva_512x512.png",
+                "icon_url": "https://pub-4421542fcd47468da3bde597fe7b682f.r2.dev/logos/canva_256x256.png",
+                "credentials": [{
+                    "name": "oauth",
+                    "description": "Sign in with your Canva account",
+                    "required": true
+                }]
+            }
+        },
+        {
+            "prefix": "circleback",
+            "mcp_server_type": "proxy",
+            "transport_type": "streamable-http",
+            "url": "https://app.circleback.ai/api/mcp",
+            "metadata_overrides": {
+                "description": "Access meeting notes, transcripts, and calendar context",
+                "category": "Productivity",
+                "server_type": "user",
+                "security_type": "oauth",
+                "logo_url": "https://pub-4421542fcd47468da3bde597fe7b682f.r2.dev/logos/circleback_512x512.png",
+                "icon_url": "https://pub-4421542fcd47468da3bde597fe7b682f.r2.dev/logos/circleback_256x256.png",
+                "credentials": [{
+                    "name": "oauth",
+                    "description": "Sign in with your Circleback account",
+                    "required": true
+                }]
+            }
         }
     ]
 }
