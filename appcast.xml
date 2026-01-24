@@ -3,6 +3,29 @@
     <channel>
         <title>Orbit</title>
         <item>
+            <title>Version 0.9.9.8</title>
+            <description><![CDATA[
+                <h2>🚀 Release 0.9.9.8</h2>
+                <p>Your assistant just leveled up. This is the most capable Orbit yet.</p>
+                <ul>
+                    <li>🔍 <strong>Smart Tool Discovery</strong> - Connect unlimited apps, Orbit finds the right one</li>
+                    <li>📡 <strong>Real-time Status</strong> - Watch progress as your assistant works</li>
+                    <li>🍎 <strong>Apple Maps & Reminders</strong> - Native Apple integrations</li>
+                    <li>✨ <strong>UI Refresh</strong> - New typography system and visual polish</li>
+                    <li>⚡ <strong>Editable Workflows</strong> - New "Yours" tab and edit button</li>
+                    <li>🤝 <strong>New Apps</strong> - Canva and Circleback</li>
+                </ul>
+            ]]></description>
+            <pubDate>Fri, 24 Jan 2026 12:00:00 +0000</pubDate>
+            <enclosure url="https://github.com/ajram23/Orbit/releases/download/0.9.9.8/Orbit.0.9.9.8.dmg"
+                       sparkle:version="696"
+                       sparkle:shortVersionString="0.9.9.8"
+                       sparkle:edSignature="bG+vEB7lPwNmU33qntYbV+hWtYGehrvweHFZlXmSOrSjQCcN/DGAl+7YbYcUZmd7bjWYUqks5eYYcAAyQFtbBg=="
+                       length="275077691"
+                       type="application/octet-stream" />
+            <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
+        </item>
+        <item>
             <title>Version 0.9.9.7</title>
             <description><![CDATA[
                 <h2>Release 0.9.9.7</h2>
