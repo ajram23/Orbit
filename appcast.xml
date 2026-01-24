@@ -17,7 +17,7 @@
                 </ul>
             ]]></description>
             <pubDate>Fri, 24 Jan 2026 12:00:00 +0000</pubDate>
-            <enclosure url="https://github.com/ajram23/Orbit/releases/download/0.9.9.8/Orbit.0.9.9.8.dmg"
+            <enclosure url="https://pub-4421542fcd47468da3bde597fe7b682f.r2.dev/builds/Orbit%200.9.9.8.dmg"
                        sparkle:version="696"
                        sparkle:shortVersionString="0.9.9.8"
                        sparkle:edSignature="bG+vEB7lPwNmU33qntYbV+hWtYGehrvweHFZlXmSOrSjQCcN/DGAl+7YbYcUZmd7bjWYUqks5eYYcAAyQFtbBg=="
@@ -40,7 +40,7 @@
                 </ul>
             ]]></description>
             <pubDate>Mon, 16 Dec 2025 12:00:00 +0000</pubDate>
-            <enclosure url="https://github.com/ajram23/Orbit/releases/download/0.9.9.7/Orbit.0.9.9.7.dmg"
+            <enclosure url="https://pub-4421542fcd47468da3bde597fe7b682f.r2.dev/builds/Orbit%200.9.9.7.dmg"
                        sparkle:version="657"
                        sparkle:shortVersionString="0.9.9.7"
                        sparkle:edSignature="yFUB12PhMPXGC4LuGM8whe1Sd+1jUUt6my3XOQrJ+SV8VgARpN86ayJKyUBjD0FljvcicOKYefZSdBUMRJF8Cw=="
@@ -78,7 +78,7 @@
             ]]></description>
             <sparkle:releaseNotesLink>https://github.com/ajram23/Orbit/releases/tag/0.9.9.6.2</sparkle:releaseNotesLink>
             <pubDate>Sat, 06 Dec 2025 00:00:00 +0000</pubDate>
-            <enclosure url="https://github.com/ajram23/Orbit/releases/download/0.9.9.6.2/Orbit.0.9.9.6.2.dmg"
+            <enclosure url="https://pub-4421542fcd47468da3bde597fe7b682f.r2.dev/builds/Orbit%200.9.9.6.2.dmg"
                        sparkle:version="647"
                        sparkle:shortVersionString="0.9.9.6.2"
                        sparkle:edSignature="iv9PW13ZwyAlAjqMgtBKR8wULvZs58UPSkIqcjWXHwBkaCKyaP3p1QnU3AaFCYH/Dw9PXwTF44FHp7O0BTb2Bg=="
@@ -102,7 +102,7 @@
                 </ul>
             ]]></description>
             <pubDate>Tue, 12 Nov 2025 12:00:00 +0000</pubDate>
-            <enclosure url="https://github.com/ajram23/Orbit/releases/download/0.9.9.6.1/Orbit-0.9.9.6.1.dmg"
+            <enclosure url="https://pub-4421542fcd47468da3bde597fe7b682f.r2.dev/builds/Orbit%200.9.9.6.1.dmg"
                        sparkle:version="623"
                        sparkle:shortVersionString="0.9.9.6.1"
                        sparkle:edSignature="Z48gVjgG4k/SoDz2sfst/AXBYxBTBvjxu8YsVsq9KQTvTIqdEmtUf956G4yd2brDgXZmOM6gk4uwQV3aBayMAg=="
