@@ -1,0 +1,473 @@
+{
+    "version": "1.3.1",
+    "workflows": [
+        {
+            "name": "Email to Tasks",
+            "description": "Extract and organize action items from your inbox",
+            "category": "Email Productivity",
+            "roles": ["all"],
+            "tools": [],
+            "services": ["google-gmail", "todoist"],
+            "prompt": "Use {!google-gmail} to find emails from today that mention deadlines, requests, or action items. Use {!todoist} to create tasks for each one with appropriate due dates."
+        },
+        {
+            "name": "Meeting Prep Bundle",
+            "description": "Get fully prepared for your next meeting",
+            "category": "Meeting Management",
+            "roles": ["all"],
+            "tools": [],
+            "services": ["google-calendar", "orbit-crm", "research", "bear-notes"],
+            "prompt": "Use {!google-calendar} to get my next meeting details. Use {!orbit-crm} to find background on {$person} I'm meeting. Use {!research} to research {#company} recent news. Use {!bear-notes} to create a meeting prep note with agenda items."
+        },
+        {
+            "name": "Post-Meeting Workflow",
+            "description": "Process meeting outcomes into actions and updates",
+            "category": "Meeting Management",
+            "roles": ["all"],
+            "tools": [],
+            "services": ["granola", "todoist", "google-gmail", "orbit-crm"],
+            "prompt": "Use {!granola} to get action items from my last meeting. Use {!todoist} to create tasks for each action. Use {!google-gmail} to draft a follow-up email with next steps. Use {!orbit-crm} to update last contacted date for attendees."
+        },
+        {
+            "name": "Weekly Planning Session",
+            "description": "Review last week and plan the upcoming one",
+            "category": "Daily Planning",
+            "roles": ["all"],
+            "tools": [],
+            "services": ["google-calendar", "todoist", "bear-notes"],
+            "prompt": "Use {!google-calendar} to review what meetings I had last week. Use {!todoist} to check which tasks I completed and what's still pending. Use {!bear-notes} to create a weekly plan with top 3 priorities for next week."
+        },
+        {
+            "name": "Catch Up on Communications",
+            "description": "Get up to speed on emails and schedule responses",
+            "category": "Email Productivity",
+            "roles": ["all"],
+            "tools": [],
+            "services": ["google-gmail", "todoist", "google-calendar"],
+            "prompt": "Use {!google-gmail} to show unread emails from the last 24 hours. Use {!todoist} to create tasks for emails needing detailed responses. Use {!google-calendar} to block 30 minutes tomorrow for email responses."
+        },
+        {
+            "name": "Research and Save",
+            "description": "Research a topic and save findings for later",
+            "category": "Research",
+            "roles": ["all"],
+            "tools": [],
+            "services": ["web-search", "readwise-reader", "bear-notes"],
+            "prompt": "Use {!web-search} to research {$field}. Use {!readwise-reader} to save the most relevant articles. Use {!bear-notes} to create a summary of key findings."
+        },
+        {
+            "name": "Stay in Touch System",
+            "description": "Identify and reconnect with neglected contacts",
+            "category": "Relationship Management",
+            "roles": ["all"],
+            "tools": [],
+            "services": ["orbit-crm", "google-calendar", "google-gmail"],
+            "prompt": "Use {!orbit-crm} to find contacts I haven't spoken to in 60+ days. Use {!google-calendar} to schedule 15-minute catch-up calls. Use {!google-gmail} to draft personalized reconnection emails."
+        },
+        {
+            "name": "Deep Person Research",
+            "description": "Comprehensive background on someone you'll meet",
+            "category": "Research",
+            "roles": ["all"],
+            "tools": [],
+            "services": ["research", "orbit-crm", "readwise-reader"],
+            "prompt": "Use {!research} to find recent information about {$person}. Use {!orbit-crm} to review our interaction history. Use {!readwise-reader} to check if I've saved any articles about them or their company."
+        },
+        {
+            "name": "Travel Meeting Optimizer",
+            "description": "Maximize networking during trips",
+            "category": "Meeting Management",
+            "roles": ["all"],
+            "tools": [],
+            "services": ["google-calendar", "orbit-crm", "web-search"],
+            "prompt": "Use {!google-calendar} to find my travel dates to {$location}. Use {!orbit-crm} to list contacts in that city. Use {!web-search} to find good meeting spots near my hotel."
+        },
+        {
+            "name": "Reading Time Scheduler",
+            "description": "Schedule time to process your reading list",
+            "category": "Knowledge Management",
+            "roles": ["all"],
+            "tools": [],
+            "services": ["readwise-reader", "google-calendar", "todoist"],
+            "prompt": "Use {!readwise-reader} to count unread articles. Use {!google-calendar} to find free time slots this week. Use {!todoist} to create a task to read top 3 priority articles."
+        },
+        {
+            "name": "Email Contact Enrichment",
+            "description": "Update contacts based on email signatures",
+            "category": "Sales",
+            "roles": ["all"],
+            "tools": [],
+            "services": ["google-gmail", "orbit-crm"],
+            "prompt": "Use {!google-gmail} to find emails from new people this week. Use {!orbit-crm} to add them as contacts with their title and company from email signatures."
+        },
+        {
+            "name": "Company Deep Dive",
+            "description": "Comprehensive research on a company",
+            "category": "Research",
+            "roles": ["all"],
+            "tools": [],
+            "services": ["research", "readwise-reader", "bear-notes"],
+            "prompt": "Use {!research} to research {#company} including funding, team, and recent news. Use {!readwise-reader} to save important findings. Use {!bear-notes} to create a company brief."
+        },
+        {
+            "name": "Meeting Location Finder",
+            "description": "Find the perfect meeting spot",
+            "category": "Meeting Management",
+            "roles": ["all"],
+            "tools": [],
+            "services": ["google-calendar", "orbit-crm", "web-search"],
+            "prompt": "Use {!google-calendar} to get tomorrow's meeting with {$person}. Use {!orbit-crm} to find their office location. Use {!web-search} to find coffee shops within walking distance."
+        },
+        {
+            "name": "Process Meeting Recording",
+            "description": "Turn meeting transcript into actionable outputs",
+            "category": "Meeting Management",
+            "roles": ["all"],
+            "tools": [],
+            "services": ["granola", "bear-notes", "todoist"],
+            "prompt": "Use {!granola} to get key points from [date] meeting. Use {!bear-notes} to create a summary for the team. Use {!todoist} to add action items with owners."
+        },
+        {
+            "name": "Weekly Email Digest",
+            "description": "Organize important emails into a weekly summary",
+            "category": "Email Productivity",
+            "roles": ["all"],
+            "tools": [],
+            "services": ["google-gmail", "bear-notes"],
+            "prompt": "Use {!google-gmail} to find important emails from this week. Use {!bear-notes} to create a weekly digest organized by project or topic."
+        },
+        {
+            "name": "Contact Cleanup Helper",
+            "description": "Identify and merge duplicate contacts",
+            "category": "Sales",
+            "roles": ["all"],
+            "tools": [],
+            "services": ["orbit-crm", "todoist"],
+            "prompt": "Use {!orbit-crm} to find contacts with similar names or same company. Use {!todoist} to create tasks to review and merge duplicates."
+        },
+        {
+            "name": "Research Synthesis",
+            "description": "Compile research from multiple sources",
+            "category": "Research",
+            "roles": ["all"],
+            "tools": [],
+            "services": ["readwise-reader", "bear-notes", "todoist"],
+            "prompt": "Use {!readwise-reader} to get highlights from articles tagged [tag]. Use {!bear-notes} to create a synthesis document. Use {!todoist} to add next research steps."
+        },
+        {
+            "name": "Inbox to Calendar",
+            "description": "Turn email requests into calendar blocks",
+            "category": "Meeting Management",
+            "roles": ["all"],
+            "tools": [],
+            "services": ["google-gmail", "google-calendar"],
+            "prompt": "Use {!google-gmail} to find emails requesting meetings or calls. Use {!google-calendar} to create events or block time to respond to each request."
+        },
+        {
+            "name": "Daily Standup Prep",
+            "description": "Prepare for daily standup meetings",
+            "category": "Meeting Management",
+            "roles": ["all"],
+            "tools": [],
+            "services": ["todoist", "google-calendar", "bear-notes"],
+            "prompt": "Use {!todoist} to list tasks completed yesterday and planned for today. Use {!google-calendar} to check today's meetings. Use {!bear-notes} to create standup talking points."
+        },
+        {
+            "name": "Follow-up Tracker",
+            "description": "Track and execute follow-ups from various sources",
+            "category": "Daily Planning",
+            "roles": ["all"],
+            "tools": [],
+            "services": ["google-gmail", "granola", "todoist"],
+            "prompt": "Use {!google-gmail} to find emails where I promised to follow up. Use {!granola} to check meeting notes for commitments. Use {!todoist} to create follow-up tasks with deadlines."
+        },
+        {
+            "name": "Quick Contact Finder",
+            "description": "Find the right person for a specific need",
+            "category": "Sales",
+            "roles": ["all"],
+            "tools": [],
+            "services": ["orbit-crm", "google-gmail"],
+            "prompt": "Use {!orbit-crm} to find contacts who work in {$industry} or have {$expertise}. Use {!google-gmail} to draft an outreach email."
+        },
+        {
+            "name": "Article to Action",
+            "description": "Turn saved articles into actionable insights",
+            "category": "Knowledge Management",
+            "roles": ["all"],
+            "tools": [],
+            "services": ["readwise-reader", "todoist"],
+            "prompt": "Use {!readwise-reader} to get highlights from articles I've read this week. Use {!todoist} to create action items based on key insights."
+        },
+        {
+            "name": "Meeting History Review",
+            "description": "Review past interactions before meeting someone",
+            "category": "Meeting Management",
+            "roles": ["all"],
+            "tools": [],
+            "services": ["orbit-crm", "google-gmail", "granola"],
+            "prompt": "Use {!orbit-crm} to get background on {$person}. Use {!google-gmail} to find our last email exchange. Use {!granola} to check notes from our previous meetings."
+        },
+        {
+            "name": "End of Day Wrap-up",
+            "description": "Close out the day and prep for tomorrow",
+            "category": "Daily Planning",
+            "roles": ["all"],
+            "tools": [],
+            "services": ["todoist", "google-calendar", "google-gmail"],
+            "prompt": "Use {!todoist} to review today's completed tasks and move incomplete ones. Use {!google-calendar} to check tomorrow's first meeting. Use {!google-gmail} to send any end-of-day updates."
+        },
+        {
+            "name": "Tag and Organize Emails",
+            "description": "Clean up untagged emails and organize them",
+            "category": "Email Productivity",
+            "roles": ["all"],
+            "tools": [],
+            "services": ["google-gmail", "todoist"],
+            "prompt": "Use {!google-gmail} to find all untagged or uncategorized emails from the last week. Apply appropriate labels and create {!todoist} tasks for any that need follow-up action."
+        },
+        {
+            "name": "Relationship Temperature Check",
+            "description": "Monitor health of key relationships",
+            "category": "Relationship Management",
+            "roles": ["all"],
+            "tools": [],
+            "services": ["orbit-crm", "google-gmail"],
+            "prompt": "Use {!orbit-crm} to list key contacts sorted by {$last_contact}. Use {!google-gmail} to check response rates and engagement levels with each person."
+        },
+        {
+            "name": "Focus Time Protector",
+            "description": "Block time for deep work based on task priorities",
+            "category": "Meeting Management",
+            "roles": ["all"],
+            "tools": [],
+            "services": ["todoist", "google-calendar"],
+            "prompt": "Use {!todoist} to identify high-priority tasks requiring focus. Use {!google-calendar} to block 2-hour chunks this week for deep work on these tasks."
+        },
+        {
+            "name": "Introduction Facilitator",
+            "description": "Make valuable connections between contacts",
+            "category": "Relationship Management",
+            "roles": ["all"],
+            "tools": [],
+            "services": ["orbit-crm", "google-gmail"],
+            "prompt": "Use {!orbit-crm} to find two contacts who should know each other based on {$industry} or {$interests}. Use {!google-gmail} to draft a double opt-in introduction email."
+        },
+        {
+            "name": "Save Paywalled Articles",
+            "description": "Archive and save articles behind paywalls",
+            "category": "Research",
+            "roles": ["all"],
+            "tools": [],
+            "services": ["web-crawler", "readwise-reader"],
+            "prompt": "Use {!web-crawler} to get the archived version of {$url} using archive.is or archive.org. Use {!readwise-reader} to save the full article with [tag] for later reading."
+        },
+        {
+            "name": "Meeting Conflict Resolver",
+            "description": "Handle scheduling conflicts intelligently",
+            "category": "Meeting Management",
+            "roles": ["all"],
+            "tools": [],
+            "services": ["google-calendar", "orbit-crm", "google-gmail"],
+            "prompt": "Use {!google-calendar} to find scheduling conflicts. Use {!orbit-crm} to determine priority based on relationship importance. Use {!google-gmail} to send rescheduling requests."
+        },
+        {
+            "name": "Task Completion Helper",
+            "description": "Get help completing stuck tasks",
+            "category": "Daily Planning",
+            "roles": ["all"],
+            "tools": [],
+            "services": ["todoist", "web-search", "google-gmail"],
+            "prompt": "Use {!todoist} to find tasks that have been pending for over a week. Use {!web-search} to research solutions for blocked tasks. Use {!google-gmail} to draft emails for tasks waiting on others."
+        },
+        {
+            "name": "Template Note Filler",
+            "description": "Fill out standard note templates quickly",
+            "category": "Knowledge Management",
+            "roles": ["all"],
+            "tools": [],
+            "services": ["bear-notes", "google-calendar", "orbit-crm"],
+            "prompt": "Use {!bear-notes} to open meeting notes template. Use {!google-calendar} to pull meeting details. Use {!orbit-crm} to add attendee information. Fill template with context."
+        },
+        {
+            "name": "Web Page Analyzer",
+            "description": "Extract and analyze content from any webpage",
+            "category": "Research",
+            "roles": ["all"],
+            "tools": [],
+            "services": ["web-crawler", "bear-notes", "readwise-reader"],
+            "prompt": "Use {!web-crawler} to crawl and extract content from {$url}. Use {!bear-notes} to create a summary of key points. Use {!readwise-reader} to save if worth reading later."
+        },
+        {
+            "name": "Weekly Planning & Alignment",
+            "description": "Audit next 7 days calendar against your goals",
+            "category": "Daily Planning",
+            "roles": ["all"],
+            "tools": [],
+            "services": ["google-calendar"],
+            "prompt": "Review all calendars in {!google-calendar} for the next 7 days. Reference goals and personal context provided. Use calendar names (e.g., Work, Personal, Side Project) and personal context to understand what matters. Connect scheduled time back to stated goals. Structure the output as an executive briefing:\n\n**Your Goals** (brief recap from context)\n\n**What Looks Good**\n[2-3 meetings/blocks that clearly advance your goals - reference which calendar and why it matters given your context]\n\n**What Looks Questionable**\n[2-3 meetings that may not align with goals - include calendar name, time commitment, and why it seems misaligned given your priorities]\n\n**Suggested Adjustments**\n[2-3 specific calendar changes: decline, delegate, or reschedule specific meetings with reasoning tied to goals]\n\n**Details**\n| Goal Area | Scheduled Hours | Key Meetings |\n|-----------|-----------------|--------------|\n[Where time is allocated - top 5 areas only]\n\n**Bottom Line**\n[2-3 sentences on overall week outlook, biggest opportunity, biggest risk]"
+		},
+        {
+            "name": "Weekly Calendar Retrospective",
+            "description": "Analyze how last week's time aligned with goals",
+            "category": "Daily Planning",
+            "roles": ["all"],
+            "tools": [],
+            "services": ["google-calendar"],
+            "prompt": "Review all calendars in {!google-calendar} for the past 7 days. Reference goals from context.\n\nStructure the output as an executive briefing:\n\n**Your Goals** (brief recap from context)\n\n**What Aligned Well**\n[2-3 specific examples of meetings/blocks that advanced your goals]\n\n**What Didn't Align**\n[2-3 specific meetings that consumed time without advancing goals - include hours spent]\n\n**Recommendations**\n[2-3 actionable tips for next week based on patterns observed]\n\n**Details**\n| Goal Area | Hours Spent | Key Meetings |\n|-----------|-------------|--------------|\n[Where the time actually went - top 5 areas only]\n\n**Bottom Line**\n[2-3 sentences summarizing overall alignment, biggest win, biggest miss]"
+        },
+        {
+            "name": "Virtual Meeting Prep",
+            "description": "Prepare thoroughly for upcoming online meetings, including attendee insights and talking points.",
+            "category": "Meeting Management",
+            "roles": ["all"],
+            "tools": [],
+            "services": ["google-calendar", "orbit-crm", "research"],
+            "prompt": "Prepare for virtual meeting '{$event_title}' from {$calendar_name} calendar at {$start_time}.\n\n**Step 1: Context Check**\nUse {!google-calendar} to get meeting details and full attendee list. Check attendee email domains against user's email domain to determine meeting type:\n- If corporate domain (not free email providers like @gmail/@yahoo/@outlook, etc.) and all attendees share same domain = Internal meeting\n- If free email account or mixed domains = External meeting\n- If recurring meeting + all attendees in {!orbit-crm} with recent interactions = Internal routine\n\n**Step 2: Attendee Research (External meetings only)**\nFor external meetings with ≤10 attendees: Use {!orbit-crm} to search for each external attendee. For any not found, use {!research} to find their background and company.\nFor large external meetings (>10 attendees) or internal meetings: Skip detailed research, just note key attendee names.\n\n**Step 3: Goal Alignment**\nReview goals from context. Answer: Does this meeting advance any of my stated priorities? If unclear, note which goal area this might support.\n\n**Output Format (Markdown):**\n### Meeting: [Title]\n**Type:** Internal/External | **Duration:** {$duration_minutes} minutes | **Attendees:** {$attendee_count}\n\n**Goal Alignment:** [1-2 sentences on how this serves priorities, or 'Unclear alignment']\n\n**Key Attendees:** [For external: name, title, company, 1 key insight per person. For internal: just names]\n\n**Talking Points:** [3-5 bullets max]\n\n**Meeting Link:** {$meeting_url}"
+		},
+        {
+            "name": "In-Person Meeting Prep",
+            "description": "Plan logistics and attendee research for face-to-face meetings.",
+            "category": "Meeting Management",
+            "roles": ["all"],
+            "tools": [],
+            "services": ["google-calendar", "orbit-crm", "research", "web-search"],
+            "prompt": "Prepare for in-person meeting '{$event_title}' from {$calendar_name} calendar at {$start_time}.\n\n**Step 1: Context Check**\nUse {!google-calendar} to get meeting details and full attendee list. Check attendee email domains against user's email domain to determine meeting type:\n- If corporate domain (not free email providers like @gmail/@yahoo/@outlook, etc.) and all attendees share same domain = Internal meeting\n- If free email account or mixed domains = External meeting\n- If recurring meeting + all attendees in {!orbit-crm} with recent interactions = Internal routine\n\n**Step 2: Attendee Research (External meetings only)**\nFor external meetings: Use {!orbit-crm} to search for each external attendee. For any not found, use {!research} to find their background and company.\nFor internal meetings: Skip detailed research, just note attendee names.\n\n**Step 3: Goal Alignment**\nReview goals from context. Answer: Does this meeting advance any of my stated priorities? If unclear, note which goal area this might support.\n\n**Step 4: Location Planning**\nIf location is specified: Use {!web-search} to find appropriate venues or confirm location details. Check travel time and parking options.\nIf no location: Suggest 2-3 venue options based on attendee locations.\n\n**Output Format (Markdown):**\n### Meeting: [Title]\n**Type:** Internal/External | **Duration:** [X] minutes | **Location:** [Address or TBD]\n\n**Goal Alignment:** [1-2 sentences on how this serves priorities, or 'Unclear alignment']\n\n**Key Attendees:** [For external: name, title, company, 1 key insight per person. For internal: just names]\n\n**Talking Points:** [3-5 bullets max]\n\n**Location Details:** [Venue info, travel time, parking notes]"
+        },
+        {
+            "name": "All-Day Event Prep",
+            "description": "Coordinate schedules and logistics for full-day events.",
+            "category": "Meeting Management",
+            "roles": ["all"],
+            "tools": [],
+            "services": ["google-calendar"],
+            "prompt": "Plan for all-day event '{$event_title}' from {$calendar_name} calendar. Use {!google-calendar} to get event details. Review schedule conflicts for the day and identify any meetings that need to be rescheduled. Plan logistics if travel is required."
+        },
+        {
+            "name": "Meeting Follow-Up",
+            "description": "Capture outcomes, update records, and draft follow-up actions.",
+            "category": "Meeting Management",
+            "roles": ["all"],
+            "tools": [],
+            "services": ["google-calendar", "orbit-crm"],
+            "prompt": "Follow up on meeting '{$event_title}' from {$calendar_name} calendar. Use {!google-calendar} to review meeting details and get attendee list. Use {!orbit-crm} to log meeting notes and update last contacted date for each attendee found in the system. Draft follow-up email summarizing key decisions and action items. Identify and track any commitments or next steps."
+        },
+        {
+            "name": "Team Dynamics Retrospective",
+            "description": "Reflect on team behaviors and identify one improvement for future meetings.",
+            "category": "Meeting Management",
+            "roles": ["all"],
+            "tools": [],
+            "services": ["granola"],
+            "prompt": "Ask {!granola} about the last meeting:\n1. Trust (1–5): What built or hurt trust?\n2. Conflict (1–5): Where did we avoid or embrace debate?\n3. Commitment (1–5): What would make decisions clearer?\n4. Accountability (1–5): What gap in follow-through did I notice?\n5. Results (1–5): Where did focus drift from team goals?\n→ Pick 1 action to improve next time."
+        },
+	{
+	    "name": "Post-Meeting Follow-Up",
+	    "description": "Generate follow-up email based on meeting details and attendee information",
+	    "category": "Meeting Management",
+	    "roles": ["all"],
+	    "tools": [],
+	    "services": ["google-calendar", "orbit-crm"],
+	    "prompt": "Follow up on meeting '{$event_title}' from {$calendar_name} calendar that occurred at {$start_time}. Use {!google-calendar} to get meeting details and full attendee list. Use {!orbit-crm} to search for and review information on each attendee for tone and context. Write a super short and casual follow-up email based on the meeting context. Use the CRM information to personalize the tone. Come up with the subject line based on the title & contents. The email should be action oriented. Include placeholders for any specific information needed (e.g. \"[Insert current ARR]\" or \"[Insert LINK to DPA]\"). Keep it genuine and reference our shared history with attendees where relevant."
+	},
+        {
+            "name": "Meeting Notes Post-Meeting Follow-Up",
+            "description": "Generate personalized, casual follow-up emails focused on action items rather than discussion summaries",
+            "category": "Meeting Management",
+            "roles": ["all"],
+            "tools": [],
+            "services": ["granola", "orbit-crm"],
+            "prompt": "Get the last meeting summary from {!granola}. Make sure to ask all details for the participants using {!orbit-crm}. Use the collective information to Write a super short and casual follow-up email that I can send based on the meeting provided. Use the CRM information for the tone of the email. Come up with the subject line based on the title & contents of the email. The email should be action oriented instead of focusing on what was discussed. In general, if there's any information you want to include in the email but you don't have it, put a placeholder in (e.g. \"[Insert current ARR]\" or \"[Insert LINK to DPA]\" or \"[Insert slide-deck-link]\" or \"[Attach DPA]\"). When I promised to do something in the meeting: - If it's something that can be done in under 5 minutes (e.g. find a document, look up some information) assume that I've done it already and put in placeholders as needed. For example, let's say I promised to reschedule our next meeting to later, you could write \"I rescheduled our next meeting to [Insert DATE]\". - If it takes more than a couple minutes and is important, mention that I'll do it. When other people promised to do something: - If it's important, mention the things other people promised to do. It's always good to push people toward action, so instead of saying that Amanda needs to do X, perhaps say \"Amanda, when do you think you'll be able to do X by?\". Do not quote the transcript directly within the email, this messes up the formatting."
+        },
+        {
+            "name": "Birthday Wishes",
+            "description": "Draft birthday messages for a contact",
+            "category": "Relationship Management",
+            "roles": ["all"],
+            "tools": [],
+            "services": ["google-calendar", "orbit-crm"],
+            "prompt": "Ask {!orbit-crm} to review all information for {$person}. Draft short message for upcoming Birthday ({$years} years) to text 💬 and an email 📧. Keep it genuine and reference our shared history or recent interactions."
+        },
+        {
+            "name": "Anniversary Wishes",
+            "description": "Draft anniversary messages for a contact",
+            "category": "Relationship Management",
+            "roles": ["all"],
+            "tools": [],
+            "services": ["google-calendar", "orbit-crm"],
+            "prompt": "Ask {!orbit-crm} to review all information for {$person}. Draft a thoughtful message for their {$anniversary_type} anniversary ({$years} years). Create versions for text 💬 and email 📧, referencing something specific about their journey."
+        },
+        {
+            "name": "Contact Check-in",
+            "description": "Reach out to someone you haven't connected with recently",
+            "category": "Relationship Management",
+            "roles": ["all"],
+            "tools": [],
+            "services": ["orbit-crm"],
+            "prompt": "Ask {!orbit-crm} to review all information for {$person}. It's been {$days_until} days since our check-in reminder. Draft a natural, friendly message to reconnect. Create versions for text 💬 and email 📧."
+        },
+        {
+            "name": "Reconnect with Contact",
+            "description": "Re-establish connection with someone after a long gap",
+            "category": "Relationship Management",
+            "roles": ["all"],
+            "tools": [],
+            "services": ["orbit-crm", "research"],
+            "prompt": "Ask {!orbit-crm} to review all information for {$person}. It's been {$days_elapsed} days since our last interaction. Use {!research} to find recent updates about them. Draft a thoughtful reconnection message referencing something current in their life."
+        },
+        {
+            "name": "Schedule Meeting with Contact",
+            "description": "Reach out to schedule a meeting with someone",
+            "category": "Relationship Management",
+            "roles": ["all"],
+            "tools": [],
+            "services": ["orbit-crm", "google-calendar"],
+            "prompt": "Ask {!orbit-crm} to review all information for {$person}. It's been {$days_elapsed} days since we last met. Check {!google-calendar} for my availability this week. Draft a message proposing 2-3 specific times to meet, either virtually or in person based on our usual preference."
+        },
+        {
+            "name": "Team Meeting Prep",
+            "description": "Prepare for a team or group meeting",
+            "category": "Meeting Management",
+            "roles": ["all"],
+            "tools": [],
+            "services": ["google-calendar", "orbit-crm"],
+            "prompt": "Prepare for team meeting '{$event_title}' from {$calendar_name} calendar with {$attendee_count} people: {$attendees}. Use {!orbit-crm} to review recent interactions with the team. Suggest: 1) Updates to share, 2) Topics for discussion, 3) Questions for the group, 4) Follow-up items from last meeting."
+        },
+        {
+            "name": "One-on-One Meeting Prep",
+            "description": "Prepare for a 1:1 meeting",
+            "category": "Meeting Management",
+            "roles": ["all"],
+            "tools": [],
+            "services": ["google-calendar", "orbit-crm"],
+            "prompt": "Prepare for 1:1 with {$attendees} about '{$event_title}' from {$calendar_name} calendar. Use {!orbit-crm} to review our interaction history and any pending items. Suggest: 1) Status updates to share, 2) Feedback to give, 3) Questions to ask, 4) Development topics to discuss."
+        },
+        {
+            "name": "Recurring Meeting Review",
+            "description": "Review and optimize a recurring meeting",
+            "category": "Meeting Management",
+            "roles": ["all"],
+            "tools": [],
+            "services": ["google-calendar"],
+            "prompt": "Review recurring meeting '{$event_title}' from {$calendar_name} calendar happening at {$start_time}. This meeting occurs regularly. Analyze: 1) Is this meeting still necessary? \n2) Could it be shorter or less frequent?\n 3) Are the right people attending?\n 4) How to make it more effective?"
+        },
+        {
+            "name": "Hybrid Meeting Management",
+            "description": "Manage a meeting with both in-person and remote participants",
+            "category": "Meeting Management",
+            "roles": ["all"],
+            "tools": [],
+            "services": ["google-calendar", "orbit-crm"],
+            "prompt": "Help me manage hybrid meeting '{$event_title}' from {$calendar_name} calendar at {$start_time}. In-person at: {$location}, Virtual link: {$meeting_url}. Total attendees: {$attendee_count}. Create a plan to: 1) Ensure equal participation\n 2) Technical setup needed\n 3) How to share materials with both groups."
+        },
+        {
+            "name": "Time Block Review",
+            "description": "Prepare for and align time blocks with your goals",
+            "category": "Daily Planning",
+            "roles": ["all"],
+            "tools": [],
+            "services": ["google-calendar"],
+            "prompt": "Review time block '{$event_title}' (event ID: {$event_id}) from {$calendar_name} calendar ({$duration} starting at {$start_time}). Use {!google-calendar} to check what comes before and after this block. Help me: 1) Clarify what success looks like for this block\n 2) Identify which of my goals this supports\n 3) List 2-3 specific outcomes I should aim for\n 4) Suggest how to eliminate distractions during this time."
+        }
+    ]
+}
