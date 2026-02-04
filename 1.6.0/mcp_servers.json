@@ -338,6 +338,50 @@
           }
         ]
       }
+    },
+    {
+      "prefix": "slack",
+      "transport_type": "streamable-http",
+      "server_source": "partner",
+      "composio_mcp_id": "69b9c235-8e5c-4851-8150-e1772bdce99d",
+      "auth_config_id": "ac_Kzbyi7gwT4qH",
+      "metadata_overrides": {
+        "description": "Send messages and search your Slack workspace",
+        "category": "Communication",
+        "server_type": "user",
+        "security_type": "oauth",
+        "logo_url": "https://pub-4421542fcd47468da3bde597fe7b682f.r2.dev/logos/slack_512x512.png",
+        "icon_url": "https://pub-4421542fcd47468da3bde597fe7b682f.r2.dev/logos/slack_256x256.png",
+        "credentials": [
+          {
+            "name": "connected_account_id",
+            "description": "Sign in with your Slack account",
+            "required": true
+          }
+        ]
+      }
+    },
+    {
+      "prefix": "wix",
+      "mcp_server_type": "proxy",
+      "transport_type": "sse",
+      "url": "https://mcp.wix.com/mcp",
+      "server_source": "official",
+      "metadata_overrides": {
+        "description": "Build and manage Wix sites, CRM, inventory, and business solutions",
+        "category": "Marketing",
+        "server_type": "user",
+        "security_type": "oauth",
+        "logo_url": "https://pub-4421542fcd47468da3bde597fe7b682f.r2.dev/logos/wix_512x512.png",
+        "icon_url": "https://pub-4421542fcd47468da3bde597fe7b682f.r2.dev/logos/wix_256x256.png",
+        "credentials": [
+          {
+            "name": "oauth",
+            "description": "Sign in with your Wix account",
+            "required": true
+          }
+        ]
+      }
     }
   ]
 }
