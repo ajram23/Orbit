@@ -296,50 +296,6 @@
       }
     },
     {
-      "prefix": "granola-official",
-      "mcp_server_type": "proxy",
-      "transport_type": "streamable-http",
-      "url": "https://mcp.granola.ai/mcp",
-      "server_source": "official",
-      "metadata_overrides": {
-        "description": "Access your meeting notes via Granola's official MCP server",
-        "category": "Collaboration",
-        "server_type": "user",
-        "security_type": "oauth",
-        "logo_url": "https://pub-4421542fcd47468da3bde597fe7b682f.r2.dev/logos/granola_512x512.png",
-        "icon_url": "https://pub-4421542fcd47468da3bde597fe7b682f.r2.dev/logos/granola_256x256.png",
-        "credentials": [
-          {
-            "name": "oauth",
-            "description": "Sign in with your Granola account",
-            "required": true
-          }
-        ]
-      }
-    },
-    {
-      "prefix": "todoist-official",
-      "mcp_server_type": "proxy",
-      "transport_type": "streamable-http",
-      "url": "https://ai.todoist.net/mcp",
-      "server_source": "official",
-      "metadata_overrides": {
-        "description": "Manage tasks and projects via Todoist's official MCP server",
-        "category": "Productivity",
-        "server_type": "user",
-        "security_type": "oauth",
-        "logo_url": "https://pub-4421542fcd47468da3bde597fe7b682f.r2.dev/logos/todoist_512x512.png",
-        "icon_url": "https://pub-4421542fcd47468da3bde597fe7b682f.r2.dev/logos/todoist_256x256.png",
-        "credentials": [
-          {
-            "name": "oauth",
-            "description": "Sign in with your Todoist account",
-            "required": true
-          }
-        ]
-      }
-    },
-    {
       "prefix": "slack",
       "transport_type": "streamable-http",
       "server_source": "partner",
@@ -347,7 +303,7 @@
       "auth_config_id": "ac_Kzbyi7gwT4qH",
       "metadata_overrides": {
         "description": "Send messages and search your Slack workspace",
-        "category": "Communication",
+        "category": "Collaboration",
         "server_type": "user",
         "security_type": "oauth",
         "logo_url": "https://pub-4421542fcd47468da3bde597fe7b682f.r2.dev/logos/slack_512x512.png",
