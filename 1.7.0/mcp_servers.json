@@ -1,0 +1,1765 @@
+{
+    "version": "1.7.0",
+    "_changelog": "Added: stripe, intercom, sentry, amplitude, mixpanel, klaviyo, webflow, ahrefs, semrush, meta-ads, brevo. Restored: todoist, granola from backup. Added 47 Horizon-hosted MCP servers: activecampaign, adobe-analytics, apollo, beehiiv, buffer, calendly, carta, clearbit, customer-io, dataforseo, demio, dub, g2, ga4, google-ads, google-search-console, hotjar, hunter, instantly, keywords-everywhere, kit, lattice, lemlist, linkedin-ads, livestorm, loops, mailchimp, mention-me, onesignal, optimizely, paddle, partnerstack, pave, plausible, postmark, resend, rewardful, rippling, savvycal, segment, sendgrid, snov, tiktok-ads, tolt, trustpilot, typeform, wistia.",
+    "servers": [
+        {
+            "prefix": "apple-maps",
+            "mcp_server_type": "proxy",
+            "transport_type": "sse",
+            "url": "http://localhost:5006/sse",
+            "server_source": "native",
+            "metadata_overrides": {
+                "description": "Search places, get directions, and explore points of interest using Apple Maps",
+                "category": "Productivity",
+                "server_type": "default",
+                "security_type": "native",
+                "logo_url": "https://pub-4421542fcd47468da3bde597fe7b682f.r2.dev/logos/apple_maps_512x512.png",
+                "icon_url": "https://pub-4421542fcd47468da3bde597fe7b682f.r2.dev/logos/apple_maps_256x256.png",
+                "required_permissions": [
+                    "location"
+                ],
+                "credentials": []
+            },
+            "server_location": "local"
+        },
+        {
+            "prefix": "apple-reminders",
+            "mcp_server_type": "proxy",
+            "transport_type": "sse",
+            "url": "http://localhost:5007/sse",
+            "server_source": "native",
+            "metadata_overrides": {
+                "description": "Create, fetch, and manage your Apple Reminders",
+                "category": "Productivity",
+                "server_type": "user",
+                "security_type": "native",
+                "logo_url": "https://pub-4421542fcd47468da3bde597fe7b682f.r2.dev/logos/apple_reminders_512x512.png",
+                "icon_url": "https://pub-4421542fcd47468da3bde597fe7b682f.r2.dev/logos/apple_reminders_256x256.png",
+                "required_permissions": [
+                    "reminders"
+                ],
+                "credentials": []
+            },
+            "server_location": "local"
+        },
+        {
+            "prefix": "google-gmail",
+            "composio_mcp_id": "5788e415-ed96-4d47-a62a-3e0fedbd4b2c",
+            "auth_config_id": "ac__o2XSYs85YfG",
+            "transport_type": "streamable-http",
+            "server_source": "partner",
+            "metadata_overrides": {
+                "description": "Manage your GMail/Google Workspace emails",
+                "category": "Collaboration",
+                "server_type": "user",
+                "security_type": "oauth",
+                "logo_url": "https://pub-4421542fcd47468da3bde597fe7b682f.r2.dev/logos/google_gmail_512x512.png",
+                "icon_url": "https://pub-4421542fcd47468da3bde597fe7b682f.r2.dev/logos/google_gmail_256x256.png",
+                "credentials": [
+                    {
+                        "name": "connected_account_id",
+                        "description": "Sign in with your Google account",
+                        "required": true
+                    }
+                ]
+            }
+        },
+        {
+            "prefix": "outlook-mail",
+            "composio_mcp_id": "fd32a824-503c-4248-911b-c655cefa7940",
+            "auth_config_id": "ac_OowYMa7j-XMB",
+            "transport_type": "streamable-http",
+            "server_source": "partner",
+            "metadata_overrides": {
+                "description": "Manage your Outlook emails",
+                "category": "Collaboration",
+                "server_type": "user",
+                "security_type": "oauth",
+                "logo_url": "https://pub-4421542fcd47468da3bde597fe7b682f.r2.dev/logos/outlook_512x512.png",
+                "icon_url": "https://pub-4421542fcd47468da3bde597fe7b682f.r2.dev/logos/outlook_256x256.png",
+                "credentials": [
+                    {
+                        "name": "connected_account_id",
+                        "description": "Sign in with your Outlook account",
+                        "required": true
+                    }
+                ]
+            }
+        },
+        {
+            "prefix": "beeper",
+            "mcp_server_type": "proxy",
+            "transport_type": "streamable-http",
+            "url": "http://localhost:23373/v0/mcp",
+            "server_source": "official",
+            "metadata_overrides": {
+                "description": "Access your Beeper Chat messages",
+                "category": "Collaboration",
+                "server_type": "user",
+                "security_type": "token",
+                "logo_url": "https://pub-4421542fcd47468da3bde597fe7b682f.r2.dev/logos/beeper_512x512.png",
+                "icon_url": "https://pub-4421542fcd47468da3bde597fe7b682f.r2.dev/logos/beeper_256x256.png",
+                "credentials": [
+                    {
+                        "name": "AUTH_TOKEN",
+                        "description": "Your Beeper authentication token (required). Beeper has to be open to connect & use.",
+                        "url": "https://developers.beeper.com/desktop-api/auth",
+                        "link_text": "Get API Token",
+                        "required": true
+                    }
+                ]
+            },
+            "server_location": "local"
+        },
+        {
+            "prefix": "github",
+            "mcp_server_type": "proxy",
+            "transport_type": "streamable-http",
+            "url": "https://api.githubcopilot.com/mcp/",
+            "server_source": "official",
+            "metadata_overrides": {
+                "description": "Access your Github repositories",
+                "category": "Product",
+                "server_type": "user",
+                "security_type": "token",
+                "logo_url": "https://pub-4421542fcd47468da3bde597fe7b682f.r2.dev/logos/github_512x512.png",
+                "icon_url": "https://pub-4421542fcd47468da3bde597fe7b682f.r2.dev/logos/github_256x256.png",
+                "credentials": [
+                    {
+                        "name": "GITHUB_PAT",
+                        "description": "GitHub Personal Access Token",
+                        "url": "https://github.com/settings/tokens",
+                        "link_text": "Create PAT",
+                        "required": true
+                    }
+                ]
+            }
+        },
+        {
+            "prefix": "zapier",
+            "mcp_server_type": "zapier",
+            "transport_type": "streamable-http",
+            "server_source": "official",
+            "metadata_overrides": {
+                "description": "Connect your custom Zapier workflows",
+                "category": "Utilities",
+                "server_type": "user",
+                "security_type": "zapier",
+                "logo_url": "https://pub-4421542fcd47468da3bde597fe7b682f.r2.dev/logos/zapier_512x512.png",
+                "icon_url": "https://pub-4421542fcd47468da3bde597fe7b682f.r2.dev/logos/zapier_256x256.png",
+                "credentials": [
+                    {
+                        "name": "server_url",
+                        "description": "Your Zapier server URL (required)",
+                        "url": "https://mcp.zapier.com/mcp/servers/",
+                        "link_text": "Get Server URL",
+                        "required": true
+                    }
+                ]
+            }
+        },
+        {
+            "prefix": "linear",
+            "mcp_server_type": "proxy",
+            "transport_type": "streamable-http",
+            "url": "https://mcp.linear.app/mcp",
+            "server_source": "official",
+            "metadata_overrides": {
+                "description": "Manage Linear issues, projects, and comments",
+                "category": "Product",
+                "server_type": "user",
+                "security_type": "token",
+                "logo_url": "https://pub-4421542fcd47468da3bde597fe7b682f.r2.dev/logos/linear_512x512.png",
+                "icon_url": "https://pub-4421542fcd47468da3bde597fe7b682f.r2.dev/logos/linear_256x256.png",
+                "credentials": [
+                    {
+                        "name": "LINEAR_API_KEY",
+                        "description": "Linear API Key",
+                        "url": "https://linear.app/settings/api",
+                        "link_text": "Get API Key",
+                        "required": true
+                    }
+                ]
+            }
+        },
+        {
+            "prefix": "fireflies",
+            "mcp_server_type": "proxy",
+            "transport_type": "streamable-http",
+            "url": "https://api.fireflies.ai/mcp",
+            "server_source": "official",
+            "metadata_overrides": {
+                "description": "Access and analyze your meeting transcripts and data",
+                "category": "Collaboration",
+                "server_type": "user",
+                "security_type": "token",
+                "logo_url": "https://pub-4421542fcd47468da3bde597fe7b682f.r2.dev/logos/fireflies_512x512.png",
+                "icon_url": "https://pub-4421542fcd47468da3bde597fe7b682f.r2.dev/logos/fireflies_256x256.png",
+                "credentials": [
+                    {
+                        "name": "FIREFLIES_API_KEY",
+                        "description": "Fireflies API Key",
+                        "url": "https://guide.fireflies.ai/hc/en-us/articles/360020249198-How-to-access-the-Fireflies-API-key",
+                        "link_text": "Get API Key",
+                        "required": true
+                    }
+                ]
+            }
+        },
+        {
+            "prefix": "notion",
+            "mcp_server_type": "proxy",
+            "transport_type": "streamable-http",
+            "url": "https://mcp.notion.com/mcp",
+            "server_source": "official",
+            "metadata_overrides": {
+                "description": "Access Notion pages and databases",
+                "category": "Collaboration",
+                "server_type": "user",
+                "security_type": "oauth",
+                "logo_url": "https://pub-4421542fcd47468da3bde597fe7b682f.r2.dev/logos/notion_512x512.png",
+                "icon_url": "https://pub-4421542fcd47468da3bde597fe7b682f.r2.dev/logos/notion_256x256.png",
+                "credentials": [
+                    {
+                        "name": "oauth",
+                        "description": "Sign in with your Notion account",
+                        "required": true
+                    }
+                ]
+            }
+        },
+        {
+            "prefix": "posthog",
+            "mcp_server_type": "proxy",
+            "transport_type": "streamable-http",
+            "url": "https://mcp.posthog.com/mcp",
+            "server_source": "official",
+            "metadata_overrides": {
+                "description": "Product analytics, feature flags, error tracking",
+                "category": "Product",
+                "server_type": "user",
+                "security_type": "token",
+                "logo_url": "https://pub-4421542fcd47468da3bde597fe7b682f.r2.dev/logos/posthog_512x512.png",
+                "icon_url": "https://pub-4421542fcd47468da3bde597fe7b682f.r2.dev/logos/posthog_256x256.png",
+                "credentials": [
+                    {
+                        "name": "POSTHOG_AUTH_HEADER",
+                        "description": "Posthog API key (use MCP Server preset)",
+                        "url": "https://posthog.com/docs/model-context-protocol",
+                        "link_text": "Get API Key",
+                        "required": true
+                    }
+                ]
+            }
+        },
+        {
+            "prefix": "canva",
+            "transport_type": "streamable-http",
+            "server_source": "partner",
+            "composio_mcp_id": "b021ab25-2a0c-41c6-9d0d-a19c46adfca3",
+            "auth_config_id": "ac_HJ4BQrf-TgVI",
+            "metadata_overrides": {
+                "description": "Create and manage Canva designs, templates, and exports",
+                "category": "Marketing",
+                "server_type": "user",
+                "security_type": "oauth",
+                "logo_url": "https://pub-4421542fcd47468da3bde597fe7b682f.r2.dev/logos/canva_512x512.png",
+                "icon_url": "https://pub-4421542fcd47468da3bde597fe7b682f.r2.dev/logos/canva_256x256.png",
+                "credentials": [
+                    {
+                        "name": "connected_account_id",
+                        "description": "Sign in with your Canva account",
+                        "required": true
+                    }
+                ]
+            }
+        },
+        {
+            "prefix": "circleback",
+            "mcp_server_type": "proxy",
+            "transport_type": "streamable-http",
+            "url": "https://app.circleback.ai/api/mcp",
+            "server_source": "official",
+            "metadata_overrides": {
+                "description": "Access meeting notes, transcripts, and calendar context",
+                "category": "Collaboration",
+                "server_type": "user",
+                "security_type": "oauth",
+                "logo_url": "https://pub-4421542fcd47468da3bde597fe7b682f.r2.dev/logos/circleback_512x512.png",
+                "icon_url": "https://pub-4421542fcd47468da3bde597fe7b682f.r2.dev/logos/circleback_256x256.png",
+                "credentials": [
+                    {
+                        "name": "oauth",
+                        "description": "Sign in with your Circleback account",
+                        "required": true
+                    }
+                ]
+            }
+        },
+        {
+            "prefix": "granola-official",
+            "mcp_server_type": "proxy",
+            "transport_type": "streamable-http",
+            "url": "https://mcp.granola.ai/mcp",
+            "server_source": "official",
+            "metadata_overrides": {
+                "description": "Access your meeting notes via Granola's official MCP server",
+                "category": "Collaboration",
+                "server_type": "user",
+                "security_type": "oauth",
+                "logo_url": "https://pub-4421542fcd47468da3bde597fe7b682f.r2.dev/logos/granola_512x512.png",
+                "icon_url": "https://pub-4421542fcd47468da3bde597fe7b682f.r2.dev/logos/granola_256x256.png",
+                "credentials": [
+                    {
+                        "name": "oauth",
+                        "description": "Sign in with your Granola account",
+                        "required": true
+                    }
+                ]
+            }
+        },
+        {
+            "prefix": "todoist-official",
+            "mcp_server_type": "proxy",
+            "transport_type": "streamable-http",
+            "url": "https://ai.todoist.net/mcp",
+            "server_source": "official",
+            "metadata_overrides": {
+                "description": "Manage tasks and projects via Todoist's official MCP server",
+                "category": "Productivity",
+                "server_type": "user",
+                "security_type": "oauth",
+                "logo_url": "https://pub-4421542fcd47468da3bde597fe7b682f.r2.dev/logos/todoist_512x512.png",
+                "icon_url": "https://pub-4421542fcd47468da3bde597fe7b682f.r2.dev/logos/todoist_256x256.png",
+                "credentials": [
+                    {
+                        "name": "oauth",
+                        "description": "Sign in with your Todoist account",
+                        "required": true
+                    }
+                ]
+            }
+        },
+        {
+            "prefix": "slack",
+            "transport_type": "streamable-http",
+            "server_source": "partner",
+            "composio_mcp_id": "69b9c235-8e5c-4851-8150-e1772bdce99d",
+            "auth_config_id": "ac_Kzbyi7gwT4qH",
+            "metadata_overrides": {
+                "description": "Send messages and search your Slack workspace",
+                "category": "Collaboration",
+                "server_type": "user",
+                "security_type": "oauth",
+                "logo_url": "https://pub-4421542fcd47468da3bde597fe7b682f.r2.dev/logos/slack_512x512.png",
+                "icon_url": "https://pub-4421542fcd47468da3bde597fe7b682f.r2.dev/logos/slack_256x256.png",
+                "credentials": [
+                    {
+                        "name": "connected_account_id",
+                        "description": "Sign in with your Slack account",
+                        "required": true
+                    }
+                ]
+            }
+        },
+        {
+            "prefix": "wix",
+            "mcp_server_type": "proxy",
+            "transport_type": "sse",
+            "url": "https://mcp.wix.com/mcp",
+            "server_source": "official",
+            "metadata_overrides": {
+                "description": "Build and manage Wix sites, CRM, inventory, and business solutions",
+                "category": "Marketing",
+                "server_type": "user",
+                "security_type": "oauth",
+                "logo_url": "https://pub-4421542fcd47468da3bde597fe7b682f.r2.dev/logos/wix_512x512.png",
+                "icon_url": "https://pub-4421542fcd47468da3bde597fe7b682f.r2.dev/logos/wix_256x256.png",
+                "credentials": [
+                    {
+                        "name": "oauth",
+                        "description": "Sign in with your Wix account",
+                        "required": true
+                    }
+                ]
+            }
+        },
+        {
+            "prefix": "stripe",
+            "mcp_server_type": "proxy",
+            "transport_type": "streamable-http",
+            "url": "https://mcp.stripe.com",
+            "server_source": "official",
+            "metadata_overrides": {
+                "description": "Manage payments, subscriptions, invoices, and customers via Stripe",
+                "category": "Commerce",
+                "server_type": "user",
+                "security_type": "token",
+                "logo_url": "https://pub-4421542fcd47468da3bde597fe7b682f.r2.dev/logos/stripe_512x512.png",
+                "icon_url": "https://pub-4421542fcd47468da3bde597fe7b682f.r2.dev/logos/stripe_256x256.png",
+                "credentials": [
+                    {
+                        "name": "STRIPE_API_KEY",
+                        "description": "Stripe Restricted API Key (recommended) or Secret Key",
+                        "url": "https://dashboard.stripe.com/apikeys",
+                        "link_text": "Get API Key",
+                        "required": true
+                    }
+                ]
+            }
+        },
+        {
+            "prefix": "intercom",
+            "mcp_server_type": "proxy",
+            "transport_type": "streamable-http",
+            "url": "https://mcp.intercom.com/mcp",
+            "server_source": "official",
+            "metadata_overrides": {
+                "description": "Access conversations, contacts, companies, and help center articles",
+                "category": "Marketing",
+                "server_type": "user",
+                "security_type": "token",
+                "logo_url": "https://pub-4421542fcd47468da3bde597fe7b682f.r2.dev/logos/intercom_512x512.png",
+                "icon_url": "https://pub-4421542fcd47468da3bde597fe7b682f.r2.dev/logos/intercom_256x256.png",
+                "credentials": [
+                    {
+                        "name": "INTERCOM_API_TOKEN",
+                        "description": "Intercom Access Token (Bearer token format)",
+                        "url": "https://app.intercom.com/a/developer-signup",
+                        "link_text": "Get API Token",
+                        "required": true
+                    }
+                ]
+            }
+        },
+        {
+            "prefix": "sentry",
+            "mcp_server_type": "proxy",
+            "transport_type": "streamable-http",
+            "url": "https://mcp.sentry.dev/mcp",
+            "server_source": "official",
+            "metadata_overrides": {
+                "description": "Monitor errors, performance issues, and application health",
+                "category": "Product",
+                "server_type": "user",
+                "security_type": "oauth",
+                "logo_url": "https://pub-4421542fcd47468da3bde597fe7b682f.r2.dev/logos/sentry_512x512.png",
+                "icon_url": "https://pub-4421542fcd47468da3bde597fe7b682f.r2.dev/logos/sentry_256x256.png",
+                "credentials": [
+                    {
+                        "name": "oauth",
+                        "description": "Sign in with your Sentry account",
+                        "required": true
+                    }
+                ]
+            }
+        },
+        {
+            "prefix": "amplitude",
+            "mcp_server_type": "proxy",
+            "transport_type": "streamable-http",
+            "url": "https://mcp.amplitude.com/mcp",
+            "server_source": "official",
+            "metadata_overrides": {
+                "description": "Analyze product data, charts, dashboards, experiments, and feature flags",
+                "category": "Product",
+                "server_type": "user",
+                "security_type": "oauth",
+                "logo_url": "https://pub-4421542fcd47468da3bde597fe7b682f.r2.dev/logos/amplitude_512x512.png",
+                "icon_url": "https://pub-4421542fcd47468da3bde597fe7b682f.r2.dev/logos/amplitude_256x256.png",
+                "credentials": [
+                    {
+                        "name": "oauth",
+                        "description": "Sign in with your Amplitude account",
+                        "required": true
+                    }
+                ]
+            }
+        },
+        {
+            "prefix": "mixpanel",
+            "mcp_server_type": "proxy",
+            "transport_type": "streamable-http",
+            "url": "https://mcp.mixpanel.com/mcp",
+            "server_source": "official",
+            "metadata_overrides": {
+                "description": "Generate reports, analyze events, and query product analytics data",
+                "category": "Product",
+                "server_type": "user",
+                "security_type": "oauth",
+                "logo_url": "https://pub-4421542fcd47468da3bde597fe7b682f.r2.dev/logos/mixpanel_512x512.png",
+                "icon_url": "https://pub-4421542fcd47468da3bde597fe7b682f.r2.dev/logos/mixpanel_256x256.png",
+                "credentials": [
+                    {
+                        "name": "oauth",
+                        "description": "Sign in with your Mixpanel account",
+                        "required": true
+                    }
+                ]
+            }
+        },
+        {
+            "prefix": "klaviyo",
+            "mcp_server_type": "proxy",
+            "transport_type": "streamable-http",
+            "url": "https://mcp.klaviyo.com/mcp",
+            "server_source": "official",
+            "metadata_overrides": {
+                "description": "Access email campaigns, flows, segments, and customer analytics",
+                "category": "Marketing",
+                "server_type": "user",
+                "security_type": "oauth",
+                "logo_url": "https://pub-4421542fcd47468da3bde597fe7b682f.r2.dev/logos/klaviyo_512x512.png",
+                "icon_url": "https://pub-4421542fcd47468da3bde597fe7b682f.r2.dev/logos/klaviyo_256x256.png",
+                "credentials": [
+                    {
+                        "name": "oauth",
+                        "description": "Sign in with your Klaviyo account",
+                        "required": true
+                    }
+                ]
+            }
+        },
+        {
+            "prefix": "webflow",
+            "mcp_server_type": "proxy",
+            "transport_type": "sse",
+            "url": "https://mcp.webflow.com/sse",
+            "server_source": "official",
+            "metadata_overrides": {
+                "description": "Manage Webflow sites, collections, elements, styles, and assets",
+                "category": "Marketing",
+                "server_type": "user",
+                "security_type": "oauth",
+                "logo_url": "https://pub-4421542fcd47468da3bde597fe7b682f.r2.dev/logos/webflow_512x512.png",
+                "icon_url": "https://pub-4421542fcd47468da3bde597fe7b682f.r2.dev/logos/webflow_256x256.png",
+                "credentials": [
+                    {
+                        "name": "oauth",
+                        "description": "Sign in with your Webflow account",
+                        "required": true
+                    }
+                ]
+            }
+        },
+        {
+            "prefix": "ahrefs",
+            "mcp_server_type": "proxy",
+            "transport_type": "streamable-http",
+            "url": "https://api.ahrefs.com/mcp/mcp",
+            "server_source": "official",
+            "metadata_overrides": {
+                "description": "SEO analysis with backlinks, keyword research, rank tracking, and competitor insights",
+                "category": "Marketing",
+                "server_type": "user",
+                "security_type": "oauth",
+                "logo_url": "https://pub-4421542fcd47468da3bde597fe7b682f.r2.dev/logos/ahrefs_512x512.png",
+                "icon_url": "https://pub-4421542fcd47468da3bde597fe7b682f.r2.dev/logos/ahrefs_256x256.png",
+                "credentials": [
+                    {
+                        "name": "oauth",
+                        "description": "Sign in with your Ahrefs account",
+                        "required": true
+                    }
+                ]
+            }
+        },
+        {
+            "prefix": "semrush",
+            "mcp_server_type": "proxy",
+            "transport_type": "streamable-http",
+            "url": "https://mcp.semrush.com/v1/mcp",
+            "server_source": "official",
+            "metadata_overrides": {
+                "description": "Competitive intelligence with keywords, domains, backlinks, and traffic analytics",
+                "category": "Marketing",
+                "server_type": "user",
+                "security_type": "oauth",
+                "logo_url": "https://pub-4421542fcd47468da3bde597fe7b682f.r2.dev/logos/semrush_512x512.png",
+                "icon_url": "https://pub-4421542fcd47468da3bde597fe7b682f.r2.dev/logos/semrush_256x256.png",
+                "credentials": [
+                    {
+                        "name": "oauth",
+                        "description": "Sign in with your Semrush account",
+                        "required": true
+                    }
+                ]
+            }
+        },
+        {
+            "prefix": "meta-ads",
+            "mcp_server_type": "proxy",
+            "transport_type": "streamable-http",
+            "url": "https://mcp.pipeboard.co/meta-ads-mcp",
+            "server_source": "official",
+            "metadata_overrides": {
+                "description": "Manage Facebook and Instagram ad campaigns, budgets, and creative",
+                "category": "Marketing",
+                "server_type": "user",
+                "security_type": "token",
+                "logo_url": "https://pub-4421542fcd47468da3bde597fe7b682f.r2.dev/logos/meta_ads_512x512.png",
+                "icon_url": "https://pub-4421542fcd47468da3bde597fe7b682f.r2.dev/logos/meta_ads_256x256.png",
+                "credentials": [
+                    {
+                        "name": "PIPEBOARD_API_TOKEN",
+                        "description": "Pipeboard API Token for Meta Ads access",
+                        "url": "https://pipeboard.co/api-tokens",
+                        "link_text": "Get API Token",
+                        "required": true
+                    }
+                ]
+            }
+        },
+        {
+            "prefix": "brevo",
+            "mcp_server_type": "zapier",
+            "transport_type": "streamable-http",
+            "server_source": "official",
+            "metadata_overrides": {
+                "description": "Manage contacts, email campaigns, deals, and marketing automation",
+                "category": "Marketing",
+                "server_type": "user",
+                "security_type": "zapier",
+                "logo_url": "https://pub-4421542fcd47468da3bde597fe7b682f.r2.dev/logos/brevo_512x512.png",
+                "icon_url": "https://pub-4421542fcd47468da3bde597fe7b682f.r2.dev/logos/brevo_256x256.png",
+                "credentials": [
+                    {
+                        "name": "server_url",
+                        "description": "Your Brevo MCP URL with token (e.g. https://mcp.brevo.com/v1/brevo_contacts/mcp/YOUR_TOKEN)",
+                        "url": "https://developers.brevo.com/docs/mcp-protocol",
+                        "link_text": "Get MCP URL",
+                        "required": true
+                    }
+                ]
+            }
+        },
+        {
+            "prefix": "activecampaign",
+            "mcp_server_type": "proxy",
+            "transport_type": "streamable-http",
+            "url": "https://orbit-activecampaign.fastmcp.app/mcp",
+            "server_source": "native",
+            "metadata_overrides": {
+                "description": "Manage contacts, campaigns, deals, automations, and CRM pipelines in ActiveCampaign",
+                "category": "Marketing",
+                "server_type": "user",
+                "security_type": "token",
+                "logo_url": "https://pub-4421542fcd47468da3bde597fe7b682f.r2.dev/logos/activecampaign_512x512.png",
+                "icon_url": "https://pub-4421542fcd47468da3bde597fe7b682f.r2.dev/logos/activecampaign_256x256.png",
+                "credentials": [
+                    {
+                        "name": "ACTIVECAMPAIGN_API_KEY",
+                        "description": "API key (found in Settings > Developer)",
+                        "required": true,
+                        "url": "https://help.activecampaign.com/hc/en-us/articles/207317590-Getting-started-with-the-API",
+                        "link_text": "Get API Key"
+                    }
+                ]
+            }
+        },
+        {
+            "prefix": "adobe-analytics",
+            "mcp_server_type": "proxy",
+            "transport_type": "streamable-http",
+            "url": "https://orbit-adobe-analytics.fastmcp.app/mcp",
+            "server_source": "native",
+            "metadata_overrides": {
+                "description": "Query report suites, dimensions, metrics, segments, and run analytics reports from Adobe Analytics",
+                "category": "Marketing",
+                "server_type": "user",
+                "security_type": "token",
+                "logo_url": "https://pub-4421542fcd47468da3bde597fe7b682f.r2.dev/logos/adobe_analytics_512x512.png",
+                "icon_url": "https://pub-4421542fcd47468da3bde597fe7b682f.r2.dev/logos/adobe_analytics_256x256.png",
+                "credentials": [
+                    {
+                        "name": "ADOBE_ANALYTICS_ACCESS_TOKEN",
+                        "description": "OAuth access token, API key, and company ID",
+                        "required": true,
+                        "url": "https://developer.adobe.com/console",
+                        "link_text": "Set Up API Access"
+                    }
+                ]
+            }
+        },
+        {
+            "prefix": "apollo",
+            "mcp_server_type": "proxy",
+            "transport_type": "streamable-http",
+            "url": "https://orbit-apollo.fastmcp.app/mcp",
+            "server_source": "native",
+            "metadata_overrides": {
+                "description": "Search and enrich people and company data, manage contacts and outreach sequences using Apollo.io",
+                "category": "Sales",
+                "server_type": "user",
+                "security_type": "token",
+                "logo_url": "https://pub-4421542fcd47468da3bde597fe7b682f.r2.dev/logos/apollo_512x512.png",
+                "icon_url": "https://pub-4421542fcd47468da3bde597fe7b682f.r2.dev/logos/apollo_256x256.png",
+                "credentials": [
+                    {
+                        "name": "APOLLO_API_KEY",
+                        "description": "API key from developer settings",
+                        "required": true,
+                        "url": "https://developer.apollo.io/keys/",
+                        "link_text": "Get API Key"
+                    }
+                ]
+            }
+        },
+        {
+            "prefix": "beehiiv",
+            "mcp_server_type": "proxy",
+            "transport_type": "streamable-http",
+            "url": "https://orbit-beehiiv.fastmcp.app/mcp",
+            "server_source": "native",
+            "metadata_overrides": {
+                "description": "Manage newsletter publications, subscribers, posts, segments, and automations on Beehiiv",
+                "category": "Marketing",
+                "server_type": "user",
+                "security_type": "token",
+                "logo_url": "https://pub-4421542fcd47468da3bde597fe7b682f.r2.dev/logos/beehiiv_512x512.png",
+                "icon_url": "https://pub-4421542fcd47468da3bde597fe7b682f.r2.dev/logos/beehiiv_256x256.png",
+                "credentials": [
+                    {
+                        "name": "BEEHIIV_API_KEY",
+                        "description": "API key from workspace settings",
+                        "required": true,
+                        "url": "https://app.beehiiv.com/settings/workspace/api",
+                        "link_text": "Get API Key"
+                    }
+                ]
+            }
+        },
+        {
+            "prefix": "buffer",
+            "mcp_server_type": "proxy",
+            "transport_type": "streamable-http",
+            "url": "https://orbit-buffer.fastmcp.app/mcp",
+            "server_source": "native",
+            "metadata_overrides": {
+                "description": "Schedule and manage social media posts across multiple profiles using Buffer",
+                "category": "Marketing",
+                "server_type": "user",
+                "security_type": "token",
+                "logo_url": "https://pub-4421542fcd47468da3bde597fe7b682f.r2.dev/logos/buffer_512x512.png",
+                "icon_url": "https://pub-4421542fcd47468da3bde597fe7b682f.r2.dev/logos/buffer_256x256.png",
+                "credentials": [
+                    {
+                        "name": "BUFFER_ACCESS_TOKEN",
+                        "description": "Access token from Buffer developer app",
+                        "required": true,
+                        "url": "https://buffer.com/developers/apps/create",
+                        "link_text": "Get Access Token"
+                    }
+                ]
+            }
+        },
+        {
+            "prefix": "calendly",
+            "mcp_server_type": "proxy",
+            "transport_type": "streamable-http",
+            "url": "https://orbit-calendly.fastmcp.app/mcp",
+            "server_source": "native",
+            "metadata_overrides": {
+                "description": "Manage scheduling links, event types, scheduled events, and invitees on Calendly",
+                "category": "Collaboration",
+                "server_type": "user",
+                "security_type": "token",
+                "logo_url": "https://pub-4421542fcd47468da3bde597fe7b682f.r2.dev/logos/calendly_512x512.png",
+                "icon_url": "https://pub-4421542fcd47468da3bde597fe7b682f.r2.dev/logos/calendly_256x256.png",
+                "credentials": [
+                    {
+                        "name": "CALENDLY_API_KEY",
+                        "description": "Personal Access Token",
+                        "required": true,
+                        "url": "https://calendly.com/integrations/api_webhooks",
+                        "link_text": "Get Access Token"
+                    }
+                ]
+            }
+        },
+        {
+            "prefix": "carta",
+            "mcp_server_type": "proxy",
+            "transport_type": "streamable-http",
+            "url": "https://orbit-carta.fastmcp.app/mcp",
+            "server_source": "native",
+            "metadata_overrides": {
+                "description": "Access equity compensation, cap table, and stakeholder data from Carta",
+                "category": "Business",
+                "server_type": "user",
+                "security_type": "token",
+                "logo_url": "https://pub-4421542fcd47468da3bde597fe7b682f.r2.dev/logos/carta_512x512.png",
+                "icon_url": "https://pub-4421542fcd47468da3bde597fe7b682f.r2.dev/logos/carta_256x256.png",
+                "credentials": [
+                    {
+                        "name": "CARTA_ACCESS_TOKEN",
+                        "description": "OAuth access token from developer portal",
+                        "required": true,
+                        "url": "https://developers.app.carta.com/user/registration",
+                        "link_text": "Register for API Access"
+                    }
+                ]
+            }
+        },
+        {
+            "prefix": "clearbit",
+            "mcp_server_type": "proxy",
+            "transport_type": "streamable-http",
+            "url": "https://orbit-clearbit.fastmcp.app/mcp",
+            "server_source": "native",
+            "metadata_overrides": {
+                "description": "Look up person and company profiles, reveal website visitors, and search for prospects using Clearbit",
+                "category": "Sales",
+                "server_type": "user",
+                "security_type": "token",
+                "logo_url": "https://pub-4421542fcd47468da3bde597fe7b682f.r2.dev/logos/clearbit_512x512.png",
+                "icon_url": "https://pub-4421542fcd47468da3bde597fe7b682f.r2.dev/logos/clearbit_256x256.png",
+                "credentials": [
+                    {
+                        "name": "CLEARBIT_API_KEY",
+                        "description": "API key from dashboard",
+                        "required": true,
+                        "url": "https://dashboard.clearbit.com/api",
+                        "link_text": "Get API Key"
+                    }
+                ]
+            }
+        },
+        {
+            "prefix": "customer-io",
+            "mcp_server_type": "proxy",
+            "transport_type": "streamable-http",
+            "url": "https://orbit-customer-io.fastmcp.app/mcp",
+            "server_source": "native",
+            "metadata_overrides": {
+                "description": "Track customers, send transactional emails, and manage campaigns and broadcasts on Customer.io",
+                "category": "Marketing",
+                "server_type": "user",
+                "security_type": "token",
+                "logo_url": "https://pub-4421542fcd47468da3bde597fe7b682f.r2.dev/logos/customer_io_512x512.png",
+                "icon_url": "https://pub-4421542fcd47468da3bde597fe7b682f.r2.dev/logos/customer_io_256x256.png",
+                "credentials": [
+                    {
+                        "name": "CUSTOMERIO_API_KEY",
+                        "description": "App API key from account settings",
+                        "required": true,
+                        "url": "https://fly.customer.io/settings/api_credentials",
+                        "link_text": "Get API Key"
+                    }
+                ]
+            }
+        },
+        {
+            "prefix": "dataforseo",
+            "mcp_server_type": "proxy",
+            "transport_type": "streamable-http",
+            "url": "https://orbit-dataforseo.fastmcp.app/mcp",
+            "server_source": "native",
+            "metadata_overrides": {
+                "description": "Run SERP queries, keyword research, backlink analysis, and competitor analysis via DataForSEO",
+                "category": "Marketing",
+                "server_type": "user",
+                "security_type": "token",
+                "logo_url": "https://pub-4421542fcd47468da3bde597fe7b682f.r2.dev/logos/dataforseo_512x512.png",
+                "icon_url": "https://pub-4421542fcd47468da3bde597fe7b682f.r2.dev/logos/dataforseo_256x256.png",
+                "credentials": [
+                    {
+                        "name": "DATAFORSEO_API_KEY",
+                        "description": "API login and password",
+                        "required": true,
+                        "url": "https://app.dataforseo.com/api-access",
+                        "link_text": "Get API Credentials"
+                    }
+                ]
+            }
+        },
+        {
+            "prefix": "demio",
+            "mcp_server_type": "proxy",
+            "transport_type": "streamable-http",
+            "url": "https://orbit-demio.fastmcp.app/mcp",
+            "server_source": "native",
+            "metadata_overrides": {
+                "description": "Manage webinar events, sessions, registrations, and attendee data on Demio",
+                "category": "Marketing",
+                "server_type": "user",
+                "security_type": "token",
+                "logo_url": "https://pub-4421542fcd47468da3bde597fe7b682f.r2.dev/logos/demio_512x512.png",
+                "icon_url": "https://pub-4421542fcd47468da3bde597fe7b682f.r2.dev/logos/demio_256x256.png",
+                "credentials": [
+                    {
+                        "name": "DEMIO_API_KEY",
+                        "description": "API key and secret",
+                        "required": true,
+                        "url": "https://my.demio.com/manage/api",
+                        "link_text": "Get API Key"
+                    }
+                ]
+            }
+        },
+        {
+            "prefix": "dub",
+            "mcp_server_type": "proxy",
+            "transport_type": "streamable-http",
+            "url": "https://orbit-dub.fastmcp.app/mcp",
+            "server_source": "native",
+            "metadata_overrides": {
+                "description": "Create, manage, and track short links with click analytics on Dub.co",
+                "category": "Marketing",
+                "server_type": "user",
+                "security_type": "token",
+                "logo_url": "https://pub-4421542fcd47468da3bde597fe7b682f.r2.dev/logos/dub_512x512.png",
+                "icon_url": "https://pub-4421542fcd47468da3bde597fe7b682f.r2.dev/logos/dub_256x256.png",
+                "credentials": [
+                    {
+                        "name": "DUB_API_KEY",
+                        "description": "API key from workspace settings",
+                        "required": true,
+                        "url": "https://app.dub.co/settings/tokens",
+                        "link_text": "Get API Key"
+                    }
+                ]
+            }
+        },
+        {
+            "prefix": "g2",
+            "mcp_server_type": "proxy",
+            "transport_type": "streamable-http",
+            "url": "https://orbit-g2.fastmcp.app/mcp",
+            "server_source": "native",
+            "metadata_overrides": {
+                "description": "Access product reviews, competitor analysis, category reports, and buyer intent data from G2",
+                "category": "Marketing",
+                "server_type": "user",
+                "security_type": "token",
+                "logo_url": "https://pub-4421542fcd47468da3bde597fe7b682f.r2.dev/logos/g2_512x512.png",
+                "icon_url": "https://pub-4421542fcd47468da3bde597fe7b682f.r2.dev/logos/g2_256x256.png",
+                "credentials": [
+                    {
+                        "name": "G2_API_TOKEN",
+                        "description": "API token from admin panel",
+                        "required": true,
+                        "url": "https://data.g2.com/api/docs",
+                        "link_text": "Get API Token"
+                    }
+                ]
+            }
+        },
+        {
+            "prefix": "ga4",
+            "mcp_server_type": "proxy",
+            "transport_type": "streamable-http",
+            "url": "https://orbit-ga4.fastmcp.app/mcp",
+            "server_source": "native",
+            "metadata_overrides": {
+                "description": "Run reports, query realtime data, and track events via Google Analytics 4",
+                "category": "Marketing",
+                "server_type": "user",
+                "security_type": "token",
+                "logo_url": "https://pub-4421542fcd47468da3bde597fe7b682f.r2.dev/logos/ga4_512x512.png",
+                "icon_url": "https://pub-4421542fcd47468da3bde597fe7b682f.r2.dev/logos/ga4_256x256.png",
+                "credentials": [
+                    {
+                        "name": "GA4_ACCESS_TOKEN",
+                        "description": "OAuth access token from Google Cloud Console",
+                        "required": true,
+                        "url": "https://console.cloud.google.com/apis/credentials",
+                        "link_text": "Set Up API Credentials"
+                    }
+                ]
+            }
+        },
+        {
+            "prefix": "google-ads",
+            "mcp_server_type": "proxy",
+            "transport_type": "streamable-http",
+            "url": "https://orbit-google-ads.fastmcp.app/mcp",
+            "server_source": "native",
+            "metadata_overrides": {
+                "description": "Manage campaigns, ad groups, keywords, and budgets on Google Ads",
+                "category": "Marketing",
+                "server_type": "user",
+                "security_type": "token",
+                "logo_url": "https://pub-4421542fcd47468da3bde597fe7b682f.r2.dev/logos/google_ads_512x512.png",
+                "icon_url": "https://pub-4421542fcd47468da3bde597fe7b682f.r2.dev/logos/google_ads_256x256.png",
+                "credentials": [
+                    {
+                        "name": "GOOGLE_ADS_ACCESS_TOKEN",
+                        "description": "Developer token from API Center",
+                        "required": true,
+                        "url": "https://ads.google.com/aw/apicenter",
+                        "link_text": "Get Developer Token"
+                    }
+                ]
+            }
+        },
+        {
+            "prefix": "google-search-console",
+            "mcp_server_type": "proxy",
+            "transport_type": "streamable-http",
+            "url": "https://orbit-google-search-console.fastmcp.app/mcp",
+            "server_source": "native",
+            "metadata_overrides": {
+                "description": "Query search analytics, inspect URLs, and manage sitemaps via Google Search Console",
+                "category": "Marketing",
+                "server_type": "user",
+                "security_type": "token",
+                "logo_url": "https://pub-4421542fcd47468da3bde597fe7b682f.r2.dev/logos/google_search_console_512x512.png",
+                "icon_url": "https://pub-4421542fcd47468da3bde597fe7b682f.r2.dev/logos/google_search_console_256x256.png",
+                "credentials": [
+                    {
+                        "name": "GSC_ACCESS_TOKEN",
+                        "description": "OAuth access token from Google Cloud Console",
+                        "required": true,
+                        "url": "https://console.cloud.google.com/apis/credentials",
+                        "link_text": "Set Up API Credentials"
+                    }
+                ]
+            }
+        },
+        {
+            "prefix": "hotjar",
+            "mcp_server_type": "proxy",
+            "transport_type": "streamable-http",
+            "url": "https://orbit-hotjar.fastmcp.app/mcp",
+            "server_source": "native",
+            "metadata_overrides": {
+                "description": "Access site data, surveys, heatmaps, recordings, and form analytics from Hotjar",
+                "category": "Product",
+                "server_type": "user",
+                "security_type": "token",
+                "logo_url": "https://pub-4421542fcd47468da3bde597fe7b682f.r2.dev/logos/hotjar_512x512.png",
+                "icon_url": "https://pub-4421542fcd47468da3bde597fe7b682f.r2.dev/logos/hotjar_256x256.png",
+                "credentials": [
+                    {
+                        "name": "HOTJAR_CLIENT_CREDENTIALS",
+                        "description": "Client ID and client secret",
+                        "required": true,
+                        "url": "https://insights.hotjar.com/settings/api",
+                        "link_text": "Get API Credentials"
+                    }
+                ]
+            }
+        },
+        {
+            "prefix": "hunter",
+            "mcp_server_type": "proxy",
+            "transport_type": "streamable-http",
+            "url": "https://orbit-hunter.fastmcp.app/mcp",
+            "server_source": "native",
+            "metadata_overrides": {
+                "description": "Search domains for email addresses, find and verify emails, and manage leads via Hunter.io",
+                "category": "Sales",
+                "server_type": "user",
+                "security_type": "token",
+                "logo_url": "https://pub-4421542fcd47468da3bde597fe7b682f.r2.dev/logos/hunter_512x512.png",
+                "icon_url": "https://pub-4421542fcd47468da3bde597fe7b682f.r2.dev/logos/hunter_256x256.png",
+                "credentials": [
+                    {
+                        "name": "HUNTER_API_KEY",
+                        "description": "API key from account settings",
+                        "required": true,
+                        "url": "https://hunter.io/api-keys",
+                        "link_text": "Get API Key"
+                    }
+                ]
+            }
+        },
+        {
+            "prefix": "instantly",
+            "mcp_server_type": "proxy",
+            "transport_type": "streamable-http",
+            "url": "https://orbit-instantly.fastmcp.app/mcp",
+            "server_source": "native",
+            "metadata_overrides": {
+                "description": "Manage cold email campaigns, leads, sending accounts, and warmup on Instantly.ai",
+                "category": "Marketing",
+                "server_type": "user",
+                "security_type": "token",
+                "logo_url": "https://pub-4421542fcd47468da3bde597fe7b682f.r2.dev/logos/instantly_512x512.png",
+                "icon_url": "https://pub-4421542fcd47468da3bde597fe7b682f.r2.dev/logos/instantly_256x256.png",
+                "credentials": [
+                    {
+                        "name": "INSTANTLY_API_KEY",
+                        "description": "API key from integrations settings",
+                        "required": true,
+                        "url": "https://app.instantly.ai/app/settings/integrations",
+                        "link_text": "Get API Key"
+                    }
+                ]
+            }
+        },
+        {
+            "prefix": "keywords-everywhere",
+            "mcp_server_type": "proxy",
+            "transport_type": "streamable-http",
+            "url": "https://orbit-keywords-everywhere.fastmcp.app/mcp",
+            "server_source": "native",
+            "metadata_overrides": {
+                "description": "Retrieve keyword search volume, CPC, competition data, and analyze domain traffic via Keywords Everywhere",
+                "category": "Marketing",
+                "server_type": "user",
+                "security_type": "token",
+                "logo_url": "https://pub-4421542fcd47468da3bde597fe7b682f.r2.dev/logos/keywords_everywhere_512x512.png",
+                "icon_url": "https://pub-4421542fcd47468da3bde597fe7b682f.r2.dev/logos/keywords_everywhere_256x256.png",
+                "credentials": [
+                    {
+                        "name": "KEYWORDS_EVERYWHERE_API_KEY",
+                        "description": "API key from dashboard",
+                        "required": true,
+                        "url": "https://api.keywordseverywhere.com/docs/",
+                        "link_text": "Get API Key"
+                    }
+                ]
+            }
+        },
+        {
+            "prefix": "kit",
+            "mcp_server_type": "proxy",
+            "transport_type": "streamable-http",
+            "url": "https://orbit-kit.fastmcp.app/mcp",
+            "server_source": "native",
+            "metadata_overrides": {
+                "description": "Manage subscribers, forms, sequences, tags, and broadcasts on Kit (formerly ConvertKit)",
+                "category": "Marketing",
+                "server_type": "user",
+                "security_type": "token",
+                "logo_url": "https://pub-4421542fcd47468da3bde597fe7b682f.r2.dev/logos/kit_512x512.png",
+                "icon_url": "https://pub-4421542fcd47468da3bde597fe7b682f.r2.dev/logos/kit_256x256.png",
+                "credentials": [
+                    {
+                        "name": "KIT_API_KEY",
+                        "description": "API key from account settings",
+                        "required": true,
+                        "url": "https://app.kit.com/account/edit#developer",
+                        "link_text": "Get API Key"
+                    }
+                ]
+            }
+        },
+        {
+            "prefix": "lattice",
+            "mcp_server_type": "proxy",
+            "transport_type": "streamable-http",
+            "url": "https://orbit-lattice.fastmcp.app/mcp",
+            "server_source": "native",
+            "metadata_overrides": {
+                "description": "Access performance reviews, goals, feedback, and people data from Lattice",
+                "category": "HR",
+                "server_type": "user",
+                "security_type": "token",
+                "logo_url": "https://pub-4421542fcd47468da3bde597fe7b682f.r2.dev/logos/lattice_512x512.png",
+                "icon_url": "https://pub-4421542fcd47468da3bde597fe7b682f.r2.dev/logos/lattice_256x256.png",
+                "credentials": [
+                    {
+                        "name": "LATTICE_API_TOKEN",
+                        "description": "API token (requires API access approval)",
+                        "required": true,
+                        "url": "https://lattice.com/api",
+                        "link_text": "Get API Token"
+                    }
+                ]
+            }
+        },
+        {
+            "prefix": "lemlist",
+            "mcp_server_type": "proxy",
+            "transport_type": "streamable-http",
+            "url": "https://orbit-lemlist.fastmcp.app/mcp",
+            "server_source": "native",
+            "metadata_overrides": {
+                "description": "Manage outreach campaigns, leads, and activities on Lemlist",
+                "category": "Marketing",
+                "server_type": "user",
+                "security_type": "token",
+                "logo_url": "https://pub-4421542fcd47468da3bde597fe7b682f.r2.dev/logos/lemlist_512x512.png",
+                "icon_url": "https://pub-4421542fcd47468da3bde597fe7b682f.r2.dev/logos/lemlist_256x256.png",
+                "credentials": [
+                    {
+                        "name": "LEMLIST_API_KEY",
+                        "description": "API key from settings",
+                        "required": true,
+                        "url": "https://app.lemlist.com/settings",
+                        "link_text": "Get API Key"
+                    }
+                ]
+            }
+        },
+        {
+            "prefix": "linkedin-ads",
+            "mcp_server_type": "proxy",
+            "transport_type": "streamable-http",
+            "url": "https://orbit-linkedin-ads.fastmcp.app/mcp",
+            "server_source": "native",
+            "metadata_overrides": {
+                "description": "Manage ad accounts, campaigns, analytics, and creatives on LinkedIn Marketing Solutions",
+                "category": "Marketing",
+                "server_type": "user",
+                "security_type": "token",
+                "logo_url": "https://pub-4421542fcd47468da3bde597fe7b682f.r2.dev/logos/linkedin_ads_512x512.png",
+                "icon_url": "https://pub-4421542fcd47468da3bde597fe7b682f.r2.dev/logos/linkedin_ads_256x256.png",
+                "credentials": [
+                    {
+                        "name": "LINKEDIN_ADS_ACCESS_TOKEN",
+                        "description": "OAuth access token from LinkedIn developer app",
+                        "required": true,
+                        "url": "https://www.linkedin.com/developers/apps",
+                        "link_text": "Set Up API Access"
+                    }
+                ]
+            }
+        },
+        {
+            "prefix": "livestorm",
+            "mcp_server_type": "proxy",
+            "transport_type": "streamable-http",
+            "url": "https://orbit-livestorm.fastmcp.app/mcp",
+            "server_source": "native",
+            "metadata_overrides": {
+                "description": "Manage webinar events, sessions, registrations, and attendee data on Livestorm",
+                "category": "Marketing",
+                "server_type": "user",
+                "security_type": "token",
+                "logo_url": "https://pub-4421542fcd47468da3bde597fe7b682f.r2.dev/logos/livestorm_512x512.png",
+                "icon_url": "https://pub-4421542fcd47468da3bde597fe7b682f.r2.dev/logos/livestorm_256x256.png",
+                "credentials": [
+                    {
+                        "name": "LIVESTORM_API_KEY",
+                        "description": "API token from integrations settings",
+                        "required": true,
+                        "url": "https://developers.livestorm.co/docs/api-token-authentication",
+                        "link_text": "Get API Key"
+                    }
+                ]
+            }
+        },
+        {
+            "prefix": "loops",
+            "mcp_server_type": "proxy",
+            "transport_type": "streamable-http",
+            "url": "https://orbit-loops.fastmcp.app/mcp",
+            "server_source": "native",
+            "metadata_overrides": {
+                "description": "Send emails, manage contacts, and trigger events with Loops",
+                "category": "Marketing",
+                "server_type": "user",
+                "security_type": "token",
+                "logo_url": "https://pub-4421542fcd47468da3bde597fe7b682f.r2.dev/logos/loops_512x512.png",
+                "icon_url": "https://pub-4421542fcd47468da3bde597fe7b682f.r2.dev/logos/loops_256x256.png",
+                "credentials": [
+                    {
+                        "name": "LOOPS_API_KEY",
+                        "description": "API key from settings",
+                        "required": true,
+                        "url": "https://app.loops.so/settings?page=api",
+                        "link_text": "Get API Key"
+                    }
+                ]
+            }
+        },
+        {
+            "prefix": "mailchimp",
+            "mcp_server_type": "proxy",
+            "transport_type": "streamable-http",
+            "url": "https://orbit-mailchimp.fastmcp.app/mcp",
+            "server_source": "native",
+            "metadata_overrides": {
+                "description": "Manage audiences, campaigns, templates, automations, and reports on Mailchimp",
+                "category": "Marketing",
+                "server_type": "user",
+                "security_type": "token",
+                "logo_url": "https://pub-4421542fcd47468da3bde597fe7b682f.r2.dev/logos/mailchimp_512x512.png",
+                "icon_url": "https://pub-4421542fcd47468da3bde597fe7b682f.r2.dev/logos/mailchimp_256x256.png",
+                "credentials": [
+                    {
+                        "name": "MAILCHIMP_API_KEY",
+                        "description": "API key from account settings",
+                        "required": true,
+                        "url": "https://us1.admin.mailchimp.com/account/api/",
+                        "link_text": "Get API Key"
+                    }
+                ]
+            }
+        },
+        {
+            "prefix": "mention-me",
+            "mcp_server_type": "proxy",
+            "transport_type": "streamable-http",
+            "url": "https://orbit-mention-me.fastmcp.app/mcp",
+            "server_source": "native",
+            "metadata_overrides": {
+                "description": "Manage referral programs, share links, rewards, and referee tracking on Mention Me",
+                "category": "Marketing",
+                "server_type": "user",
+                "security_type": "token",
+                "logo_url": "https://pub-4421542fcd47468da3bde597fe7b682f.r2.dev/logos/mention_me_512x512.png",
+                "icon_url": "https://pub-4421542fcd47468da3bde597fe7b682f.r2.dev/logos/mention_me_256x256.png",
+                "credentials": [
+                    {
+                        "name": "MENTION_ME_API_KEY",
+                        "description": "API key from developer portal",
+                        "required": true,
+                        "url": "https://developers.mention-me.com/docs/authentication",
+                        "link_text": "Get API Credentials"
+                    }
+                ]
+            }
+        },
+        {
+            "prefix": "onesignal",
+            "mcp_server_type": "proxy",
+            "transport_type": "streamable-http",
+            "url": "https://orbit-onesignal.fastmcp.app/mcp",
+            "server_source": "native",
+            "metadata_overrides": {
+                "description": "Send push notifications, manage segments and users on OneSignal",
+                "category": "Marketing",
+                "server_type": "user",
+                "security_type": "token",
+                "logo_url": "https://pub-4421542fcd47468da3bde597fe7b682f.r2.dev/logos/onesignal_512x512.png",
+                "icon_url": "https://pub-4421542fcd47468da3bde597fe7b682f.r2.dev/logos/onesignal_256x256.png",
+                "credentials": [
+                    {
+                        "name": "ONESIGNAL_REST_API_KEY",
+                        "description": "REST API key and App ID",
+                        "required": true,
+                        "url": "https://dashboard.onesignal.com/apps",
+                        "link_text": "Get API Key"
+                    }
+                ]
+            }
+        },
+        {
+            "prefix": "optimizely",
+            "mcp_server_type": "proxy",
+            "transport_type": "streamable-http",
+            "url": "https://orbit-optimizely.fastmcp.app/mcp",
+            "server_source": "native",
+            "metadata_overrides": {
+                "description": "Manage A/B testing projects, experiments, audiences, and view results on Optimizely",
+                "category": "Product",
+                "server_type": "user",
+                "security_type": "token",
+                "logo_url": "https://pub-4421542fcd47468da3bde597fe7b682f.r2.dev/logos/optimizely_512x512.png",
+                "icon_url": "https://pub-4421542fcd47468da3bde597fe7b682f.r2.dev/logos/optimizely_256x256.png",
+                "credentials": [
+                    {
+                        "name": "OPTIMIZELY_API_TOKEN",
+                        "description": "Personal Access Token",
+                        "required": true,
+                        "url": "https://app.optimizely.com/v2/accountsettings/account/plan",
+                        "link_text": "Get Access Token"
+                    }
+                ]
+            }
+        },
+        {
+            "prefix": "paddle",
+            "mcp_server_type": "proxy",
+            "transport_type": "streamable-http",
+            "url": "https://orbit-paddle.fastmcp.app/mcp",
+            "server_source": "native",
+            "metadata_overrides": {
+                "description": "Manage products, prices, customers, subscriptions, and transactions on Paddle",
+                "category": "Commerce",
+                "server_type": "user",
+                "security_type": "token",
+                "logo_url": "https://pub-4421542fcd47468da3bde597fe7b682f.r2.dev/logos/paddle_512x512.png",
+                "icon_url": "https://pub-4421542fcd47468da3bde597fe7b682f.r2.dev/logos/paddle_256x256.png",
+                "credentials": [
+                    {
+                        "name": "PADDLE_API_KEY",
+                        "description": "API key from authentication settings",
+                        "required": true,
+                        "url": "https://vendors.paddle.com/authentication-v2",
+                        "link_text": "Get API Key"
+                    }
+                ]
+            }
+        },
+        {
+            "prefix": "partnerstack",
+            "mcp_server_type": "proxy",
+            "transport_type": "streamable-http",
+            "url": "https://orbit-partnerstack.fastmcp.app/mcp",
+            "server_source": "native",
+            "metadata_overrides": {
+                "description": "Manage partnerships, referral revenue, commissions, and affiliate programs on PartnerStack",
+                "category": "Marketing",
+                "server_type": "user",
+                "security_type": "token",
+                "logo_url": "https://pub-4421542fcd47468da3bde597fe7b682f.r2.dev/logos/partnerstack_512x512.png",
+                "icon_url": "https://pub-4421542fcd47468da3bde597fe7b682f.r2.dev/logos/partnerstack_256x256.png",
+                "credentials": [
+                    {
+                        "name": "PARTNERSTACK_API_KEY",
+                        "description": "API key and secret",
+                        "required": true,
+                        "url": "https://app.partnerstack.com/settings/integrations",
+                        "link_text": "Get API Key"
+                    }
+                ]
+            }
+        },
+        {
+            "prefix": "pave",
+            "mcp_server_type": "proxy",
+            "transport_type": "streamable-http",
+            "url": "https://orbit-pave.fastmcp.app/mcp",
+            "server_source": "native",
+            "metadata_overrides": {
+                "description": "Access compensation planning and merit cycle data from Pave",
+                "category": "HR",
+                "server_type": "user",
+                "security_type": "token",
+                "logo_url": "https://pub-4421542fcd47468da3bde597fe7b682f.r2.dev/logos/pave_512x512.png",
+                "icon_url": "https://pub-4421542fcd47468da3bde597fe7b682f.r2.dev/logos/pave_256x256.png",
+                "credentials": [
+                    {
+                        "name": "PAVE_API_KEY",
+                        "description": "API key from settings",
+                        "required": true,
+                        "url": "https://app.pave.com/settings",
+                        "link_text": "Get API Key"
+                    }
+                ]
+            }
+        },
+        {
+            "prefix": "plausible",
+            "mcp_server_type": "proxy",
+            "transport_type": "streamable-http",
+            "url": "https://orbit-plausible.fastmcp.app/mcp",
+            "server_source": "native",
+            "metadata_overrides": {
+                "description": "Query aggregate stats, timeseries data, traffic sources, and manage sites on Plausible Analytics",
+                "category": "Marketing",
+                "server_type": "user",
+                "security_type": "token",
+                "logo_url": "https://pub-4421542fcd47468da3bde597fe7b682f.r2.dev/logos/plausible_512x512.png",
+                "icon_url": "https://pub-4421542fcd47468da3bde597fe7b682f.r2.dev/logos/plausible_256x256.png",
+                "credentials": [
+                    {
+                        "name": "PLAUSIBLE_API_KEY",
+                        "description": "API key from account settings",
+                        "required": true,
+                        "url": "https://plausible.io/settings",
+                        "link_text": "Get API Key"
+                    }
+                ]
+            }
+        },
+        {
+            "prefix": "postmark",
+            "mcp_server_type": "proxy",
+            "transport_type": "streamable-http",
+            "url": "https://orbit-postmark.fastmcp.app/mcp",
+            "server_source": "native",
+            "metadata_overrides": {
+                "description": "Send transactional and broadcast emails, manage templates, and view delivery stats on Postmark",
+                "category": "Marketing",
+                "server_type": "user",
+                "security_type": "token",
+                "logo_url": "https://pub-4421542fcd47468da3bde597fe7b682f.r2.dev/logos/postmark_512x512.png",
+                "icon_url": "https://pub-4421542fcd47468da3bde597fe7b682f.r2.dev/logos/postmark_256x256.png",
+                "credentials": [
+                    {
+                        "name": "POSTMARK_SERVER_TOKEN",
+                        "description": "Server API token",
+                        "required": true,
+                        "url": "https://account.postmarkapp.com/servers",
+                        "link_text": "Get API Token"
+                    }
+                ]
+            }
+        },
+        {
+            "prefix": "resend",
+            "mcp_server_type": "proxy",
+            "transport_type": "streamable-http",
+            "url": "https://orbit-resend.fastmcp.app/mcp",
+            "server_source": "native",
+            "metadata_overrides": {
+                "description": "Send transactional emails, manage domains, contacts, and broadcasts on Resend",
+                "category": "Marketing",
+                "server_type": "user",
+                "security_type": "token",
+                "logo_url": "https://pub-4421542fcd47468da3bde597fe7b682f.r2.dev/logos/resend_512x512.png",
+                "icon_url": "https://pub-4421542fcd47468da3bde597fe7b682f.r2.dev/logos/resend_256x256.png",
+                "credentials": [
+                    {
+                        "name": "RESEND_API_KEY",
+                        "description": "API key from dashboard",
+                        "required": true,
+                        "url": "https://resend.com/api-keys",
+                        "link_text": "Get API Key"
+                    }
+                ]
+            }
+        },
+        {
+            "prefix": "rewardful",
+            "mcp_server_type": "proxy",
+            "transport_type": "streamable-http",
+            "url": "https://orbit-rewardful.fastmcp.app/mcp",
+            "server_source": "native",
+            "metadata_overrides": {
+                "description": "Manage affiliates, referrals, commissions, and referral links on Rewardful",
+                "category": "Marketing",
+                "server_type": "user",
+                "security_type": "token",
+                "logo_url": "https://pub-4421542fcd47468da3bde597fe7b682f.r2.dev/logos/rewardful_512x512.png",
+                "icon_url": "https://pub-4421542fcd47468da3bde597fe7b682f.r2.dev/logos/rewardful_256x256.png",
+                "credentials": [
+                    {
+                        "name": "REWARDFUL_API_KEY",
+                        "description": "API secret key from company settings",
+                        "required": true,
+                        "url": "https://app.getrewardful.com/company/edit",
+                        "link_text": "Get API Key"
+                    }
+                ]
+            }
+        },
+        {
+            "prefix": "rippling",
+            "mcp_server_type": "proxy",
+            "transport_type": "streamable-http",
+            "url": "https://orbit-rippling.fastmcp.app/mcp",
+            "server_source": "native",
+            "metadata_overrides": {
+                "description": "Access employee, department, and team data from Rippling HRIS",
+                "category": "HR",
+                "server_type": "user",
+                "security_type": "token",
+                "logo_url": "https://pub-4421542fcd47468da3bde597fe7b682f.r2.dev/logos/rippling_512x512.png",
+                "icon_url": "https://pub-4421542fcd47468da3bde597fe7b682f.r2.dev/logos/rippling_256x256.png",
+                "credentials": [
+                    {
+                        "name": "RIPPLING_API_TOKEN",
+                        "description": "API token from developer portal",
+                        "required": true,
+                        "url": "https://developer.rippling.com",
+                        "link_text": "Get API Token"
+                    }
+                ]
+            }
+        },
+        {
+            "prefix": "savvycal",
+            "mcp_server_type": "proxy",
+            "transport_type": "streamable-http",
+            "url": "https://orbit-savvycal.fastmcp.app/mcp",
+            "server_source": "native",
+            "metadata_overrides": {
+                "description": "Manage scheduling links, events, and available time slots on SavvyCal",
+                "category": "Collaboration",
+                "server_type": "user",
+                "security_type": "token",
+                "logo_url": "https://pub-4421542fcd47468da3bde597fe7b682f.r2.dev/logos/savvycal_512x512.png",
+                "icon_url": "https://pub-4421542fcd47468da3bde597fe7b682f.r2.dev/logos/savvycal_256x256.png",
+                "credentials": [
+                    {
+                        "name": "SAVVYCAL_API_KEY",
+                        "description": "API token from developer settings",
+                        "required": true,
+                        "url": "https://savvycal.com/developers",
+                        "link_text": "Get API Token"
+                    }
+                ]
+            }
+        },
+        {
+            "prefix": "segment",
+            "mcp_server_type": "proxy",
+            "transport_type": "streamable-http",
+            "url": "https://orbit-segment.fastmcp.app/mcp",
+            "server_source": "native",
+            "metadata_overrides": {
+                "description": "Track events, identify users, and route customer data to analytics tools via Segment",
+                "category": "Product",
+                "server_type": "user",
+                "security_type": "token",
+                "logo_url": "https://pub-4421542fcd47468da3bde597fe7b682f.r2.dev/logos/segment_512x512.png",
+                "icon_url": "https://pub-4421542fcd47468da3bde597fe7b682f.r2.dev/logos/segment_256x256.png",
+                "credentials": [
+                    {
+                        "name": "SEGMENT_WRITE_KEY",
+                        "description": "Source write key",
+                        "required": true,
+                        "url": "https://segment.com/docs/connections/find-writekey/",
+                        "link_text": "Get Write Key"
+                    }
+                ]
+            }
+        },
+        {
+            "prefix": "sendgrid",
+            "mcp_server_type": "proxy",
+            "transport_type": "streamable-http",
+            "url": "https://orbit-sendgrid.fastmcp.app/mcp",
+            "server_source": "native",
+            "metadata_overrides": {
+                "description": "Send transactional and marketing emails, manage contacts, lists, and templates on SendGrid",
+                "category": "Marketing",
+                "server_type": "user",
+                "security_type": "token",
+                "logo_url": "https://pub-4421542fcd47468da3bde597fe7b682f.r2.dev/logos/sendgrid_512x512.png",
+                "icon_url": "https://pub-4421542fcd47468da3bde597fe7b682f.r2.dev/logos/sendgrid_256x256.png",
+                "credentials": [
+                    {
+                        "name": "SENDGRID_API_KEY",
+                        "description": "API key from settings",
+                        "required": true,
+                        "url": "https://app.sendgrid.com/settings/api_keys",
+                        "link_text": "Get API Key"
+                    }
+                ]
+            }
+        },
+        {
+            "prefix": "snov",
+            "mcp_server_type": "proxy",
+            "transport_type": "streamable-http",
+            "url": "https://orbit-snov.fastmcp.app/mcp",
+            "server_source": "native",
+            "metadata_overrides": {
+                "description": "Search for emails, verify addresses, manage prospect lists, and run drip campaigns on Snov.io",
+                "category": "Marketing",
+                "server_type": "user",
+                "security_type": "token",
+                "logo_url": "https://pub-4421542fcd47468da3bde597fe7b682f.r2.dev/logos/snov_512x512.png",
+                "icon_url": "https://pub-4421542fcd47468da3bde597fe7b682f.r2.dev/logos/snov_256x256.png",
+                "credentials": [
+                    {
+                        "name": "SNOV_CLIENT_CREDENTIALS",
+                        "description": "Client ID and client secret",
+                        "required": true,
+                        "url": "https://app.snov.io/account/api",
+                        "link_text": "Get API Credentials"
+                    }
+                ]
+            }
+        },
+        {
+            "prefix": "tiktok-ads",
+            "mcp_server_type": "proxy",
+            "transport_type": "streamable-http",
+            "url": "https://orbit-tiktok-ads.fastmcp.app/mcp",
+            "server_source": "native",
+            "metadata_overrides": {
+                "description": "Manage campaigns, ad groups, creatives, and pull performance reports from TikTok Ads",
+                "category": "Marketing",
+                "server_type": "user",
+                "security_type": "token",
+                "logo_url": "https://pub-4421542fcd47468da3bde597fe7b682f.r2.dev/logos/tiktok_ads_512x512.png",
+                "icon_url": "https://pub-4421542fcd47468da3bde597fe7b682f.r2.dev/logos/tiktok_ads_256x256.png",
+                "credentials": [
+                    {
+                        "name": "TIKTOK_ADS_ACCESS_TOKEN",
+                        "description": "Access token from TikTok developer portal",
+                        "required": true,
+                        "url": "https://business-api.tiktok.com/portal/apps",
+                        "link_text": "Set Up API Access"
+                    }
+                ]
+            }
+        },
+        {
+            "prefix": "tolt",
+            "mcp_server_type": "proxy",
+            "transport_type": "streamable-http",
+            "url": "https://orbit-tolt.fastmcp.app/mcp",
+            "server_source": "native",
+            "metadata_overrides": {
+                "description": "Manage affiliates, referrals, commissions, and payouts on Tolt",
+                "category": "Marketing",
+                "server_type": "user",
+                "security_type": "token",
+                "logo_url": "https://pub-4421542fcd47468da3bde597fe7b682f.r2.dev/logos/tolt_512x512.png",
+                "icon_url": "https://pub-4421542fcd47468da3bde597fe7b682f.r2.dev/logos/tolt_256x256.png",
+                "credentials": [
+                    {
+                        "name": "TOLT_API_KEY",
+                        "description": "API key from integrations settings",
+                        "required": true,
+                        "url": "https://app.tolt.io/settings/integrations",
+                        "link_text": "Get API Key"
+                    }
+                ]
+            }
+        },
+        {
+            "prefix": "trustpilot",
+            "mcp_server_type": "proxy",
+            "transport_type": "streamable-http",
+            "url": "https://orbit-trustpilot.fastmcp.app/mcp",
+            "server_source": "native",
+            "metadata_overrides": {
+                "description": "Search businesses, read and reply to reviews, and manage review invitations on Trustpilot",
+                "category": "Marketing",
+                "server_type": "user",
+                "security_type": "token",
+                "logo_url": "https://pub-4421542fcd47468da3bde597fe7b682f.r2.dev/logos/trustpilot_512x512.png",
+                "icon_url": "https://pub-4421542fcd47468da3bde597fe7b682f.r2.dev/logos/trustpilot_256x256.png",
+                "credentials": [
+                    {
+                        "name": "TRUSTPILOT_API_CREDENTIALS",
+                        "description": "API key and secret",
+                        "required": true,
+                        "url": "https://businessapp.b2b.trustpilot.com/#/applications/",
+                        "link_text": "Get API Credentials"
+                    }
+                ]
+            }
+        },
+        {
+            "prefix": "typeform",
+            "mcp_server_type": "proxy",
+            "transport_type": "streamable-http",
+            "url": "https://orbit-typeform.fastmcp.app/mcp",
+            "server_source": "native",
+            "metadata_overrides": {
+                "description": "Create and manage forms, collect responses, and manage webhooks on Typeform",
+                "category": "Marketing",
+                "server_type": "user",
+                "security_type": "token",
+                "logo_url": "https://pub-4421542fcd47468da3bde597fe7b682f.r2.dev/logos/typeform_512x512.png",
+                "icon_url": "https://pub-4421542fcd47468da3bde597fe7b682f.r2.dev/logos/typeform_256x256.png",
+                "credentials": [
+                    {
+                        "name": "TYPEFORM_ACCESS_TOKEN",
+                        "description": "Personal Access Token",
+                        "required": true,
+                        "url": "https://admin.typeform.com/account#/section/tokens",
+                        "link_text": "Get Access Token"
+                    }
+                ]
+            }
+        },
+        {
+            "prefix": "wistia",
+            "mcp_server_type": "proxy",
+            "transport_type": "streamable-http",
+            "url": "https://orbit-wistia.fastmcp.app/mcp",
+            "server_source": "native",
+            "metadata_overrides": {
+                "description": "Manage video projects, media files, captions, and view engagement stats on Wistia",
+                "category": "Marketing",
+                "server_type": "user",
+                "security_type": "token",
+                "logo_url": "https://pub-4421542fcd47468da3bde597fe7b682f.r2.dev/logos/wistia_512x512.png",
+                "icon_url": "https://pub-4421542fcd47468da3bde597fe7b682f.r2.dev/logos/wistia_256x256.png",
+                "credentials": [
+                    {
+                        "name": "WISTIA_API_TOKEN",
+                        "description": "API token from account settings",
+                        "required": true,
+                        "url": "https://my.wistia.com/account/api",
+                        "link_text": "Get API Token"
+                    }
+                ]
+            }
+        }
+    ]
+}
