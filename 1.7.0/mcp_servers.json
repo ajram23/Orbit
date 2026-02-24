@@ -1,6 +1,6 @@
 {
     "version": "1.7.0",
-    "_changelog": "Added: stripe, intercom, sentry, amplitude, mixpanel, klaviyo, webflow, ahrefs, semrush, meta-ads, brevo. Restored: todoist, granola from backup. Added 47 Horizon-hosted MCP servers: activecampaign, adobe-analytics, apollo, beehiiv, buffer, calendly, carta, clearbit, customer-io, dataforseo, demio, dub, g2, ga4, google-ads, google-search-console, hotjar, hunter, instantly, keywords-everywhere, kit, lattice, lemlist, linkedin-ads, livestorm, loops, mailchimp, mention-me, onesignal, optimizely, paddle, partnerstack, pave, plausible, postmark, resend, rewardful, rippling, savvycal, segment, sendgrid, snov, tiktok-ads, tolt, trustpilot, typeform, wistia.",
+    "_changelog": "Added: stripe, intercom, sentry, amplitude, mixpanel, klaviyo, webflow, ahrefs, semrush, meta-ads, brevo. Restored: todoist, granola from backup. Added 48 Horizon-hosted MCP servers: activecampaign, adobe-analytics, apollo, beehiiv, buffer, calendly, carta, clearbit, customer-io, dataforseo, demio, dub, g2, ga4, google-ads, google-search-console, hotjar, hunter, instantly, keywords-everywhere, kit, lattice, lemlist, linkedin-ads, livestorm, loops, mailchimp, mention-me, onesignal, optimizely, paddle, partnerstack, pave, plausible, postmark, reddit-ads, resend, rewardful, rippling, savvycal, segment, sendgrid, snov, tiktok-ads, tolt, trustpilot, typeform, wistia. Moved to oauth_required_servers.json (need OAuth/Composio): ga4, google-ads, google-search-console, linkedin-ads, carta, hotjar, snov, trustpilot.",
     "servers": [
         {
             "prefix": "apple-maps",
@@ -778,30 +778,6 @@
             }
         },
         {
-            "prefix": "carta",
-            "mcp_server_type": "proxy",
-            "transport_type": "streamable-http",
-            "url": "https://orbit-carta.fastmcp.app/mcp",
-            "server_source": "native",
-            "metadata_overrides": {
-                "description": "Access equity compensation, cap table, and stakeholder data from Carta",
-                "category": "Business",
-                "server_type": "user",
-                "security_type": "token",
-                "logo_url": "https://pub-4421542fcd47468da3bde597fe7b682f.r2.dev/logos/carta_512x512.png",
-                "icon_url": "https://pub-4421542fcd47468da3bde597fe7b682f.r2.dev/logos/carta_256x256.png",
-                "credentials": [
-                    {
-                        "name": "CARTA_ACCESS_TOKEN",
-                        "description": "OAuth access token from developer portal",
-                        "required": true,
-                        "url": "https://developers.app.carta.com/user/registration",
-                        "link_text": "Register for API Access"
-                    }
-                ]
-            }
-        },
-        {
             "prefix": "clearbit",
             "mcp_server_type": "proxy",
             "transport_type": "streamable-http",
@@ -946,102 +922,6 @@
             }
         },
         {
-            "prefix": "ga4",
-            "mcp_server_type": "proxy",
-            "transport_type": "streamable-http",
-            "url": "https://orbit-ga4.fastmcp.app/mcp",
-            "server_source": "native",
-            "metadata_overrides": {
-                "description": "Run reports, query realtime data, and track events via Google Analytics 4",
-                "category": "Marketing",
-                "server_type": "user",
-                "security_type": "token",
-                "logo_url": "https://pub-4421542fcd47468da3bde597fe7b682f.r2.dev/logos/ga4_512x512.png",
-                "icon_url": "https://pub-4421542fcd47468da3bde597fe7b682f.r2.dev/logos/ga4_256x256.png",
-                "credentials": [
-                    {
-                        "name": "GA4_ACCESS_TOKEN",
-                        "description": "OAuth access token from Google Cloud Console",
-                        "required": true,
-                        "url": "https://console.cloud.google.com/apis/credentials",
-                        "link_text": "Set Up API Credentials"
-                    }
-                ]
-            }
-        },
-        {
-            "prefix": "google-ads",
-            "mcp_server_type": "proxy",
-            "transport_type": "streamable-http",
-            "url": "https://orbit-google-ads.fastmcp.app/mcp",
-            "server_source": "native",
-            "metadata_overrides": {
-                "description": "Manage campaigns, ad groups, keywords, and budgets on Google Ads",
-                "category": "Marketing",
-                "server_type": "user",
-                "security_type": "token",
-                "logo_url": "https://pub-4421542fcd47468da3bde597fe7b682f.r2.dev/logos/google_ads_512x512.png",
-                "icon_url": "https://pub-4421542fcd47468da3bde597fe7b682f.r2.dev/logos/google_ads_256x256.png",
-                "credentials": [
-                    {
-                        "name": "GOOGLE_ADS_ACCESS_TOKEN",
-                        "description": "Developer token from API Center",
-                        "required": true,
-                        "url": "https://ads.google.com/aw/apicenter",
-                        "link_text": "Get Developer Token"
-                    }
-                ]
-            }
-        },
-        {
-            "prefix": "google-search-console",
-            "mcp_server_type": "proxy",
-            "transport_type": "streamable-http",
-            "url": "https://orbit-google-search-console.fastmcp.app/mcp",
-            "server_source": "native",
-            "metadata_overrides": {
-                "description": "Query search analytics, inspect URLs, and manage sitemaps via Google Search Console",
-                "category": "Marketing",
-                "server_type": "user",
-                "security_type": "token",
-                "logo_url": "https://pub-4421542fcd47468da3bde597fe7b682f.r2.dev/logos/google_search_console_512x512.png",
-                "icon_url": "https://pub-4421542fcd47468da3bde597fe7b682f.r2.dev/logos/google_search_console_256x256.png",
-                "credentials": [
-                    {
-                        "name": "GSC_ACCESS_TOKEN",
-                        "description": "OAuth access token from Google Cloud Console",
-                        "required": true,
-                        "url": "https://console.cloud.google.com/apis/credentials",
-                        "link_text": "Set Up API Credentials"
-                    }
-                ]
-            }
-        },
-        {
-            "prefix": "hotjar",
-            "mcp_server_type": "proxy",
-            "transport_type": "streamable-http",
-            "url": "https://orbit-hotjar.fastmcp.app/mcp",
-            "server_source": "native",
-            "metadata_overrides": {
-                "description": "Access site data, surveys, heatmaps, recordings, and form analytics from Hotjar",
-                "category": "Product",
-                "server_type": "user",
-                "security_type": "token",
-                "logo_url": "https://pub-4421542fcd47468da3bde597fe7b682f.r2.dev/logos/hotjar_512x512.png",
-                "icon_url": "https://pub-4421542fcd47468da3bde597fe7b682f.r2.dev/logos/hotjar_256x256.png",
-                "credentials": [
-                    {
-                        "name": "HOTJAR_CLIENT_CREDENTIALS",
-                        "description": "Client ID and client secret",
-                        "required": true,
-                        "url": "https://insights.hotjar.com/settings/api",
-                        "link_text": "Get API Credentials"
-                    }
-                ]
-            }
-        },
-        {
             "prefix": "hunter",
             "mcp_server_type": "proxy",
             "transport_type": "streamable-http",
@@ -1181,30 +1061,6 @@
                         "required": true,
                         "url": "https://app.lemlist.com/settings",
                         "link_text": "Get API Key"
-                    }
-                ]
-            }
-        },
-        {
-            "prefix": "linkedin-ads",
-            "mcp_server_type": "proxy",
-            "transport_type": "streamable-http",
-            "url": "https://orbit-linkedin-ads.fastmcp.app/mcp",
-            "server_source": "native",
-            "metadata_overrides": {
-                "description": "Manage ad accounts, campaigns, analytics, and creatives on LinkedIn Marketing Solutions",
-                "category": "Marketing",
-                "server_type": "user",
-                "security_type": "token",
-                "logo_url": "https://pub-4421542fcd47468da3bde597fe7b682f.r2.dev/logos/linkedin_ads_512x512.png",
-                "icon_url": "https://pub-4421542fcd47468da3bde597fe7b682f.r2.dev/logos/linkedin_ads_256x256.png",
-                "credentials": [
-                    {
-                        "name": "LINKEDIN_ADS_ACCESS_TOKEN",
-                        "description": "OAuth access token from LinkedIn developer app",
-                        "required": true,
-                        "url": "https://www.linkedin.com/developers/apps",
-                        "link_text": "Set Up API Access"
                     }
                 ]
             }
@@ -1618,30 +1474,6 @@
             }
         },
         {
-            "prefix": "snov",
-            "mcp_server_type": "proxy",
-            "transport_type": "streamable-http",
-            "url": "https://orbit-snov.fastmcp.app/mcp",
-            "server_source": "native",
-            "metadata_overrides": {
-                "description": "Search for emails, verify addresses, manage prospect lists, and run drip campaigns on Snov.io",
-                "category": "Marketing",
-                "server_type": "user",
-                "security_type": "token",
-                "logo_url": "https://pub-4421542fcd47468da3bde597fe7b682f.r2.dev/logos/snov_512x512.png",
-                "icon_url": "https://pub-4421542fcd47468da3bde597fe7b682f.r2.dev/logos/snov_256x256.png",
-                "credentials": [
-                    {
-                        "name": "SNOV_CLIENT_CREDENTIALS",
-                        "description": "Client ID and client secret",
-                        "required": true,
-                        "url": "https://app.snov.io/account/api",
-                        "link_text": "Get API Credentials"
-                    }
-                ]
-            }
-        },
-        {
             "prefix": "tiktok-ads",
             "mcp_server_type": "proxy",
             "transport_type": "streamable-http",
@@ -1685,30 +1517,6 @@
                         "required": true,
                         "url": "https://app.tolt.io/settings/integrations",
                         "link_text": "Get API Key"
-                    }
-                ]
-            }
-        },
-        {
-            "prefix": "trustpilot",
-            "mcp_server_type": "proxy",
-            "transport_type": "streamable-http",
-            "url": "https://orbit-trustpilot.fastmcp.app/mcp",
-            "server_source": "native",
-            "metadata_overrides": {
-                "description": "Search businesses, read and reply to reviews, and manage review invitations on Trustpilot",
-                "category": "Marketing",
-                "server_type": "user",
-                "security_type": "token",
-                "logo_url": "https://pub-4421542fcd47468da3bde597fe7b682f.r2.dev/logos/trustpilot_512x512.png",
-                "icon_url": "https://pub-4421542fcd47468da3bde597fe7b682f.r2.dev/logos/trustpilot_256x256.png",
-                "credentials": [
-                    {
-                        "name": "TRUSTPILOT_API_CREDENTIALS",
-                        "description": "API key and secret",
-                        "required": true,
-                        "url": "https://businessapp.b2b.trustpilot.com/#/applications/",
-                        "link_text": "Get API Credentials"
                     }
                 ]
             }
