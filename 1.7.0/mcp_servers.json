@@ -1568,6 +1568,28 @@
                     }
                 ]
             }
+        },
+        {
+            "prefix": "attio",
+            "mcp_server_type": "proxy",
+            "transport_type": "streamable-http",
+            "url": "https://mcp.attio.com/mcp",
+            "server_source": "official",
+            "metadata_overrides": {
+                "description": "Search and manage contacts, companies, deals, lists, and notes in your Attio CRM workspace",
+                "category": "Sales",
+                "server_type": "user",
+                "security_type": "oauth",
+                "logo_url": "https://pub-4421542fcd47468da3bde597fe7b682f.r2.dev/logos/attio_512x512.png",
+                "icon_url": "https://pub-4421542fcd47468da3bde597fe7b682f.r2.dev/logos/attio_256x256.png",
+                "credentials": [
+                    {
+                        "name": "oauth",
+                        "description": "Sign in with your Attio account",
+                        "required": true
+                    }
+                ]
+            }
         }
     ]
 }
