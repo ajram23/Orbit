@@ -1590,6 +1590,30 @@
                     }
                 ]
             }
+        },
+        {
+            "prefix": "similarweb",
+            "mcp_server_type": "proxy",
+            "transport_type": "streamable-http",
+            "url": "https://mcp.similarweb.com",
+            "server_source": "official",
+            "metadata_overrides": {
+                "description": "Analyze website traffic, search metrics, audience demographics, and app performance with Similarweb",
+                "category": "Marketing",
+                "server_type": "user",
+                "security_type": "token",
+                "logo_url": "https://pub-4421542fcd47468da3bde597fe7b682f.r2.dev/logos/similarweb_512x512.png",
+                "icon_url": "https://pub-4421542fcd47468da3bde597fe7b682f.r2.dev/logos/similarweb_256x256.png",
+                "credentials": [
+                    {
+                        "name": "SIMILARWEB_API_KEY",
+                        "description": "API key from your account dashboard",
+                        "required": true,
+                        "url": "https://account.similarweb.com/#/api-management",
+                        "link_text": "Get API Key"
+                    }
+                ]
+            }
         }
     ]
 }
