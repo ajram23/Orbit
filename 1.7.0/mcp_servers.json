@@ -1614,6 +1614,472 @@
                     }
                 ]
             }
+        },
+        {
+            "prefix": "asana",
+            "mcp_server_type": "proxy",
+            "transport_type": "streamable-http",
+            "url": "https://mcp.asana.com/v2/mcp",
+            "server_source": "official",
+            "metadata_overrides": {
+                "description": "Manage tasks, projects, and workflows in Asana",
+                "category": "Product",
+                "server_type": "user",
+                "security_type": "oauth",
+                "logo_url": "https://pub-4421542fcd47468da3bde597fe7b682f.r2.dev/logos/asana_512x512.png",
+                "icon_url": "https://pub-4421542fcd47468da3bde597fe7b682f.r2.dev/logos/asana_256x256.png",
+                "credentials": [
+                    {
+                        "name": "oauth",
+                        "description": "Sign in with your Asana account",
+                        "required": true
+                    }
+                ]
+            }
+        },
+        {
+            "prefix": "atlassian",
+            "mcp_server_type": "proxy",
+            "transport_type": "streamable-http",
+            "url": "https://mcp.atlassian.com/v1/mcp",
+            "server_source": "official",
+            "metadata_overrides": {
+                "description": "Access Jira issues, Confluence pages, and projects in Atlassian",
+                "category": "Collaboration",
+                "server_type": "user",
+                "security_type": "oauth",
+                "logo_url": "https://pub-4421542fcd47468da3bde597fe7b682f.r2.dev/logos/atlassian_512x512.png",
+                "icon_url": "https://pub-4421542fcd47468da3bde597fe7b682f.r2.dev/logos/atlassian_256x256.png",
+                "credentials": [
+                    {
+                        "name": "oauth",
+                        "description": "Sign in with your Atlassian account",
+                        "required": true
+                    }
+                ]
+            }
+        },
+        {
+            "prefix": "box",
+            "mcp_server_type": "proxy",
+            "transport_type": "streamable-http",
+            "url": "https://mcp.box.com",
+            "server_source": "official",
+            "metadata_overrides": {
+                "description": "Store, share, and manage files and documents in Box",
+                "category": "Productivity",
+                "server_type": "user",
+                "security_type": "oauth",
+                "logo_url": "https://pub-4421542fcd47468da3bde597fe7b682f.r2.dev/logos/box_512x512.png",
+                "icon_url": "https://pub-4421542fcd47468da3bde597fe7b682f.r2.dev/logos/box_256x256.png",
+                "credentials": [
+                    {
+                        "name": "oauth",
+                        "description": "Sign in with your Box account",
+                        "required": true
+                    }
+                ]
+            }
+        },
+        {
+            "prefix": "clickup",
+            "mcp_server_type": "proxy",
+            "transport_type": "streamable-http",
+            "url": "https://mcp.clickup.com/mcp",
+            "server_source": "official",
+            "metadata_overrides": {
+                "description": "Manage tasks, docs, goals, and workflows in ClickUp",
+                "category": "Product",
+                "server_type": "user",
+                "security_type": "oauth",
+                "logo_url": "https://pub-4421542fcd47468da3bde597fe7b682f.r2.dev/logos/clickup_512x512.png",
+                "icon_url": "https://pub-4421542fcd47468da3bde597fe7b682f.r2.dev/logos/clickup_256x256.png",
+                "credentials": [
+                    {
+                        "name": "oauth",
+                        "description": "Sign in with your Clickup account",
+                        "required": true
+                    }
+                ]
+            }
+        },
+        {
+            "prefix": "close",
+            "mcp_server_type": "proxy",
+            "transport_type": "streamable-http",
+            "url": "https://mcp.close.com/mcp",
+            "server_source": "official",
+            "metadata_overrides": {
+                "description": "Manage leads, contacts, opportunities, and sales pipelines in Close CRM",
+                "category": "Sales",
+                "server_type": "user",
+                "security_type": "oauth",
+                "logo_url": "https://pub-4421542fcd47468da3bde597fe7b682f.r2.dev/logos/close_512x512.png",
+                "icon_url": "https://pub-4421542fcd47468da3bde597fe7b682f.r2.dev/logos/close_256x256.png",
+                "credentials": [
+                    {
+                        "name": "oauth",
+                        "description": "Sign in with your Close account",
+                        "required": true
+                    }
+                ]
+            }
+        },
+        {
+            "prefix": "common-room",
+            "mcp_server_type": "proxy",
+            "transport_type": "streamable-http",
+            "url": "https://mcp.commonroom.io/mcp",
+            "server_source": "official",
+            "metadata_overrides": {
+                "description": "Track community signals, member activity, and engagement in Common Room",
+                "category": "Sales",
+                "server_type": "user",
+                "security_type": "oauth",
+                "logo_url": "https://pub-4421542fcd47468da3bde597fe7b682f.r2.dev/logos/common_room_512x512.png",
+                "icon_url": "https://pub-4421542fcd47468da3bde597fe7b682f.r2.dev/logos/common_room_256x256.png",
+                "credentials": [
+                    {
+                        "name": "oauth",
+                        "description": "Sign in with your Common Room account",
+                        "required": true
+                    }
+                ]
+            }
+        },
+        {
+            "prefix": "datadog",
+            "mcp_server_type": "proxy",
+            "transport_type": "streamable-http",
+            "url": "https://mcp.datadoghq.com/mcp",
+            "server_source": "official",
+            "metadata_overrides": {
+                "description": "Monitor infrastructure, logs, APM traces, and dashboards in Datadog",
+                "category": "Product",
+                "server_type": "user",
+                "security_type": "oauth",
+                "logo_url": "https://pub-4421542fcd47468da3bde597fe7b682f.r2.dev/logos/datadog_512x512.png",
+                "icon_url": "https://pub-4421542fcd47468da3bde597fe7b682f.r2.dev/logos/datadog_256x256.png",
+                "credentials": [
+                    {
+                        "name": "oauth",
+                        "description": "Sign in with your Datadog account",
+                        "required": true
+                    }
+                ]
+            }
+        },
+        {
+            "prefix": "docusign",
+            "mcp_server_type": "proxy",
+            "transport_type": "streamable-http",
+            "url": "https://mcp.docusign.com/mcp",
+            "server_source": "official",
+            "metadata_overrides": {
+                "description": "Send, sign, and manage agreements and envelopes in DocuSign",
+                "category": "Business",
+                "server_type": "user",
+                "security_type": "oauth",
+                "logo_url": "https://pub-4421542fcd47468da3bde597fe7b682f.r2.dev/logos/docusign_512x512.png",
+                "icon_url": "https://pub-4421542fcd47468da3bde597fe7b682f.r2.dev/logos/docusign_256x256.png",
+                "credentials": [
+                    {
+                        "name": "oauth",
+                        "description": "Sign in with your Docusign account",
+                        "required": true
+                    }
+                ]
+            }
+        },
+        {
+            "prefix": "egnyte",
+            "mcp_server_type": "proxy",
+            "transport_type": "streamable-http",
+            "url": "https://mcp-server.egnyte.com/mcp",
+            "server_source": "official",
+            "metadata_overrides": {
+                "description": "Access, share, and manage files and folders in Egnyte",
+                "category": "Productivity",
+                "server_type": "user",
+                "security_type": "oauth",
+                "logo_url": "https://pub-4421542fcd47468da3bde597fe7b682f.r2.dev/logos/egnyte_512x512.png",
+                "icon_url": "https://pub-4421542fcd47468da3bde597fe7b682f.r2.dev/logos/egnyte_256x256.png",
+                "credentials": [
+                    {
+                        "name": "oauth",
+                        "description": "Sign in with your Egnyte account",
+                        "required": true
+                    }
+                ]
+            }
+        },
+        {
+            "prefix": "figma",
+            "mcp_server_type": "proxy",
+            "transport_type": "streamable-http",
+            "url": "https://mcp.figma.com/mcp",
+            "server_source": "official",
+            "metadata_overrides": {
+                "description": "Design, prototype, and collaborate on UI projects in Figma",
+                "category": "Product",
+                "server_type": "user",
+                "security_type": "oauth",
+                "logo_url": "https://pub-4421542fcd47468da3bde597fe7b682f.r2.dev/logos/figma_512x512.png",
+                "icon_url": "https://pub-4421542fcd47468da3bde597fe7b682f.r2.dev/logos/figma_256x256.png",
+                "credentials": [
+                    {
+                        "name": "oauth",
+                        "description": "Sign in with your Figma account",
+                        "required": true
+                    }
+                ]
+            }
+        },
+        {
+            "prefix": "guru",
+            "mcp_server_type": "proxy",
+            "transport_type": "streamable-http",
+            "url": "https://mcp.api.getguru.com/mcp",
+            "server_source": "official",
+            "metadata_overrides": {
+                "description": "Search and manage knowledge cards, boards, and collections in Guru",
+                "category": "Collaboration",
+                "server_type": "user",
+                "security_type": "oauth",
+                "logo_url": "https://pub-4421542fcd47468da3bde597fe7b682f.r2.dev/logos/guru_512x512.png",
+                "icon_url": "https://pub-4421542fcd47468da3bde597fe7b682f.r2.dev/logos/guru_256x256.png",
+                "credentials": [
+                    {
+                        "name": "oauth",
+                        "description": "Sign in with your Guru account",
+                        "required": true
+                    }
+                ]
+            }
+        },
+        {
+            "prefix": "hex",
+            "mcp_server_type": "proxy",
+            "transport_type": "streamable-http",
+            "url": "https://app.hex.tech/mcp",
+            "server_source": "official",
+            "metadata_overrides": {
+                "description": "Build and run data queries, notebooks, and analytics projects in Hex",
+                "category": "Product",
+                "server_type": "user",
+                "security_type": "oauth",
+                "logo_url": "https://pub-4421542fcd47468da3bde597fe7b682f.r2.dev/logos/hex_512x512.png",
+                "icon_url": "https://pub-4421542fcd47468da3bde597fe7b682f.r2.dev/logos/hex_256x256.png",
+                "credentials": [
+                    {
+                        "name": "oauth",
+                        "description": "Sign in with your Hex account",
+                        "required": true
+                    }
+                ]
+            }
+        },
+        {
+            "prefix": "monday",
+            "mcp_server_type": "proxy",
+            "transport_type": "streamable-http",
+            "url": "https://mcp.monday.com/mcp",
+            "server_source": "official",
+            "metadata_overrides": {
+                "description": "Manage boards, items, updates, and workflows in monday.com",
+                "category": "Product",
+                "server_type": "user",
+                "security_type": "oauth",
+                "logo_url": "https://pub-4421542fcd47468da3bde597fe7b682f.r2.dev/logos/monday_512x512.png",
+                "icon_url": "https://pub-4421542fcd47468da3bde597fe7b682f.r2.dev/logos/monday_256x256.png",
+                "credentials": [
+                    {
+                        "name": "oauth",
+                        "description": "Sign in with your Monday account",
+                        "required": true
+                    }
+                ]
+            }
+        },
+        {
+            "prefix": "outreach",
+            "mcp_server_type": "proxy",
+            "transport_type": "streamable-http",
+            "url": "https://mcp.outreach.io/mcp",
+            "server_source": "official",
+            "metadata_overrides": {
+                "description": "Manage sequences, prospects, and sales engagement in Outreach",
+                "category": "Sales",
+                "server_type": "user",
+                "security_type": "oauth",
+                "logo_url": "https://pub-4421542fcd47468da3bde597fe7b682f.r2.dev/logos/outreach_512x512.png",
+                "icon_url": "https://pub-4421542fcd47468da3bde597fe7b682f.r2.dev/logos/outreach_256x256.png",
+                "credentials": [
+                    {
+                        "name": "oauth",
+                        "description": "Sign in with your Outreach account",
+                        "required": true
+                    }
+                ]
+            }
+        },
+        {
+            "prefix": "pendo",
+            "mcp_server_type": "proxy",
+            "transport_type": "streamable-http",
+            "url": "https://app.pendo.io/mcp/v0/shttp",
+            "server_source": "official",
+            "metadata_overrides": {
+                "description": "Access product analytics, guides, and user feedback in Pendo",
+                "category": "Product",
+                "server_type": "user",
+                "security_type": "oauth",
+                "logo_url": "https://pub-4421542fcd47468da3bde597fe7b682f.r2.dev/logos/pendo_512x512.png",
+                "icon_url": "https://pub-4421542fcd47468da3bde597fe7b682f.r2.dev/logos/pendo_256x256.png",
+                "credentials": [
+                    {
+                        "name": "oauth",
+                        "description": "Sign in with your Pendo account",
+                        "required": true
+                    }
+                ]
+            }
+        },
+        {
+            "prefix": "zoominfo",
+            "mcp_server_type": "proxy",
+            "transport_type": "streamable-http",
+            "url": "https://mcp.zoominfo.com/mcp",
+            "server_source": "official",
+            "metadata_overrides": {
+                "description": "Search contacts, companies, and B2B intelligence in ZoomInfo",
+                "category": "Sales",
+                "server_type": "user",
+                "security_type": "oauth",
+                "logo_url": "https://pub-4421542fcd47468da3bde597fe7b682f.r2.dev/logos/zoominfo_512x512.png",
+                "icon_url": "https://pub-4421542fcd47468da3bde597fe7b682f.r2.dev/logos/zoominfo_256x256.png",
+                "credentials": [
+                    {
+                        "name": "oauth",
+                        "description": "Sign in with your Zoominfo account",
+                        "required": true
+                    }
+                ]
+            }
+        },
+        {
+            "prefix": "clay",
+            "mcp_server_type": "proxy",
+            "transport_type": "streamable-http",
+            "url": "https://api.clay.com/v3/mcp",
+            "server_source": "official",
+            "metadata_overrides": {
+                "description": "Enrich leads, build prospect lists, and automate data workflows in Clay",
+                "category": "Sales",
+                "server_type": "user",
+                "security_type": "token",
+                "logo_url": "https://pub-4421542fcd47468da3bde597fe7b682f.r2.dev/logos/clay_512x512.png",
+                "icon_url": "https://pub-4421542fcd47468da3bde597fe7b682f.r2.dev/logos/clay_256x256.png",
+                "credentials": [
+                    {
+                        "name": "CLAY_API_KEY",
+                        "description": "API key from settings",
+                        "required": true,
+                        "url": "https://app.clay.com/settings/api",
+                        "link_text": "Get API Key"
+                    }
+                ]
+            }
+        },
+        {
+            "prefix": "pagerduty",
+            "mcp_server_type": "proxy",
+            "transport_type": "streamable-http",
+            "url": "https://mcp.pagerduty.com/mcp",
+            "server_source": "official",
+            "metadata_overrides": {
+                "description": "Manage incidents, services, on-call schedules, and alerts in PagerDuty",
+                "category": "Product",
+                "server_type": "user",
+                "security_type": "token",
+                "logo_url": "https://pub-4421542fcd47468da3bde597fe7b682f.r2.dev/logos/pagerduty_512x512.png",
+                "icon_url": "https://pub-4421542fcd47468da3bde597fe7b682f.r2.dev/logos/pagerduty_256x256.png",
+                "credentials": [
+                    {
+                        "name": "PAGERDUTY_API_TOKEN",
+                        "description": "User API token from account settings",
+                        "required": true,
+                        "url": "https://support.pagerduty.com/main/docs/api-access-keys",
+                        "link_text": "Get API Token"
+                    }
+                ]
+            }
+        },
+        {
+            "prefix": "airtable",
+            "mcp_server_type": "proxy",
+            "transport_type": "streamable-http",
+            "url": "https://mcp.airtable.com/mcp",
+            "server_source": "official",
+            "metadata_overrides": {
+                "description": "Create, read, and update bases, tables, fields, and records in Airtable",
+                "category": "Productivity",
+                "server_type": "user",
+                "security_type": "oauth",
+                "logo_url": "https://pub-4421542fcd47468da3bde597fe7b682f.r2.dev/logos/airtable_512x512.png",
+                "icon_url": "https://pub-4421542fcd47468da3bde597fe7b682f.r2.dev/logos/airtable_256x256.png",
+                "credentials": [
+                    {
+                        "name": "oauth",
+                        "description": "Sign in with your Airtable account",
+                        "required": true
+                    }
+                ]
+            }
+        },
+        {
+            "prefix": "airops",
+            "mcp_server_type": "proxy",
+            "transport_type": "streamable-http",
+            "url": "https://app.airops.com/mcp",
+            "server_source": "official",
+            "metadata_overrides": {
+                "description": "Access AEO data and craft content that wins AI search with AirOps",
+                "category": "Marketing",
+                "server_type": "user",
+                "security_type": "oauth",
+                "logo_url": "https://pub-4421542fcd47468da3bde597fe7b682f.r2.dev/logos/airops_512x512.png",
+                "icon_url": "https://pub-4421542fcd47468da3bde597fe7b682f.r2.dev/logos/airops_256x256.png",
+                "credentials": [
+                    {
+                        "name": "oauth",
+                        "description": "Sign in with your AirOps account",
+                        "required": true
+                    }
+                ]
+            }
+        },
+        {
+            "prefix": "wordpress",
+            "mcp_server_type": "proxy",
+            "transport_type": "streamable-http",
+            "url": "https://public-api.wordpress.com/wpcom/v2/mcp/v1",
+            "server_source": "official",
+            "metadata_overrides": {
+                "description": "Create and manage posts, pages, comments, media, and sites on WordPress.com",
+                "category": "Marketing",
+                "server_type": "user",
+                "security_type": "oauth",
+                "logo_url": "https://pub-4421542fcd47468da3bde597fe7b682f.r2.dev/logos/wordpress_512x512.png",
+                "icon_url": "https://pub-4421542fcd47468da3bde597fe7b682f.r2.dev/logos/wordpress_256x256.png",
+                "credentials": [
+                    {
+                        "name": "oauth",
+                        "description": "Sign in with your WordPress.com account",
+                        "required": true
+                    }
+                ]
+            }
         }
     ]
 }
