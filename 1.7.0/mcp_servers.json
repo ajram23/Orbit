@@ -1,6 +1,6 @@
 {
     "version": "1.7.0",
-    "_changelog": "Added: stripe, intercom, sentry, amplitude, mixpanel, klaviyo, webflow, ahrefs, semrush, meta-ads, brevo. Restored: todoist, granola from backup. Added 48 Horizon-hosted MCP servers: activecampaign, adobe-analytics, apollo, beehiiv, buffer, calendly, carta, clearbit, customer-io, dataforseo, demio, dub, g2, ga4, google-ads, google-search-console, hotjar, hunter, instantly, keywords-everywhere, kit, lattice, lemlist, linkedin-ads, livestorm, loops, mailchimp, mention-me, onesignal, optimizely, paddle, partnerstack, pave, plausible, postmark, reddit-ads, resend, rewardful, rippling, savvycal, segment, sendgrid, snov, tiktok-ads, tolt, trustpilot, typeform, wistia. Moved to oauth_required_servers.json (need OAuth/Composio): ga4, google-ads, google-search-console, linkedin-ads, carta, hotjar, snov, trustpilot.",
+    "_changelog": "Added: stripe, intercom, sentry, amplitude, mixpanel, klaviyo, webflow, ahrefs, semrush, meta-ads, brevo. Restored: todoist, granola from backup. Added 48 Horizon-hosted MCP servers: activecampaign, adobe-analytics, apollo, beehiiv, buffer, calendly, carta, clearbit, customer-io, dataforseo, demio, dub, g2, ga4, google-ads, google-search-console, hotjar, hunter, instantly, keywords-everywhere, kit, lattice, lemlist, linkedin-ads, livestorm, loops, mailchimp, mention-me, onesignal, optimizely, paddle, partnerstack, pave, plausible, postmark, reddit-ads, resend, rewardful, rippling, savvycal, segment, sendgrid, snov, tiktok-ads, tolt, trustpilot, typeform, wistia. Moved to oauth_required_servers.json (need OAuth/Composio): ga4, google-ads, google-search-console, linkedin-ads, carta, hotjar, snov, trustpilot. | Batch 2: Added 18 official remote MCP servers: heygen, supermetrics, mailerlite, fellow, jotform, bitly, paypal, square, ramp, explorium, luminpdf, windsor-ai (token), day-ai, mercury, make, process-street (DCR+secret_post pending fix), n8n, workato (zapier pattern). Moved paypal+square from oauth_required_servers.json (now support DCR).",
     "servers": [
         {
             "prefix": "apple-maps",
@@ -1667,7 +1667,7 @@
             "server_source": "official",
             "metadata_overrides": {
                 "description": "Store, share, and manage files and documents in Box",
-                "category": "Productivity",
+                "category": "Collaboration",
                 "server_type": "user",
                 "security_type": "oauth",
                 "logo_url": "https://pub-4421542fcd47468da3bde597fe7b682f.r2.dev/logos/box_512x512.png",
@@ -1799,7 +1799,7 @@
             "server_source": "official",
             "metadata_overrides": {
                 "description": "Access, share, and manage files and folders in Egnyte",
-                "category": "Productivity",
+                "category": "Collaboration",
                 "server_type": "user",
                 "security_type": "oauth",
                 "logo_url": "https://pub-4421542fcd47468da3bde597fe7b682f.r2.dev/logos/egnyte_512x512.png",
@@ -2076,6 +2076,454 @@
                     {
                         "name": "oauth",
                         "description": "Sign in with your WordPress.com account",
+                        "required": true
+                    }
+                ]
+            }
+        },
+        {
+            "prefix": "heygen",
+            "mcp_server_type": "proxy",
+            "transport_type": "streamable-http",
+            "url": "https://mcp.heygen.com/mcp/v1/",
+            "server_source": "official",
+            "metadata_overrides": {
+                "description": "Generate AI videos, text-to-speech, and manage video content",
+                "category": "Marketing",
+                "server_type": "user",
+                "security_type": "oauth",
+                "logo_url": "https://pub-4421542fcd47468da3bde597fe7b682f.r2.dev/logos/heygen_512x512.png",
+                "icon_url": "https://pub-4421542fcd47468da3bde597fe7b682f.r2.dev/logos/heygen_256x256.png",
+                "credentials": [
+                    {
+                        "name": "oauth",
+                        "description": "Sign in with your HeyGen account",
+                        "required": true
+                    }
+                ]
+            }
+        },
+        {
+            "prefix": "supermetrics",
+            "mcp_server_type": "proxy",
+            "transport_type": "streamable-http",
+            "url": "https://mcp.supermetrics.com",
+            "server_source": "official",
+            "metadata_overrides": {
+                "description": "Analyze marketing performance across 200+ data sources",
+                "category": "Marketing",
+                "server_type": "user",
+                "security_type": "oauth",
+                "logo_url": "https://pub-4421542fcd47468da3bde597fe7b682f.r2.dev/logos/supermetrics_512x512.png",
+                "icon_url": "https://pub-4421542fcd47468da3bde597fe7b682f.r2.dev/logos/supermetrics_256x256.png",
+                "credentials": [
+                    {
+                        "name": "oauth",
+                        "description": "Sign in with your Supermetrics account",
+                        "required": true
+                    }
+                ]
+            }
+        },
+        {
+            "prefix": "mailerlite",
+            "mcp_server_type": "proxy",
+            "transport_type": "streamable-http",
+            "url": "https://mcp.mailerlite.com/mcp",
+            "server_source": "official",
+            "metadata_overrides": {
+                "description": "Manage email campaigns, subscribers, automations, and analytics",
+                "category": "Marketing",
+                "server_type": "user",
+                "security_type": "oauth",
+                "logo_url": "https://pub-4421542fcd47468da3bde597fe7b682f.r2.dev/logos/mailerlite_512x512.png",
+                "icon_url": "https://pub-4421542fcd47468da3bde597fe7b682f.r2.dev/logos/mailerlite_256x256.png",
+                "credentials": [
+                    {
+                        "name": "oauth",
+                        "description": "Sign in with your MailerLite account",
+                        "required": true
+                    }
+                ]
+            }
+        },
+        {
+            "prefix": "fellow",
+            "mcp_server_type": "proxy",
+            "transport_type": "streamable-http",
+            "url": "https://fellow.app/mcp",
+            "server_source": "official",
+            "metadata_overrides": {
+                "description": "Search meeting transcripts, notes, and action items",
+                "category": "Collaboration",
+                "server_type": "user",
+                "security_type": "oauth",
+                "logo_url": "https://pub-4421542fcd47468da3bde597fe7b682f.r2.dev/logos/fellow_512x512.png",
+                "icon_url": "https://pub-4421542fcd47468da3bde597fe7b682f.r2.dev/logos/fellow_256x256.png",
+                "credentials": [
+                    {
+                        "name": "oauth",
+                        "description": "Sign in with your Fellow account",
+                        "required": true
+                    }
+                ]
+            }
+        },
+        {
+            "prefix": "jotform",
+            "mcp_server_type": "proxy",
+            "transport_type": "streamable-http",
+            "url": "https://mcp.jotform.com",
+            "server_source": "official",
+            "metadata_overrides": {
+                "description": "Create forms and analyze submission data",
+                "category": "Marketing",
+                "server_type": "user",
+                "security_type": "oauth",
+                "logo_url": "https://pub-4421542fcd47468da3bde597fe7b682f.r2.dev/logos/jotform_512x512.png",
+                "icon_url": "https://pub-4421542fcd47468da3bde597fe7b682f.r2.dev/logos/jotform_256x256.png",
+                "credentials": [
+                    {
+                        "name": "oauth",
+                        "description": "Sign in with your Jotform account",
+                        "required": true
+                    }
+                ]
+            }
+        },
+        {
+            "prefix": "bitly",
+            "mcp_server_type": "proxy",
+            "transport_type": "streamable-http",
+            "url": "https://api-ssl.bitly.com/v4/mcp",
+            "server_source": "official",
+            "metadata_overrides": {
+                "description": "Shorten links, generate QR codes, and track click performance",
+                "category": "Marketing",
+                "server_type": "user",
+                "security_type": "oauth",
+                "logo_url": "https://pub-4421542fcd47468da3bde597fe7b682f.r2.dev/logos/bitly_512x512.png",
+                "icon_url": "https://pub-4421542fcd47468da3bde597fe7b682f.r2.dev/logos/bitly_256x256.png",
+                "credentials": [
+                    {
+                        "name": "oauth",
+                        "description": "Sign in with your Bitly account",
+                        "required": true
+                    }
+                ]
+            }
+        },
+        {
+            "prefix": "paypal",
+            "mcp_server_type": "proxy",
+            "transport_type": "streamable-http",
+            "url": "https://mcp.paypal.com/mcp",
+            "server_source": "official",
+            "metadata_overrides": {
+                "description": "Create invoices, view transactions, and manage subscriptions",
+                "category": "Commerce",
+                "server_type": "user",
+                "security_type": "oauth",
+                "logo_url": "https://pub-4421542fcd47468da3bde597fe7b682f.r2.dev/logos/paypal_512x512.png",
+                "icon_url": "https://pub-4421542fcd47468da3bde597fe7b682f.r2.dev/logos/paypal_256x256.png",
+                "credentials": [
+                    {
+                        "name": "oauth",
+                        "description": "Sign in with your PayPal account",
+                        "required": true
+                    }
+                ]
+            }
+        },
+        {
+            "prefix": "square",
+            "mcp_server_type": "proxy",
+            "transport_type": "sse",
+            "url": "https://mcp.squareup.com/sse",
+            "server_source": "official",
+            "metadata_overrides": {
+                "description": "Manage transactions, inventory, customers, and payment data",
+                "category": "Commerce",
+                "server_type": "user",
+                "security_type": "oauth",
+                "logo_url": "https://pub-4421542fcd47468da3bde597fe7b682f.r2.dev/logos/square_512x512.png",
+                "icon_url": "https://pub-4421542fcd47468da3bde597fe7b682f.r2.dev/logos/square_256x256.png",
+                "credentials": [
+                    {
+                        "name": "oauth",
+                        "description": "Sign in with your Square account",
+                        "required": true
+                    }
+                ]
+            }
+        },
+        {
+            "prefix": "ramp",
+            "mcp_server_type": "proxy",
+            "transport_type": "streamable-http",
+            "url": "https://mcp.ramp.com/developer/mcp",
+            "server_source": "official",
+            "metadata_overrides": {
+                "description": "View expenses, transactions, receipts, and financial data",
+                "category": "Commerce",
+                "server_type": "user",
+                "security_type": "oauth",
+                "logo_url": "https://pub-4421542fcd47468da3bde597fe7b682f.r2.dev/logos/ramp_512x512.png",
+                "icon_url": "https://pub-4421542fcd47468da3bde597fe7b682f.r2.dev/logos/ramp_256x256.png",
+                "credentials": [
+                    {
+                        "name": "oauth",
+                        "description": "Sign in with your Ramp account",
+                        "required": true
+                    }
+                ]
+            }
+        },
+        {
+            "prefix": "explorium",
+            "mcp_server_type": "proxy",
+            "transport_type": "streamable-http",
+            "url": "https://mcp.explorium.ai/mcp",
+            "server_source": "official",
+            "metadata_overrides": {
+                "description": "Find prospects, research accounts, and enrich company data",
+                "category": "Sales",
+                "server_type": "user",
+                "security_type": "oauth",
+                "logo_url": "https://pub-4421542fcd47468da3bde597fe7b682f.r2.dev/logos/explorium_512x512.png",
+                "icon_url": "https://pub-4421542fcd47468da3bde597fe7b682f.r2.dev/logos/explorium_256x256.png",
+                "credentials": [
+                    {
+                        "name": "oauth",
+                        "description": "Sign in with your Explorium account",
+                        "required": true
+                    }
+                ]
+            }
+        },
+        {
+            "prefix": "luminpdf",
+            "mcp_server_type": "proxy",
+            "transport_type": "streamable-http",
+            "url": "https://mcp.luminpdf.com/mcp",
+            "server_source": "official",
+            "metadata_overrides": {
+                "description": "Manage documents, send signature requests, and convert to PDF",
+                "category": "Productivity",
+                "server_type": "user",
+                "security_type": "oauth",
+                "logo_url": "https://pub-4421542fcd47468da3bde597fe7b682f.r2.dev/logos/luminpdf_512x512.png",
+                "icon_url": "https://pub-4421542fcd47468da3bde597fe7b682f.r2.dev/logos/luminpdf_256x256.png",
+                "credentials": [
+                    {
+                        "name": "oauth",
+                        "description": "Sign in with your Lumin account",
+                        "required": true
+                    }
+                ]
+            }
+        },
+        {
+            "prefix": "windsor-ai",
+            "mcp_server_type": "proxy",
+            "transport_type": "sse",
+            "url": "https://mcp.windsor.ai/sse",
+            "server_source": "official",
+            "metadata_overrides": {
+                "description": "Connect and analyze data from 325+ marketing, analytics, and CRM sources",
+                "category": "Marketing",
+                "server_type": "user",
+                "security_type": "token",
+                "logo_url": "https://pub-4421542fcd47468da3bde597fe7b682f.r2.dev/logos/windsor_ai_512x512.png",
+                "icon_url": "https://pub-4421542fcd47468da3bde597fe7b682f.r2.dev/logos/windsor_ai_256x256.png",
+                "credentials": [
+                    {
+                        "name": "WINDSOR_API_KEY",
+                        "description": "Windsor.ai API Key",
+                        "url": "https://onboard.windsor.ai/",
+                        "link_text": "Get API Key",
+                        "required": true
+                    }
+                ]
+            }
+        },
+        {
+            "prefix": "day-ai",
+            "mcp_server_type": "proxy",
+            "transport_type": "streamable-http",
+            "url": "https://day.ai/api/mcp",
+            "server_source": "official",
+            "metadata_overrides": {
+                "description": "Query your CRM, create records, and get prospect insights",
+                "category": "Sales",
+                "server_type": "user",
+                "security_type": "oauth",
+                "logo_url": "https://pub-4421542fcd47468da3bde597fe7b682f.r2.dev/logos/day_ai_512x512.png",
+                "icon_url": "https://pub-4421542fcd47468da3bde597fe7b682f.r2.dev/logos/day_ai_256x256.png",
+                "credentials": [
+                    {
+                        "name": "oauth",
+                        "description": "Sign in with your Day.ai account",
+                        "required": true
+                    }
+                ]
+            }
+        },
+        {
+            "prefix": "mercury",
+            "mcp_server_type": "proxy",
+            "transport_type": "streamable-http",
+            "url": "https://mcp.mercury.com/mcp",
+            "server_source": "official",
+            "metadata_overrides": {
+                "description": "View balances, transactions, recipients, and financial statements",
+                "category": "Commerce",
+                "server_type": "user",
+                "security_type": "oauth",
+                "logo_url": "https://pub-4421542fcd47468da3bde597fe7b682f.r2.dev/logos/mercury_512x512.png",
+                "icon_url": "https://pub-4421542fcd47468da3bde597fe7b682f.r2.dev/logos/mercury_256x256.png",
+                "credentials": [
+                    {
+                        "name": "oauth",
+                        "description": "Sign in with your Mercury account",
+                        "required": true
+                    }
+                ]
+            }
+        },
+        {
+            "prefix": "make",
+            "mcp_server_type": "proxy",
+            "transport_type": "sse",
+            "url": "https://mcp.make.com/sse",
+            "server_source": "official",
+            "metadata_overrides": {
+                "description": "Run automation scenarios and manage your Make workflows",
+                "category": "Utilities",
+                "server_type": "user",
+                "security_type": "oauth",
+                "logo_url": "https://pub-4421542fcd47468da3bde597fe7b682f.r2.dev/logos/make_512x512.png",
+                "icon_url": "https://pub-4421542fcd47468da3bde597fe7b682f.r2.dev/logos/make_256x256.png",
+                "credentials": [
+                    {
+                        "name": "oauth",
+                        "description": "Sign in with your Make account",
+                        "required": true
+                    }
+                ]
+            }
+        },
+        {
+            "prefix": "process-street",
+            "mcp_server_type": "proxy",
+            "transport_type": "streamable-http",
+            "url": "https://mcp.process.st",
+            "server_source": "official",
+            "metadata_overrides": {
+                "description": "Explore and update checklists, workflows, and process data",
+                "category": "Product",
+                "server_type": "user",
+                "security_type": "oauth",
+                "logo_url": "https://pub-4421542fcd47468da3bde597fe7b682f.r2.dev/logos/process_street_512x512.png",
+                "icon_url": "https://pub-4421542fcd47468da3bde597fe7b682f.r2.dev/logos/process_street_256x256.png",
+                "credentials": [
+                    {
+                        "name": "oauth",
+                        "description": "Sign in with your Process Street account",
+                        "required": true
+                    }
+                ]
+            }
+        },
+        {
+            "prefix": "n8n",
+            "mcp_server_type": "zapier",
+            "transport_type": "streamable-http",
+            "server_source": "official",
+            "metadata_overrides": {
+                "description": "Access and run your n8n automation workflows",
+                "category": "Utilities",
+                "server_type": "user",
+                "security_type": "zapier",
+                "logo_url": "https://pub-4421542fcd47468da3bde597fe7b682f.r2.dev/logos/n8n_512x512.png",
+                "icon_url": "https://pub-4421542fcd47468da3bde597fe7b682f.r2.dev/logos/n8n_256x256.png",
+                "credentials": [
+                    {
+                        "name": "server_url",
+                        "description": "Your n8n MCP server URL (from n8n Settings > MCP)",
+                        "url": "https://docs.n8n.io/advanced-ai/accessing-n8n-mcp-server/",
+                        "link_text": "Get MCP URL",
+                        "required": true
+                    }
+                ]
+            }
+        },
+        {
+            "prefix": "workato",
+            "mcp_server_type": "zapier",
+            "transport_type": "streamable-http",
+            "server_source": "official",
+            "metadata_overrides": {
+                "description": "Run automation recipes and connect your business apps",
+                "category": "Utilities",
+                "server_type": "user",
+                "security_type": "zapier",
+                "logo_url": "https://pub-4421542fcd47468da3bde597fe7b682f.r2.dev/logos/workato_512x512.png",
+                "icon_url": "https://pub-4421542fcd47468da3bde597fe7b682f.r2.dev/logos/workato_256x256.png",
+                "credentials": [
+                    {
+                        "name": "server_url",
+                        "description": "Your Workato MCP server URL (from AI Hub > MCP Servers)",
+                        "url": "https://docs.workato.com/mcp.html",
+                        "link_text": "Get MCP URL",
+                        "required": true
+                    }
+                ]
+            }
+        },
+        {
+            "prefix": "revenuecat",
+            "mcp_server_type": "proxy",
+            "transport_type": "streamable-http",
+            "url": "https://mcp.revenuecat.ai/mcp",
+            "server_source": "official",
+            "metadata_overrides": {
+                "description": "Manage in-app subscriptions, entitlements, customers, and revenue analytics",
+                "category": "Commerce",
+                "server_type": "user",
+                "security_type": "token",
+                "logo_url": "https://pub-4421542fcd47468da3bde597fe7b682f.r2.dev/logos/revenuecat_512x512.png",
+                "icon_url": "https://pub-4421542fcd47468da3bde597fe7b682f.r2.dev/logos/revenuecat_256x256.png",
+                "credentials": [
+                    {
+                        "name": "REVENUECAT_API_KEY",
+                        "description": "RevenueCat API v2 Secret Key (starts with sk_)",
+                        "url": "https://app.revenuecat.com/settings/api-keys",
+                        "link_text": "Get Secret Key",
+                        "required": true
+                    }
+                ]
+            }
+        },
+        {
+            "prefix": "jam",
+            "mcp_server_type": "proxy",
+            "transport_type": "streamable-http",
+            "url": "https://mcp.jam.dev/mcp",
+            "server_source": "official",
+            "metadata_overrides": {
+                "description": "Analyze bug recordings, screen captures, console logs, and network requests from Jam",
+                "category": "Product",
+                "server_type": "user",
+                "security_type": "token",
+                "logo_url": "https://pub-4421542fcd47468da3bde597fe7b682f.r2.dev/logos/jam_512x512.png",
+                "icon_url": "https://pub-4421542fcd47468da3bde597fe7b682f.r2.dev/logos/jam_256x256.png",
+                "credentials": [
+                    {
+                        "name": "JAM_ACCESS_TOKEN",
+                        "description": "Jam Personal Access Token",
+                        "url": "https://jam.dev/account/tokens",
+                        "link_text": "Get Access Token",
                         "required": true
                     }
                 ]
