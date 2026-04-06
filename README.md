@@ -1,4 +1,5 @@
 # Orbit - Your AI Executive Assistant
+<img width="1536" height="1024" alt="orbit_1600x1000" src="https://github.com/user-attachments/assets/505f3e41-56e0-417f-801b-c6d57f713508" />
 
 An AI-powered assistant that orchestrates your professional life from your Mac toolbar. Connect your apps, automate workflows, and let Orbit handle the repetitive work while you focus on what matters.
 
